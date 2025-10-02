@@ -2,7 +2,7 @@
   <section class="relative isolate">
     <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-20 sm:py-28">
       <div class="grid grid-cols-1 items-center gap-10 md:grid-cols-2">
-        <div>
+        <div :class="[ 'transition-all duration-700 ease-out', isShown ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-2' ]">
           <h1 class="text-3xl sm:text-5xl font-extrabold tracking-tight heading-gradient">
             Hadi ZareZadeh
           </h1>
@@ -10,7 +10,7 @@
             Full-Stack Web Developer
           </p>
           <p class="mt-4 text-gray-600 max-w-prose">
-            Passionate about building modern web applications and automating workflows.
+            Highly motivated developer with 4+ years of experience in Laravel, Vue 3, Tailwind, and Python automation.
           </p>
           <div class="mt-6 flex items-center gap-3">
             <RouterLink
@@ -27,7 +27,7 @@
             </RouterLink>
           </div>
         </div>
-        <div class="relative">
+        <div class="relative" :class="[ 'transition-all duration-700 ease-out delay-150', isShown ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-2' ]">
           <div class="aspect-square w-full overflow-hidden rounded-2xl bg-gray-100 shadow-inner">
             <img
               class="h-full w-full object-cover"
@@ -43,6 +43,10 @@
 
 <script setup>
 import { RouterLink } from 'vue-router';
+import { ref, onMounted } from 'vue';
+
+const isShown = ref(false);
+onMounted(() => { requestAnimationFrame(() => { isShown.value = true; }); });
 </script>
 
 
