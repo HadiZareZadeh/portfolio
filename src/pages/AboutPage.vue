@@ -19,7 +19,7 @@
               </div>
               <div class="flex items-start justify-between gap-4">
                 <dt class="text-gray-500">Email</dt>
-                <dd class="text-gray-900 text-right"><a class="hover:underline" href="mailto:Zarehadi2@gmail.com">Zarehadi2@gmail.com</a></dd>
+                <dd class="text-gray-900 text-right"><a class="hover:underline" href="mailto:HadiZareZadeh00@gmail.com">HadiZareZadeh00@gmail.com</a></dd>
               </div>
               <div class="flex items-start justify-between gap-4">
                 <dt class="text-gray-500">Phone</dt>
