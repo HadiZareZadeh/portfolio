@@ -16,6 +16,7 @@
         :image="project.image"
         :github="project.github"
         :demo="project.demo"
+        v-reveal
       />
     </div>
   </section>
