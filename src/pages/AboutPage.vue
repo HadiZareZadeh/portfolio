@@ -90,31 +90,31 @@
 
         <h3 class="mt-10 text-lg font-semibold text-gray-900">Experience</h3>
         <ol class="mt-3 relative border-l border-gray-200">
-          <li class="ml-4 mb-6" v-reveal>
+          <li class="ml-4 pl-5 mb-6" v-reveal>
             <div class="absolute -left-1.5 mt-1 h-3 w-3 rounded-full bg-gray-300"></div>
             <p class="text-gray-900 font-medium">Full-stack Developer @ Lyndakade (2020 – Present)</p>
           </li>
-          <li class="ml-4 mb-6" v-reveal>
+          <li class="ml-4 pl-5 mb-6" v-reveal>
             <div class="absolute -left-1.5 mt-1 h-3 w-3 rounded-full bg-gray-300"></div>
             <p class="text-gray-900 font-medium">Mobile/Desktop App Dev @ Lyndakade (2024)</p>
           </li>
-          <li class="ml-4 mb-6" v-reveal>
+          <li class="ml-4 pl-5 mb-6" v-reveal>
             <div class="absolute -left-1.5 mt-1 h-3 w-3 rounded-full bg-gray-300"></div>
             <p class="text-gray-900 font-medium">Python Bot Developer (2025)</p>
           </li>
-          <li class="ml-4 mb-6" v-reveal>
+          <li class="ml-4 pl-5 mb-6" v-reveal>
             <div class="absolute -left-1.5 mt-1 h-3 w-3 rounded-full bg-gray-300"></div>
             <p class="text-gray-900 font-medium">Game Developer @ Legend Company (2018–2020)</p>
           </li>
-          <li class="ml-4 mb-6" v-reveal>
+          <li class="ml-4 pl-5 mb-6" v-reveal>
             <div class="absolute -left-1.5 mt-1 h-3 w-3 rounded-full bg-gray-300"></div>
             <p class="text-gray-900 font-medium">Teaching Assistant @ Kashmar Higher Education Institute (2017–2020)</p>
           </li>
-          <li class="ml-4 mb-6" v-reveal>
+          <li class="ml-4 pl-5 mb-6" v-reveal>
             <div class="absolute -left-1.5 mt-1 h-3 w-3 rounded-full bg-gray-300"></div>
             <p class="text-gray-900 font-medium">Head of Education @ Scientific Association (2017–2020)</p>
           </li>
-          <li class="ml-4 mb-0" v-reveal>
+          <li class="ml-4 pl-5 mb-0" v-reveal>
             <div class="absolute -left-1.5 mt-1 h-3 w-3 rounded-full bg-gray-300"></div>
             <p class="text-gray-900 font-medium">Secretary of Director @ Cargo Clearance Co. (2015)</p>
           </li>
