@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hadi ZareZadeh — Portfolio</title>
+  <meta name="description" content="Portfolio of Hadi ZareZadeh, Full-Stack Web Developer." />
+  <script type="module" crossorigin src="/portfolio/assets/index-DuMaI5qi.js"></script>
+  <link rel="stylesheet" crossorigin href="/portfolio/assets/index-CyfytV9N.css">
+</head>
+
+<body class="bg-gray-50 text-gray-800 antialiased">
+  <script>
+    // GitHub Pages SPA redirect: restores correct route from query params
+    // Source: https://github.com/rafgraph/spa-github-pages
+    (function() {
+      var redirect = sessionStorage.getItem('gh_redirect');
+      if (redirect) {
+        sessionStorage.removeItem('gh_redirect');
+        var locationState = JSON.parse(redirect);
+        var destination = locationState.pathname + locationState.search + locationState.hash;
+        if (destination.indexOf('/portfolio/') === 0) {
+          window.history.replaceState(null, null, destination);
+        }
+      }
+    })();
+  </script>
+  <div id="app"></div>
+</body>
+
+</html>
