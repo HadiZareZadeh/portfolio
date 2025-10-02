@@ -35,7 +35,7 @@
             <img
               class="h-full w-full object-cover"
               alt="Profile"
-              src="https://images.unsplash.com/photo-1531123897727-8f129e1688ce?w=1200&q=80&auto=format&fit=crop"
+              :src="avatarUrl"
             />
           </div>
         </div>
@@ -47,6 +47,7 @@
 <script setup>
 import { RouterLink } from 'vue-router';
 import { ref, onMounted, computed } from 'vue';
+import { proxyImageUrl } from '../utils/imageProxy';
 
 const isShown = ref(false);
 onMounted(() => { requestAnimationFrame(() => { isShown.value = true; }); });
@@ -69,6 +70,8 @@ const tiltStyle = computed(() => ({
   transform: `perspective(800px) rotateX(${tiltX.value}deg) rotateY(${tiltY.value}deg)`,
   transition: 'transform 200ms ease-out',
 }));
+
+const avatarUrl = computed(() => proxyImageUrl('https://images.unsplash.com/photo-1531123897727-8f129e1688ce?w=1200&q=80&auto=format&fit=crop', { width: 1200, quality: 80, auto: 'format', fit: 'crop' }));
 </script>
 
 

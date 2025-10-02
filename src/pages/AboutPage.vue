@@ -6,7 +6,7 @@
           <img
             class="h-full w-full object-cover"
             alt="Profile"
-            src="https://images.unsplash.com/photo-1546525848-3ce03ca516f6?w=1200&q=80&auto=format&fit=crop"
+            :src="avatarUrl"
           />
         </div>
 
@@ -169,6 +169,7 @@
 <script setup>
 import SkillBadge from '../components/SkillBadge.vue';
 import { ref, computed } from 'vue';
+import { proxyImageUrl } from '../utils/imageProxy';
 
 // Tilt effect for profile card
 const tiltX = ref(0);
@@ -188,6 +189,8 @@ const tiltStyle = computed(() => ({
   transform: `perspective(800px) rotateX(${tiltX.value}deg) rotateY(${tiltY.value}deg)`,
   transition: 'transform 200ms ease-out',
 }));
+
+const avatarUrl = computed(() => proxyImageUrl('https://images.unsplash.com/photo-1546525848-3ce03ca516f6?w=1200&q=80&auto=format&fit=crop', { width: 1200, quality: 80, auto: 'format', fit: 'crop' }));
 </script>
 
 

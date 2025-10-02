@@ -1,7 +1,7 @@
 <template>
   <article class="card group" v-reveal>
     <div class="relative aspect-video w-full overflow-hidden bg-gray-100">
-      <img :src="image" :alt="title" class="h-full w-full object-cover transition-transform duration-500 ease-out group-hover:scale-105" />
+      <img :src="proxiedImage" :alt="title" class="h-full w-full object-cover transition-transform duration-500 ease-out group-hover:scale-105" />
       <div class="pointer-events-none absolute inset-0 bg-gradient-to-t from-black/30 to-transparent opacity-0 transition-opacity duration-300 group-hover:opacity-100"></div>
       <div class="absolute inset-x-0 bottom-0 p-3 sm:p-4 translate-y-2 opacity-0 transition-all duration-300 group-hover:translate-y-0 group-hover:opacity-100">
         <div class="flex items-center gap-2">
@@ -36,14 +36,17 @@
 
 <script setup>
 import { ArrowTopRightOnSquareIcon, PlayCircleIcon } from '@heroicons/vue/24/outline';
+import { computed } from 'vue';
+import { proxyImageUrl } from '../utils/imageProxy';
 
-defineProps({
+const props = defineProps({
   title: { type: String, required: true },
   description: { type: String, required: true },
   image: { type: String, default: 'https://images.unsplash.com/photo-1527427337751-fdca2f128ce5?w=1200&q=80&auto=format&fit=crop' },
   github: { type: String, default: '' },
   demo: { type: String, default: '' },
 });
+const proxiedImage = computed(() => proxyImageUrl(props.image, { width: 1200, quality: 80, auto: 'format' }));
 </script>
 
 
