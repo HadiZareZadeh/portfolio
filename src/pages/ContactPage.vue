@@ -1,34 +1,89 @@
 <template>
-  <section class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-14 sm:py-20">
-    <div class="grid grid-cols-1 gap-10 md:grid-cols-2">
-      <div>
-        <h2 class="text-2xl sm:text-3xl font-bold text-gray-900">Get in touch</h2>
-        <p class="mt-2 text-gray-600">Have a project or idea? Let's talk.</p>
-
-        <div class="mt-6 flex items-center gap-3 text-sm">
-          <a href="https://www.linkedin.com/in/hadi-zare-zadeh-686113182" target="_blank" rel="noreferrer" class="inline-flex items-center gap-2 text-gray-700 hover:text-gray-900">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.762 2.239 5 5 5h14c2.762 0 5-2.238 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.271c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 11.271h-3v-5.604c0-1.337-.026-3.059-1.865-3.059-1.867 0-2.153 1.459-2.153 2.967v5.696h-3v-10h2.881v1.367h.041c.402-.761 1.381-1.563 2.842-1.563 3.04 0 3.605 2.002 3.605 4.604v5.592z"/></svg>
-            LinkedIn
-          </a>
-          <a href="https://github.com/HadiZareZadeh" target="_blank" rel="noreferrer" class="inline-flex items-center gap-2 text-gray-700 hover:text-gray-900">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.6.111.793-.261.793-.577 0-.285-.01-1.04-.015-2.04-3.338.726-4.042-1.61-4.042-1.61-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.73.083-.73 1.205.085 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492 .997 .108-.775 .418-1.305 .762-1.605-2.665-.304-5.467-1.334-5.467-5.931 0-1.311 .469-2.381 1.236-3.221-.124-.303-.536-1.523 .117-3.176 0 0 1.008-.322 3.301 1.23 .957-.266 1.983-.399 3.003-.404 1.02 .005 2.047 .138 3.006 .404 2.291-1.552 3.297-1.23 3.297-1.23 .655 1.653 .243 2.873 .119 3.176 .77 .84 1.235 1.91 1.235 3.221 0 4.609-2.807 5.625-5.479 5.922 .43 .371 .823 1.102 .823 2.222 0 1.606-.015 2.898-.015 3.293 0 .319 .191 .694 .801 .576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
-            GitHub
-          </a>
-          <a href="mailto:HadiZareZadeh00@gmail.com" class="inline-flex items-center gap-2 text-gray-700 hover:text-gray-900">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 24 24" fill="currentColor"><path d="M12 13.5l-11.99-7.5h23.98l-11.99 7.5zm0 2.25l-12-7.5v12.75h24v-12.75l-12 7.5z"/></svg>
-            Email
-          </a>
+  <div class="min-h-screen pt-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <!-- Page Header -->
+      <div class="text-center mb-16" v-reveal>
+        <h1 class="text-4xl lg:text-5xl font-bold heading-gradient mb-4">
+          Get in touch
+        </h1>
+        <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+          Have a project or idea? Let's talk.
+        </p>
+      </div>
+      
+      <div class="grid lg:grid-cols-2 gap-12">
+        <!-- Contact Information -->
+        <div class="space-y-8">
+          <div v-reveal class="card p-8">
+            <h2 class="text-2xl font-semibold text-gray-900 mb-6">Let's Connect</h2>
+            <p class="text-gray-700 mb-8 leading-relaxed">
+              I'm always interested in hearing about new opportunities and exciting projects. Whether you have a question, want to collaborate, or just want to say hi, feel free to reach out!
+            </p>
+            
+            <!-- Contact Links -->
+            <div class="space-y-4">
+              <a 
+                href="https://www.linkedin.com/in/hadi-zare-zadeh-686113182" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                class="flex items-center space-x-4 p-4 rounded-lg border border-gray-200 hover:border-brand-300 hover:bg-brand-50 transition-all duration-200 group"
+              >
+                <div class="w-12 h-12 bg-blue-100 rounded-lg flex items-center justify-center group-hover:bg-blue-200 transition-colors">
+                  <svg class="h-6 w-6 text-blue-600" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="font-medium text-gray-900">LinkedIn</h3>
+                  <p class="text-gray-600">Connect with me professionally</p>
+                </div>
+              </a>
+              
+              <a 
+                href="https://github.com/HadiZareZadeh" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                class="flex items-center space-x-4 p-4 rounded-lg border border-gray-200 hover:border-brand-300 hover:bg-brand-50 transition-all duration-200 group"
+              >
+                <div class="w-12 h-12 bg-gray-100 rounded-lg flex items-center justify-center group-hover:bg-gray-200 transition-colors">
+                  <svg class="h-6 w-6 text-gray-600" fill="currentColor" viewBox="0 0 24 24">
+                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="font-medium text-gray-900">GitHub</h3>
+                  <p class="text-gray-600">Check out my code and projects</p>
+                </div>
+              </a>
+              
+              <a 
+                href="mailto:HadiZareZadeh00@gmail.com" 
+                class="flex items-center space-x-4 p-4 rounded-lg border border-gray-200 hover:border-brand-300 hover:bg-brand-50 transition-all duration-200 group"
+              >
+                <div class="w-12 h-12 bg-red-100 rounded-lg flex items-center justify-center group-hover:bg-red-200 transition-colors">
+                  <svg class="h-6 w-6 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="font-medium text-gray-900">Email</h3>
+                  <p class="text-gray-600">HadiZareZadeh00@gmail.com</p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        
+        <!-- Contact Form -->
+        <div v-reveal class="card p-8">
+          <h2 class="text-2xl font-semibold text-gray-900 mb-6">Send a Message</h2>
+          <ContactForm />
         </div>
       </div>
-      <div>
-        <ContactForm />
-      </div>
     </div>
-  </section>
+  </div>
 </template>
 
 <script setup>
-import ContactForm from '../components/ContactForm.vue';
+import ContactForm from '../components/ContactForm.vue'
 </script>
-
-

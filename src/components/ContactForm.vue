@@ -1,34 +1,106 @@
 <template>
-  <form @submit.prevent="handleSubmit" class="mx-auto w-full max-w-xl space-y-5" v-reveal>
+  <form @submit.prevent="handleSubmit" class="space-y-6">
+    <!-- Name Field -->
     <div class="relative">
-      <input v-model="form.name" type="text" required id="name" class="peer w-full rounded-md border border-gray-300 bg-white px-4 py-3 shadow-sm placeholder-transparent focus:border-brand-600 focus:ring-brand-600 focus:outline-none transition" placeholder="Your name" />
-      <label for="name" class="pointer-events-none absolute left-3 top-2 px-1 text-gray-500 transition-all peer-placeholder-shown:top-3.5 peer-placeholder-shown:text-gray-400 peer-placeholder-shown:text-sm peer-focus:top-[-0.5rem] peer-focus:bg-white peer-focus:text-xs peer-focus:text-brand-700">Name</label>
+      <input
+        v-model="form.name"
+        type="text"
+        id="name"
+        name="name"
+        required
+        class="peer w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand-600 focus:border-transparent transition-all duration-200 bg-transparent"
+        placeholder=" "
+      />
+      <label
+        for="name"
+        class="absolute left-4 top-3 text-gray-500 transition-all duration-200 peer-placeholder-shown:text-base peer-placeholder-shown:top-3 peer-focus:-top-2 peer-focus:text-sm peer-focus:text-brand-600 bg-white px-1"
+      >
+        Full Name
+      </label>
     </div>
+    
+    <!-- Email Field -->
     <div class="relative">
-      <input v-model="form.email" type="email" required id="email" class="peer w-full rounded-md border border-gray-300 bg-white px-4 py-3 shadow-sm placeholder-transparent focus:border-brand-600 focus:ring-brand-600 focus:outline-none transition" placeholder="you@example.com" />
-      <label for="email" class="pointer-events-none absolute left-3 top-2 px-1 text-gray-500 transition-all peer-placeholder-shown:top-3.5 peer-placeholder-shown:text-gray-400 peer-placeholder-shown:text-sm peer-focus:top-[-0.5rem] peer-focus:bg-white peer-focus:text-xs peer-focus:text-brand-700">Email</label>
+      <input
+        v-model="form.email"
+        type="email"
+        id="email"
+        name="email"
+        required
+        class="peer w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand-600 focus:border-transparent transition-all duration-200 bg-transparent"
+        placeholder=" "
+      />
+      <label
+        for="email"
+        class="absolute left-4 top-3 text-gray-500 transition-all duration-200 peer-placeholder-shown:text-base peer-placeholder-shown:top-3 peer-focus:-top-2 peer-focus:text-sm peer-focus:text-brand-600 bg-white px-1"
+      >
+        Email Address
+      </label>
     </div>
+    
+    <!-- Message Field -->
     <div class="relative">
-      <textarea v-model="form.message" rows="5" required id="message" class="peer w-full rounded-md border border-gray-300 bg-white px-4 py-3 shadow-sm placeholder-transparent focus:border-brand-600 focus:ring-brand-600 focus:outline-none transition" placeholder="Tell me about your project..." />
-      <label for="message" class="pointer-events-none absolute left-3 top-2 px-1 text-gray-500 transition-all peer-placeholder-shown:top-3.5 peer-placeholder-shown:text-gray-400 peer-placeholder-shown:text-sm peer-focus:top-[-0.5rem] peer-focus:bg-white peer-focus:text-xs peer-focus:text-brand-700">Message</label>
+      <textarea
+        v-model="form.message"
+        id="message"
+        name="message"
+        rows="5"
+        required
+        class="peer w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-brand-600 focus:border-transparent transition-all duration-200 bg-transparent resize-none"
+        placeholder=" "
+      ></textarea>
+      <label
+        for="message"
+        class="absolute left-4 top-3 text-gray-500 transition-all duration-200 peer-placeholder-shown:text-base peer-placeholder-shown:top-3 peer-focus:-top-2 peer-focus:text-sm peer-focus:text-brand-600 bg-white px-1"
+      >
+        Your Message
+      </label>
     </div>
-    <button type="submit" class="btn-primary">
-      Send Message
+    
+    <!-- Submit Button -->
+    <button
+      type="submit"
+      :disabled="submitted"
+      class="btn btn-primary w-full"
+    >
+      {{ submitted ? 'Message Sent!' : 'Send Message' }}
     </button>
-    <p v-if="submitted" class="text-sm text-green-700">Thanks! This is a demo form. Your message was not sent.</p>
+    
+    <!-- Success Message -->
+    <div
+      v-if="showSuccessMessage"
+      class="text-center text-green-600 bg-green-50 border border-green-200 rounded-lg p-4"
+    >
+      Thanks! This is a demo form. Your message was not sent.
+    </div>
   </form>
 </template>
 
 <script setup>
-import { reactive, ref } from 'vue';
+import { ref, reactive } from 'vue'
 
-const form = reactive({ name: '', email: '', message: '' });
-const submitted = ref(false);
+const form = reactive({
+  name: '',
+  email: '',
+  message: ''
+})
 
-function handleSubmit() {
-  submitted.value = true;
-  setTimeout(() => { submitted.value = false; }, 4000);
+const submitted = ref(false)
+const showSuccessMessage = ref(false)
+
+const handleSubmit = () => {
+  submitted.value = true
+  showSuccessMessage.value = true
+  
+  // Hide success message after 4 seconds
+  setTimeout(() => {
+    showSuccessMessage.value = false
+    submitted.value = false
+    
+    // Reset form
+    form.name = ''
+    form.email = ''
+    form.message = ''
+  }, 4000)
 }
 </script>
-
-

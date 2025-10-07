@@ -1,77 +1,108 @@
 <template>
-  <section class="relative isolate bg-animated-gradient">
-    <div class="pointer-events-none absolute inset-0 -z-10" aria-hidden="true">
-      <div class="absolute left-1/2 top-[-8rem] -translate-x-1/2 h-[24rem] w-[36rem] rounded-full bg-gradient-to-r from-brand-200/60 via-brand-300/40 to-transparent blur-3xl"></div>
-    </div>
-    <div class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-20 sm:py-28">
-      <div class="grid grid-cols-1 items-center gap-10 md:grid-cols-2">
-        <div :class="[ 'transition-all duration-700 ease-out', isShown ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-2' ]">
-          <h1 class="text-3xl sm:text-5xl font-extrabold tracking-tight heading-gradient animate-fade-in-up">
-            Hadi ZareZadeh
-          </h1>
-          <p class="mt-2 text-lg sm:text-xl text-gray-700 font-medium transition-opacity duration-700 ease-out">
-            Full-Stack Web Developer
-          </p>
-          <p class="mt-4 text-gray-600 max-w-prose">
-            Highly motivated developer with 4+ years of experience in Laravel, Vue 3, Tailwind, and Python automation.
-          </p>
-          <div class="mt-6 flex items-center gap-3">
-            <RouterLink
-              to="/projects#top"
-              class="btn-primary animate-float"
-            >
-              View My Work
-            </RouterLink>
-            <RouterLink
-              to="/contact"
-              class="btn-outline"
-            >
-              Contact
-            </RouterLink>
+  <div class="min-h-screen">
+    <!-- Hero Section -->
+    <section class="bg-animated-gradient min-h-screen flex items-center">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+        <div class="grid lg:grid-cols-2 gap-12 items-center">
+          <!-- Left Column - Text Content -->
+          <div class="space-y-8">
+            <div v-reveal>
+              <h1 class="text-5xl lg:text-6xl font-bold heading-gradient animate-fade-in-up">
+                Hadi ZareZadeh
+              </h1>
+              <p class="text-2xl lg:text-3xl text-gray-600 mt-4">
+                Full-Stack Web Developer
+              </p>
+            </div>
+            
+            <div v-reveal class="space-y-6">
+              <p class="text-lg text-gray-700 leading-relaxed">
+                Highly motivated developer with 4+ years of experience in Laravel, Vue 3, Tailwind, and Python automation.
+              </p>
+              
+              <div class="flex flex-col sm:flex-row gap-4">
+                <RouterLink 
+                  to="/projects" 
+                  class="btn btn-primary animate-float"
+                >
+                  View My Work
+                </RouterLink>
+                <RouterLink 
+                  to="/contact" 
+                  class="btn btn-outline"
+                >
+                  Contact
+                </RouterLink>
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="relative" :class="[ 'transition-all duration-700 ease-out delay-150', isShown ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-2' ]">
-          <div class="aspect-square w-full overflow-hidden rounded-2xl bg-gray-100 shadow-inner will-change-transform" @mousemove="onTilt" @mouseleave="resetTilt" :style="tiltStyle">
-            <img
-              class="h-full w-full object-cover"
-              alt="Profile"
-              :src="avatarUrl"
-            />
+          
+          <!-- Right Column - Avatar -->
+          <div v-reveal class="flex justify-center lg:justify-end">
+            <div 
+              ref="avatarCard"
+              class="relative w-80 h-80 rounded-2xl overflow-hidden shadow-soft cursor-pointer"
+              @mousemove="handleMouseMove"
+              @mouseleave="resetTilt"
+            >
+              <img 
+                :src="proxiedAvatar" 
+                alt="Hadi ZareZadeh - Full-Stack Web Developer"
+                class="w-full h-full object-cover"
+                loading="eager"
+              />
+            </div>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
+  </div>
 </template>
 
 <script setup>
-import { RouterLink } from 'vue-router';
-import { ref, onMounted, computed } from 'vue';
-import { proxyImageUrl } from '../utils/imageProxy';
+import { ref, computed, onMounted } from 'vue'
+import { proxyImageUrl } from '../utils/imageProxy.js'
 
-const isShown = ref(false);
-onMounted(() => { requestAnimationFrame(() => { isShown.value = true; }); });
+const avatarCard = ref(null)
+const isShown = ref(false)
 
-// Simple hover tilt for the avatar card
-const tiltX = ref(0);
-const tiltY = ref(0);
-const onTilt = (e) => {
-  const target = e.currentTarget;
-  const rect = target.getBoundingClientRect();
-  const x = e.clientX - rect.left;
-  const y = e.clientY - rect.top;
-  const percentX = (x / rect.width) - 0.5;
-  const percentY = (y / rect.height) - 0.5;
-  tiltX.value = percentY * -8;
-  tiltY.value = percentX * 8;
-};
-const resetTilt = () => { tiltX.value = 0; tiltY.value = 0; };
-const tiltStyle = computed(() => ({
-  transform: `perspective(800px) rotateX(${tiltX.value}deg) rotateY(${tiltY.value}deg)`,
-  transition: 'transform 200ms ease-out',
-}));
+const proxiedAvatar = computed(() => {
+  return proxyImageUrl(
+    'https://images.unsplash.com/photo-1531123897727-8f129e1688ce?w=1200&q=80&auto=format&fit=crop',
+    {
+      width: 800,
+      quality: 85,
+      auto: 'format'
+    }
+  )
+})
 
-const avatarUrl = computed(() => proxyImageUrl('https://images.unsplash.com/photo-1531123897727-8f129e1688ce?w=1200&q=80&auto=format&fit=crop', { width: 1200, quality: 80, auto: 'format', fit: 'crop' }));
+const handleMouseMove = (e) => {
+  if (!avatarCard.value) return
+  
+  const rect = avatarCard.value.getBoundingClientRect()
+  const centerX = rect.left + rect.width / 2
+  const centerY = rect.top + rect.height / 2
+  
+  const mouseX = e.clientX - centerX
+  const mouseY = e.clientY - centerY
+  
+  const tiltX = (mouseY / rect.height) * 20
+  const tiltY = (mouseX / rect.width) * -20
+  
+  avatarCard.value.style.transform = `perspective(800px) rotateX(${tiltX}deg) rotateY(${tiltY}deg)`
+}
+
+const resetTilt = () => {
+  if (avatarCard.value) {
+    avatarCard.value.style.transform = 'perspective(800px) rotateX(0deg) rotateY(0deg)'
+  }
+}
+
+onMounted(() => {
+  // Trigger reveal animation
+  setTimeout(() => {
+    isShown.value = true
+  }, 100)
+})
 </script>
-
-

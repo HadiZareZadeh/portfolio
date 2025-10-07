@@ -1,68 +1,87 @@
 <template>
-  <section id="top" class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-14 sm:py-20">
-    <div class="flex items-end justify-between gap-4">
-      <div>
-        <h2 class="text-2xl sm:text-3xl font-bold text-gray-900">Projects</h2>
-        <p class="mt-2 text-gray-600">Selected work and experiments.</p>
+  <div class="min-h-screen pt-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <!-- Page Header -->
+      <div class="text-center mb-16" v-reveal>
+        <h1 class="text-4xl lg:text-5xl font-bold heading-gradient mb-4">
+          Projects
+        </h1>
+        <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+          Selected work and experiments showcasing my development skills
+        </p>
+      </div>
+      
+      <!-- Projects Grid -->
+      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div v-reveal>
+          <ProjectCard
+            title="E-commerce Website (2020 – Present)"
+            description="Full-stack Laravel + Vue 3 project for Lyndakade."
+            image="https://images.unsplash.com/photo-1519331379826-f10be5486c6f?w=1200&q=80&auto=format&fit=crop"
+            github=""
+            demo=""
+          />
+        </div>
+        
+        <div v-reveal>
+          <ProjectCard
+            title="Flutter Apps (2024)"
+            description="Developed mobile & desktop applications using Flutter."
+            image="https://images.unsplash.com/photo-1518770660439-4636190af475?w=1200&q=80&auto=format&fit=crop"
+            github=""
+            demo=""
+          />
+        </div>
+        
+        <div v-reveal>
+          <ProjectCard
+            title="Python Automation Bot (2025)"
+            description="Built a scalable bot system to automate Plato game platform accounts."
+            image="https://images.unsplash.com/photo-1510511459019-5dda7724fd87?w=1200&q=80&auto=format&fit=crop"
+            github=""
+            demo=""
+          />
+        </div>
+        
+        <div v-reveal>
+          <ProjectCard
+            title="Game Development (2018–2020)"
+            description="Developed games for Legend Company."
+            image="https://images.unsplash.com/photo-1538481199705-c710c4e965fc?w=1200&q=80&auto=format&fit=crop"
+            github=""
+            demo=""
+          />
+        </div>
+        
+        <div v-reveal>
+          <ProjectCard
+            title="Academic Game Project (2018)"
+            description="Driving-based game with realistic maps of Torshiz city."
+            image="https://images.unsplash.com/photo-1542751371-adc38448a05e?w=1200&q=80&auto=format&fit=crop"
+            github=""
+            demo=""
+          />
+        </div>
+      </div>
+      
+      <!-- Call to Action -->
+      <div class="text-center mt-16" v-reveal>
+        <div class="card p-8 max-w-2xl mx-auto">
+          <h2 class="text-2xl font-semibold text-gray-900 mb-4">
+            Interested in working together?
+          </h2>
+          <p class="text-gray-600 mb-6">
+            I'm always open to discussing new projects and opportunities. Let's create something amazing together!
+          </p>
+          <RouterLink to="/contact" class="btn btn-primary">
+            Get In Touch
+          </RouterLink>
+        </div>
       </div>
     </div>
-
-    <div class="mt-8 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-      <ProjectCard
-        v-for="project in projects"
-        :key="project.title"
-        :title="project.title"
-        :description="project.description"
-        :image="project.image"
-        :github="project.github"
-        :demo="project.demo"
-        v-reveal
-      />
-    </div>
-  </section>
+  </div>
 </template>
 
 <script setup>
-import { ref } from 'vue';
-import ProjectCard from '../components/ProjectCard.vue';
-
-const projects = ref([
-  {
-    title: 'E-commerce Website (2020 – Present)',
-    description: 'Full-stack Laravel + Vue 3 project for Lyndakade.',
-    image: 'https://images.unsplash.com/photo-1519331379826-f10be5486c6f?w=1200&q=80&auto=format&fit=crop',
-    github: '',
-    demo: '',
-  },
-  {
-    title: 'Flutter Apps (2024)',
-    description: 'Developed mobile & desktop applications using Flutter.',
-    image: 'https://images.unsplash.com/photo-1518770660439-4636190af475?w=1200&q=80&auto=format&fit=crop',
-    github: '',
-    demo: '',
-  },
-  {
-    title: 'Python Automation Bot (2025)',
-    description: 'Built a scalable bot system to automate Plato game platform accounts.',
-    image: 'https://images.unsplash.com/photo-1510511459019-5dda7724fd87?w=1200&q=80&auto=format&fit=crop',
-    github: '',
-    demo: '',
-  },
-  {
-    title: 'Game Development (2018–2020)',
-    description: 'Developed games for Legend Company.',
-    image: 'https://images.unsplash.com/photo-1538481199705-c710c4e965fc?w=1200&q=80&auto=format&fit=crop',
-    github: '',
-    demo: '',
-  },
-  {
-    title: 'Academic Game Project (2018)',
-    description: 'Driving-based game with realistic maps of Torshiz city.',
-    image: 'https://images.unsplash.com/photo-1542751371-adc38448a05e?w=1200&q=80&auto=format&fit=crop',
-    github: '',
-    demo: '',
-  },
-]);
+import ProjectCard from '../components/ProjectCard.vue'
 </script>
-
-

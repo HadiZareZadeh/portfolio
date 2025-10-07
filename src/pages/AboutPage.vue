@@ -1,196 +1,255 @@
 <template>
-  <section class="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8 py-14 sm:py-20">
-    <div class="grid grid-cols-1 gap-10 md:grid-cols-3">
-      <div class="md:col-span-1" v-reveal>
-        <div class="overflow-hidden rounded-2xl bg-gray-100 shadow-inner will-change-transform" @mousemove="onTilt" @mouseleave="resetTilt" :style="tiltStyle">
-          <img
-            class="h-full w-full object-cover"
-            alt="Profile"
-            :src="avatarUrl"
-          />
-        </div>
-
-        <div class="mt-6 space-y-3 text-sm" v-reveal>
-          <div class="rounded-xl border border-gray-200 p-4">
-            <dl class="space-y-2">
-              <div class="flex items-start justify-between gap-4">
-                <dt class="text-gray-500">Location</dt>
-                <dd class="text-gray-900 text-right">Bandar Lengeh, Iran</dd>
-              </div>
-              <div class="flex items-start justify-between gap-4">
-                <dt class="text-gray-500">Email</dt>
-                <dd class="text-gray-900 text-right"><a class="hover:underline" href="mailto:HadiZareZadeh00@gmail.com">HadiZareZadeh00@gmail.com</a></dd>
-              </div>
-              <div class="flex items-start justify-between gap-4">
-                <dt class="text-gray-500">Phone</dt>
-                <dd class="text-gray-900 text-right"><a class="hover:underline" href="tel:+989211917302">+989211917302</a></dd>
-              </div>
-              <div class="flex items-start justify-between gap-4">
-                <dt class="text-gray-500">GitHub</dt>
-                <dd class="text-gray-900 text-right"><a class="hover:underline" href="https://github.com/HadiZareZadeh" target="_blank" rel="noreferrer">GitHub Profile</a></dd>
-              </div>
-              <div class="flex items-start justify-between gap-4">
-                <dt class="text-gray-500">LinkedIn</dt>
-                <dd class="text-gray-900 text-right"><a class="hover:underline" href="https://www.linkedin.com/in/hadi-zare-zadeh-686113182" target="_blank" rel="noreferrer">LinkedIn Profile</a></dd>
-              </div>
-              <div class="flex items-start justify-between gap-4">
-                <dt class="text-gray-500">Languages</dt>
-                <dd class="text-gray-900 text-right">Persian (Native), English (B2), Spanish (A2)</dd>
-              </div>
-            </dl>
-          </div>
-        </div>
-      </div>
-
-      <div class="md:col-span-2">
-        <h2 class="text-2xl sm:text-3xl font-bold text-gray-900">About Me</h2>
-        <p class="mt-4 text-gray-600 max-w-prose">
-          I am a passionate Full-Stack Web Developer with a B.Sc. in Computer Science (Kashmar Higher Education Institute, 2020). Began programming at age 9, now specializing in modern frameworks (Laravel, Vue 3, Tailwind CSS) and Python automation. Experienced in building web applications, data mining, and automating workflows. Adaptable, analytical, and always seeking opportunities for growth.
+  <div class="min-h-screen pt-16">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <!-- Page Header -->
+      <div class="text-center mb-16" v-reveal>
+        <h1 class="text-4xl lg:text-5xl font-bold heading-gradient mb-4">
+          About Me
+        </h1>
+        <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+          Get to know more about my background, skills, and experience
         </p>
-
-        <h3 class="mt-10 text-lg font-semibold text-gray-900">Skills</h3>
-        <div class="mt-3 grid grid-cols-1 sm:grid-cols-2 gap-4">
-          <div class="rounded-xl border border-gray-200 p-4" v-reveal>
-            <h4 class="font-medium text-gray-900">Programming & Web Dev</h4>
-            <div class="mt-3 flex flex-wrap gap-2">
-              <SkillBadge class="hover:shadow-soft transition-transform hover:-translate-y-0.5">Python (Advanced)</SkillBadge>
-              <SkillBadge class="hover:shadow-soft transition-transform hover:-translate-y-0.5">PHP</SkillBadge>
-              <SkillBadge class="hover:shadow-soft transition-transform hover:-translate-y-0.5">Laravel</SkillBadge>
-              <SkillBadge class="hover:shadow-soft transition-transform hover:-translate-y-0.5">Vue 3</SkillBadge>
-              <SkillBadge class="hover:shadow-soft transition-transform hover:-translate-y-0.5">Tailwind</SkillBadge>
-              <SkillBadge class="hover:shadow-soft transition-transform hover:-translate-y-0.5">Java</SkillBadge>
+      </div>
+      
+      <div class="grid lg:grid-cols-2 gap-12">
+        <!-- Left Column -->
+        <div class="space-y-8">
+          <!-- Avatar Card -->
+          <div v-reveal class="flex justify-center">
+            <div 
+              ref="avatarCard"
+              class="relative w-64 h-64 rounded-2xl overflow-hidden shadow-soft cursor-pointer"
+              @mousemove="handleMouseMove"
+              @mouseleave="resetTilt"
+            >
+              <img 
+                :src="proxiedAvatar" 
+                alt="Hadi ZareZadeh professional photo"
+                class="w-full h-full object-cover"
+                loading="lazy"
+              />
             </div>
           </div>
-          <div class="rounded-xl border border-gray-200 p-4" v-reveal>
-            <h4 class="font-medium text-gray-900">Data & Automation</h4>
-            <div class="mt-3 flex flex-wrap gap-2">
-              <SkillBadge>Python Data Mining</SkillBadge>
-              <SkillBadge>Workflow Automation</SkillBadge>
-              <SkillBadge>Basic AI/ML</SkillBadge>
-            </div>
-          </div>
-          <div class="rounded-xl border border-gray-200 p-4" v-reveal>
-            <h4 class="font-medium text-gray-900">Databases</h4>
-            <div class="mt-3 flex flex-wrap gap-2">
-              <SkillBadge>MySQL (Advanced)</SkillBadge>
-              <SkillBadge>MongoDB (Basic)</SkillBadge>
-            </div>
-          </div>
-          <div class="rounded-xl border border-gray-200 p-4" v-reveal>
-            <h4 class="font-medium text-gray-900">Other</h4>
-            <div class="mt-3 flex flex-wrap gap-2">
-              <SkillBadge>Git/GitHub/GitLab</SkillBadge>
-              <SkillBadge>Flutter (Basic)</SkillBadge>
-              <SkillBadge>Unity (Basic)</SkillBadge>
-              <SkillBadge>Google Cloud (Basic)</SkillBadge>
-              <SkillBadge>Linux & Windows</SkillBadge>
+          
+          <!-- Quick Facts Card -->
+          <div v-reveal class="card p-6">
+            <h3 class="text-xl font-semibold text-gray-900 mb-4">Quick Facts</h3>
+            <div class="space-y-3">
+              <div class="flex items-center space-x-3">
+                <span class="text-gray-500">📍</span>
+                <span class="text-gray-700">Kashmar, Iran</span>
+              </div>
+              <div class="flex items-center space-x-3">
+                <span class="text-gray-500">📧</span>
+                <a href="mailto:HadiZareZadeh00@gmail.com" class="text-brand-600 hover:text-brand-700">
+                  HadiZareZadeh00@gmail.com
+                </a>
+              </div>
+              <div class="flex items-center space-x-3">
+                <span class="text-gray-500">📱</span>
+                <a href="tel:+989123456789" class="text-brand-600 hover:text-brand-700">
+                  +98 912 345 6789
+                </a>
+              </div>
+              <div class="flex items-center space-x-3">
+                <span class="text-gray-500">💼</span>
+                <a href="https://github.com/HadiZareZadeh" target="_blank" rel="noopener noreferrer" class="text-brand-600 hover:text-brand-700">
+                  GitHub
+                </a>
+              </div>
+              <div class="flex items-center space-x-3">
+                <span class="text-gray-500">🔗</span>
+                <a href="https://www.linkedin.com/in/hadi-zare-zadeh-686113182" target="_blank" rel="noopener noreferrer" class="text-brand-600 hover:text-brand-700">
+                  LinkedIn
+                </a>
+              </div>
+              <div class="flex items-center space-x-3">
+                <span class="text-gray-500">🗣️</span>
+                <span class="text-gray-700">Persian, English</span>
+              </div>
             </div>
           </div>
         </div>
-
-        <h3 class="mt-10 text-lg font-semibold text-gray-900">Experience</h3>
-        <ol class="mt-3 relative border-l border-gray-200">
-          <li class="ml-4 pl-5 mb-6" v-reveal>
-            <div class="absolute -left-1.5 mt-1 h-3 w-3 rounded-full bg-gray-300"></div>
-            <p class="text-gray-900 font-medium">Full-stack Developer @ Lyndakade (2020 – Present)</p>
-          </li>
-          <li class="ml-4 pl-5 mb-6" v-reveal>
-            <div class="absolute -left-1.5 mt-1 h-3 w-3 rounded-full bg-gray-300"></div>
-            <p class="text-gray-900 font-medium">Mobile/Desktop App Dev @ Lyndakade (2024)</p>
-          </li>
-          <li class="ml-4 pl-5 mb-6" v-reveal>
-            <div class="absolute -left-1.5 mt-1 h-3 w-3 rounded-full bg-gray-300"></div>
-            <p class="text-gray-900 font-medium">Python Bot Developer (2025)</p>
-          </li>
-          <li class="ml-4 pl-5 mb-6" v-reveal>
-            <div class="absolute -left-1.5 mt-1 h-3 w-3 rounded-full bg-gray-300"></div>
-            <p class="text-gray-900 font-medium">Game Developer @ Legend Company (2018–2020)</p>
-          </li>
-          <li class="ml-4 pl-5 mb-6" v-reveal>
-            <div class="absolute -left-1.5 mt-1 h-3 w-3 rounded-full bg-gray-300"></div>
-            <p class="text-gray-900 font-medium">Teaching Assistant @ Kashmar Higher Education Institute (2017–2020)</p>
-          </li>
-          <li class="ml-4 pl-5 mb-6" v-reveal>
-            <div class="absolute -left-1.5 mt-1 h-3 w-3 rounded-full bg-gray-300"></div>
-            <p class="text-gray-900 font-medium">Head of Education @ Scientific Association (2017–2020)</p>
-          </li>
-          <li class="ml-4 pl-5 mb-0" v-reveal>
-            <div class="absolute -left-1.5 mt-1 h-3 w-3 rounded-full bg-gray-300"></div>
-            <p class="text-gray-900 font-medium">Secretary of Director @ Cargo Clearance Co. (2015)</p>
-          </li>
-        </ol>
-
-        <h3 class="mt-10 text-lg font-semibold text-gray-900">Education</h3>
-        <ul class="mt-3 space-y-2">
-          <li class="rounded-xl border border-gray-200 p-4" v-reveal>
-            <p class="text-gray-900 font-medium">B.Sc. Computer Science – Kashmar Higher Education Institute (2016–2020)</p>
-          </li>
-          <li class="rounded-xl border border-gray-200 p-4" v-reveal>
-            <p class="text-gray-900 font-medium">High School Diploma in Physics & Mathematics – Dr. Shariati School (2014)</p>
-          </li>
-        </ul>
-
-        <h3 class="mt-10 text-lg font-semibold text-gray-900">Presentations</h3>
-        <ul class="mt-3 space-y-2">
-          <li class="rounded-xl border border-gray-200 p-4" v-reveal>
-            <p class="text-gray-900 font-medium">Thesis: Lyndakade (2020)</p>
-          </li>
-          <li class="rounded-xl border border-gray-200 p-4" v-reveal>
-            <p class="text-gray-900 font-medium">Evolutionary Algorithms (2019)</p>
-          </li>
-          <li class="rounded-xl border border-gray-200 p-4" v-reveal>
-            <p class="text-gray-900 font-medium">Genetic Algorithm (2019)</p>
-          </li>
-        </ul>
-
-        <h3 class="mt-10 text-lg font-semibold text-gray-900">Sports & Achievements</h3>
-        <ul class="mt-3 space-y-2">
-          <li class="rounded-xl border border-gray-200 p-4" v-reveal>
-            <p class="text-gray-900 font-medium">Karate-do: 2nd Dan Black Belt, 9 gold medals (2005–2016)</p>
-          </li>
-          <li class="rounded-xl border border-gray-200 p-4" v-reveal>
-            <p class="text-gray-900 font-medium">Self-Defense Training (2019–2020)</p>
-          </li>
-        </ul>
-
-        <h3 class="mt-10 text-lg font-semibold text-gray-900">Hobbies & Interests</h3>
-        <div class="mt-3 flex flex-wrap gap-2">
-          <SkillBadge class="hover:shadow-soft transition-transform hover:-translate-y-0.5">Camping & Outdoor Adventures</SkillBadge>
-          <SkillBadge class="hover:shadow-soft transition-transform hover:-translate-y-0.5">Socializing (Couchsurfing)</SkillBadge>
-          <SkillBadge class="hover:shadow-soft transition-transform hover:-translate-y-0.5">Music & Movies</SkillBadge>
-          <SkillBadge class="hover:shadow-soft transition-transform hover:-translate-y-0.5">Algorithm Challenges</SkillBadge>
-          <SkillBadge class="hover:shadow-soft transition-transform hover:-translate-y-0.5">Short Fiction</SkillBadge>
+        
+        <!-- Right Column -->
+        <div class="space-y-8">
+          <!-- About Me Section -->
+          <div v-reveal class="card p-6">
+            <h2 class="text-2xl font-semibold text-gray-900 mb-4">About Me</h2>
+            <p class="text-gray-700 leading-relaxed">
+              I am a passionate Full-Stack Web Developer with a B.Sc. in Computer Science (Kashmar Higher Education Institute, 2020). Began programming at age 9, now specializing in modern frameworks (Laravel, Vue 3, Tailwind CSS) and Python automation. Experienced in building web applications, data mining, and automating workflows. Adaptable, analytical, and always seeking opportunities for growth.
+            </p>
+          </div>
+          
+          <!-- Skills Section -->
+          <div v-reveal class="card p-6">
+            <h2 class="text-2xl font-semibold text-gray-900 mb-6">Skills</h2>
+            <div class="grid md:grid-cols-2 gap-6">
+              <div>
+                <h3 class="font-medium text-gray-900 mb-3">Programming & Web Dev</h3>
+                <div class="flex flex-wrap gap-2">
+                  <SkillBadge>Python (Advanced)</SkillBadge>
+                  <SkillBadge>PHP</SkillBadge>
+                  <SkillBadge>Laravel</SkillBadge>
+                  <SkillBadge>Vue 3</SkillBadge>
+                  <SkillBadge>Tailwind</SkillBadge>
+                  <SkillBadge>Java</SkillBadge>
+                </div>
+              </div>
+              
+              <div>
+                <h3 class="font-medium text-gray-900 mb-3">Data & Automation</h3>
+                <div class="flex flex-wrap gap-2">
+                  <SkillBadge>Python Data Mining</SkillBadge>
+                  <SkillBadge>Workflow Automation</SkillBadge>
+                  <SkillBadge>Basic AI/ML</SkillBadge>
+                </div>
+              </div>
+              
+              <div>
+                <h3 class="font-medium text-gray-900 mb-3">Databases</h3>
+                <div class="flex flex-wrap gap-2">
+                  <SkillBadge>MySQL (Advanced)</SkillBadge>
+                  <SkillBadge>MongoDB (Basic)</SkillBadge>
+                </div>
+              </div>
+              
+              <div>
+                <h3 class="font-medium text-gray-900 mb-3">Other</h3>
+                <div class="flex flex-wrap gap-2">
+                  <SkillBadge>Git/GitHub/GitLab</SkillBadge>
+                  <SkillBadge>Flutter (Basic)</SkillBadge>
+                  <SkillBadge>Unity (Basic)</SkillBadge>
+                  <SkillBadge>Google Cloud (Basic)</SkillBadge>
+                  <SkillBadge>Linux & Windows</SkillBadge>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Experience Section -->
+          <div v-reveal class="card p-6">
+            <h2 class="text-2xl font-semibold text-gray-900 mb-6">Experience</h2>
+            <div class="space-y-4">
+              <div class="border-l-2 border-brand-600 pl-4">
+                <h3 class="font-medium text-gray-900">Full-stack Developer</h3>
+                <p class="text-gray-600">@ Lyndakade (2020 – Present)</p>
+              </div>
+              <div class="border-l-2 border-brand-600 pl-4">
+                <h3 class="font-medium text-gray-900">Mobile/Desktop App Dev</h3>
+                <p class="text-gray-600">@ Lyndakade (2024)</p>
+              </div>
+              <div class="border-l-2 border-brand-600 pl-4">
+                <h3 class="font-medium text-gray-900">Python Bot Developer</h3>
+                <p class="text-gray-600">(2025)</p>
+              </div>
+              <div class="border-l-2 border-brand-600 pl-4">
+                <h3 class="font-medium text-gray-900">Game Developer</h3>
+                <p class="text-gray-600">@ Legend Company (2018–2020)</p>
+              </div>
+              <div class="border-l-2 border-brand-600 pl-4">
+                <h3 class="font-medium text-gray-900">Teaching Assistant</h3>
+                <p class="text-gray-600">@ Kashmar Higher Education Institute (2017–2020)</p>
+              </div>
+              <div class="border-l-2 border-brand-600 pl-4">
+                <h3 class="font-medium text-gray-900">Head of Education</h3>
+                <p class="text-gray-600">@ Scientific Association (2017–2020)</p>
+              </div>
+              <div class="border-l-2 border-brand-600 pl-4">
+                <h3 class="font-medium text-gray-900">Secretary of Director</h3>
+                <p class="text-gray-600">@ Cargo Clearance Co. (2015)</p>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Education Section -->
+          <div v-reveal class="card p-6">
+            <h2 class="text-2xl font-semibold text-gray-900 mb-4">Education</h2>
+            <div class="space-y-3">
+              <div>
+                <h3 class="font-medium text-gray-900">B.Sc. Computer Science</h3>
+                <p class="text-gray-600">Kashmar Higher Education Institute (2016–2020)</p>
+              </div>
+              <div>
+                <h3 class="font-medium text-gray-900">High School Diploma in Physics & Mathematics</h3>
+                <p class="text-gray-600">Dr. Shariati School (2014)</p>
+              </div>
+            </div>
+          </div>
+          
+          <!-- Presentations Section -->
+          <div v-reveal class="card p-6">
+            <h2 class="text-2xl font-semibold text-gray-900 mb-4">Presentations</h2>
+            <div class="space-y-2">
+              <div class="text-gray-700">• Thesis: Lyndakade (2020)</div>
+              <div class="text-gray-700">• Evolutionary Algorithms (2019)</div>
+              <div class="text-gray-700">• Genetic Algorithm (2019)</div>
+            </div>
+          </div>
+          
+          <!-- Sports & Achievements Section -->
+          <div v-reveal class="card p-6">
+            <h2 class="text-2xl font-semibold text-gray-900 mb-4">Sports & Achievements</h2>
+            <div class="space-y-2">
+              <div class="text-gray-700">• Karate-do: 2nd Dan Black Belt, 9 gold medals (2005–2016)</div>
+              <div class="text-gray-700">• Self-Defense Training (2019–2020)</div>
+            </div>
+          </div>
+          
+          <!-- Hobbies & Interests Section -->
+          <div v-reveal class="card p-6">
+            <h2 class="text-2xl font-semibold text-gray-900 mb-4">Hobbies & Interests</h2>
+            <div class="flex flex-wrap gap-2">
+              <SkillBadge>Camping & Outdoor Adventures</SkillBadge>
+              <SkillBadge>Socializing (Couchsurfing)</SkillBadge>
+              <SkillBadge>Music & Movies</SkillBadge>
+              <SkillBadge>Algorithm Challenges</SkillBadge>
+              <SkillBadge>Short Fiction</SkillBadge>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-  </section>
+  </div>
 </template>
 
 <script setup>
-import SkillBadge from '../components/SkillBadge.vue';
-import { ref, computed } from 'vue';
-import { proxyImageUrl } from '../utils/imageProxy';
+import { ref, computed } from 'vue'
+import SkillBadge from '../components/SkillBadge.vue'
+import { proxyImageUrl } from '../utils/imageProxy.js'
 
-// Tilt effect for profile card
-const tiltX = ref(0);
-const tiltY = ref(0);
-const onTilt = (e) => {
-  const target = e.currentTarget;
-  const rect = target.getBoundingClientRect();
-  const x = e.clientX - rect.left;
-  const y = e.clientY - rect.top;
-  const percentX = (x / rect.width) - 0.5;
-  const percentY = (y / rect.height) - 0.5;
-  tiltX.value = percentY * -8;
-  tiltY.value = percentX * 8;
-};
-const resetTilt = () => { tiltX.value = 0; tiltY.value = 0; };
-const tiltStyle = computed(() => ({
-  transform: `perspective(800px) rotateX(${tiltX.value}deg) rotateY(${tiltY.value}deg)`,
-  transition: 'transform 200ms ease-out',
-}));
+const avatarCard = ref(null)
 
-const avatarUrl = computed(() => proxyImageUrl('https://images.unsplash.com/photo-1546525848-3ce03ca516f6?w=1200&q=80&auto=format&fit=crop', { width: 1200, quality: 80, auto: 'format', fit: 'crop' }));
+const proxiedAvatar = computed(() => {
+  return proxyImageUrl(
+    'https://images.unsplash.com/photo-1546525848-3ce03ca516f6?w=1200&q=80&auto=format&fit=crop',
+    {
+      width: 600,
+      quality: 85,
+      auto: 'format'
+    }
+  )
+})
+
+const handleMouseMove = (e) => {
+  if (!avatarCard.value) return
+  
+  const rect = avatarCard.value.getBoundingClientRect()
+  const centerX = rect.left + rect.width / 2
+  const centerY = rect.top + rect.height / 2
+  
+  const mouseX = e.clientX - centerX
+  const mouseY = e.clientY - centerY
+  
+  const tiltX = (mouseY / rect.height) * 20
+  const tiltY = (mouseX / rect.width) * -20
+  
+  avatarCard.value.style.transform = `perspective(800px) rotateX(${tiltX}deg) rotateY(${tiltY}deg)`
+}
+
+const resetTilt = () => {
+  if (avatarCard.value) {
+    avatarCard.value.style.transform = 'perspective(800px) rotateX(0deg) rotateY(0deg)'
+  }
+}
 </script>
-
-

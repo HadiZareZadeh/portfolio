@@ -1,31 +1,37 @@
-<!doctype html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <title>Redirecting...</title>
-    <script>
-      // SPA GitHub Pages redirect script
-      // Source: https://github.com/rafgraph/spa-github-pages
-      (function(l) {
-        var repoBase = '/portfolio';
-        if (l.pathname.startsWith(repoBase + '/')) {
-          var path = l.pathname.substring(repoBase.length);
-          var search = l.search ? l.search : '';
-          var hash = l.hash ? l.hash : '';
-          var target = repoBase + '/?p=' + encodeURIComponent(path) + search + hash;
-          sessionStorage.setItem('gh_redirect', JSON.stringify({
-            pathname: repoBase + path,
-            search: search,
-            hash: hash
-          }));
-          l.replace(target);
-        }
-      })(window.location);
-    </script>
-  </head>
-  <body>
-    Redirecting...
-  </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Redirecting...</title>
+</head>
+<body>
+  <script>
+    (function() {
+      const repoBase = '/portfolio';
+      const pathSegmentsToKeep = 1;
+      
+      const path = window.location.pathname;
+      const segments = path.split('/').filter(function(segment) {
+        return segment.length > 0;
+      });
+      
+      if (segments.length > pathSegmentsToKeep) {
+        const redirectPath = repoBase + '/?p=/' + segments.slice(pathSegmentsToKeep).join('/') + window.location.search + window.location.hash;
+        
+        // Store the redirect info for the SPA to restore
+        const redirectInfo = {
+          pathname: '/' + segments.slice(pathSegmentsToKeep).join('/'),
+          search: window.location.search,
+          hash: window.location.hash
+        };
+        sessionStorage.setItem('gh_redirect', JSON.stringify(redirectInfo));
+        
+        window.location.replace(redirectPath);
+      } else {
+        window.location.replace(repoBase + '/');
+      }
+    })();
+  </script>
+</body>
 </html>
-
-
