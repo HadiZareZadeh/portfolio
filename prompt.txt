@@ -5,7 +5,7 @@ High-level requirements
 - Purpose: Portfolio of “Hadi ZareZadeh — Full-Stack Web Developer”.
 - Routes: / (Home), /about, /projects, /contact.
 - Styling: Tailwind 3 with extended color palette and custom animations. Global utility classes for buttons, cards, reveal animations, and subtle gradient backgrounds.
-- Images: External URLs proxied via https://wsrv.nl to add width/quality params.
+- Images: Use local files under public/images; reference them via import.meta.env.BASE_URL in templates to respect the base "/portfolio/".
 - UX: Smooth page transitions, smooth scroll to hash, sticky navbar that changes style on scroll, scroll-to-top button in footer.
 - Deploy: GitHub Pages, repository named “portfolio”, served at https://HadiZareZadeh.github.io/portfolio/. Use non-hash history with SPA redirect strategy for GH Pages.
 - Accessibility: Provide alt text, focus styles, aria labels where applicable.
@@ -17,12 +17,21 @@ Project structure to generate
 - tailwind.config.js
 - index.html
 - public/404.html
+ - public/images/
+   - avatar.svg
+   - about-avatar.svg
+   - placeholder.svg
+   - projects/
+     - ecommerce.svg
+     - flutter-apps.svg
+     - python-bot.svg
+     - game-dev.svg
+     - academic-game.svg
 - src/
   - main.js
   - App.vue
   - assets/tailwind.css
   - router/index.js
-  - utils/imageProxy.js
   - components/
     - SiteNavbar.vue
     - SiteFooter.vue
@@ -155,12 +164,9 @@ Exact implementation details
   - else if to.hash → { el: to.hash, top: 80, behavior: "smooth" }
   - else → { top: 0, behavior: "smooth" }
 
-11) src/utils/imageProxy.js
-- Export function proxyImageUrl(originalUrl, options = {}):
-  - If not string, return as is.
-  - Only proxy absolute http/https URLs; leave data:, blob:, or relative unchanged.
-  - Strip protocol, set URLSearchParams: url, and optional w, q, fit, auto.
-  - Return "https://wsrv.nl/?" + params.toString().
+11) Local images
+- Place SVG placeholders under public/images as listed above.
+- When referencing local images in templates, prefix with import.meta.env.BASE_URL (e.g., const base = import.meta.env.BASE_URL; <img :src="base + 'images/avatar.svg'" />) so assets resolve under the "/portfolio/" base.
 
 12) Components
 a) SiteNavbar.vue
@@ -177,11 +183,11 @@ b) SiteFooter.vue
 - Floating scroll-to-top button at bottom-right, circular, brand-600 background, white icon, shadow, and "pulse-glow" animation. On click, window.scrollTo({ top: 0, behavior: "smooth" }).
 - aria-label on the button: "Scroll to top".
 
-c) ProjectCard.vue
-- Card with aspect-video image, hover scale transform, dark gradient overlay on hover, and bottom action bar that slides in on hover.
-- Props: title (required), description (required), image (default to an Unsplash fallback), github (optional), demo (optional).
-- If github set, show "Code" button with ArrowTopRightOnSquareIcon; if demo set, show "Demo" with PlayCircleIcon.
-- Use proxyImageUrl(image, { width: 1200, quality: 80, auto: 'format' }).
+ c) ProjectCard.vue
+ - Card with aspect-video image, hover scale transform, dark gradient overlay on hover, and bottom action bar that slides in on hover.
+ - Props: title (required), description (required), image (default to '/images/placeholder.svg'), github (optional), demo (optional).
+ - If github set, show "Code" button with ArrowTopRightOnSquareIcon; if demo set, show "Demo" with PlayCircleIcon.
+ - Renders <img :src="image"> directly; callers pass a path that is already prefixed appropriately (e.g., base + 'images/...').
 
 d) SkillBadge.vue
 - Simple rounded-full pill badge with gray background and text. Uses <slot> for label.
@@ -193,7 +199,7 @@ e) ContactForm.vue
 - Button uses .btn-primary.
 
 13) Pages
-a) HomePage.vue
+ a) HomePage.vue
 - Hero section with class "bg-animated-gradient".
 - Left column: 
   - H1 “Hadi ZareZadeh” with .heading-gradient and animation "fade-in-up".
@@ -204,10 +210,10 @@ a) HomePage.vue
     - Secondary: "Contact" → RouterLink to "/contact" with .btn-outline.
 - Right column:
   - Square avatar card with overflow-hidden rounded-2xl; tilt effect on mousemove: compute tiltX/tiltY based on cursor position; transform: perspective(800px) rotateX(...) rotateY(...); transition transform 200ms.
-  - Avatar src via proxyImageUrl on: https://images.unsplash.com/photo-1531123897727-8f129e1688ce?w=1200&q=80&auto=format&fit=crop
+  - Avatar image is local: bind src to base + 'images/avatar.svg' where base = import.meta.env.BASE_URL.
 - On mount: reveal hero columns via CSS transition (opacity/translate) toggled by a local isShown flag.
 
-b) AboutPage.vue
+ b) AboutPage.vue
 - Two-column layout: 
   - Left: avatar card with same tilt effect; below it a card of "quick facts" (Location, Email mailto link, Phone tel link, GitHub and LinkedIn external links, Languages).
   - Right:
@@ -238,16 +244,17 @@ b) AboutPage.vue
       - Self-Defense Training (2019–2020)
     - Section “Hobbies & Interests” badges:
       - Camping & Outdoor Adventures, Socializing (Couchsurfing), Music & Movies, Algorithm Challenges, Short Fiction
-- Avatar src via proxyImageUrl on: https://images.unsplash.com/photo-1546525848-3ce03ca516f6?w=1200&q=80&auto=format&fit=crop
+- Avatar image is local: bind src to base + 'images/about-avatar.svg' where base = import.meta.env.BASE_URL.
 
-c) ProjectsPage.vue
-- Heading “Projects” + subtext “Selected work and experiments.”
-- Grid of <ProjectCard> (5 items) with titles, descriptions, images (use these exact titles/descriptions/unsplash image URLs; github/demo empty strings):
-  1) Title: “E-commerce Website (2020 – Present)”; Description: “Full-stack Laravel + Vue 3 project for Lyndakade.”; Image: https://images.unsplash.com/photo-1519331379826-f10be5486c6f?w=1200&q=80&auto=format&fit=crop
-  2) Title: “Flutter Apps (2024)”; Description: “Developed mobile & desktop applications using Flutter.”; Image: https://images.unsplash.com/photo-1518770660439-4636190af475?w=1200&q=80&auto=format&fit=crop
-  3) Title: “Python Automation Bot (2025)”; Description: “Built a scalable bot system to automate Plato game platform accounts.”; Image: https://images.unsplash.com/photo-1510511459019-5dda7724fd87?w=1200&q=80&auto=format&fit=crop
-  4) Title: “Game Development (2018–2020)”; Description: “Developed games for Legend Company.”; Image: https://images.unsplash.com/photo-1538481199705-c710c4e965fc?w=1200&q=80&auto=format&fit=crop
-  5) Title: “Academic Game Project (2018)”; Description: “Driving-based game with realistic maps of Torshiz city.”; Image: https://images.unsplash.com/photo-1542751371-adc38448a05e?w=1200&q=80&auto=format&fit=crop
+ c) ProjectsPage.vue
+ - Heading “Projects” + subtext “Selected work and experiments.”
+ - Define const base = import.meta.env.BASE_URL in <script setup>.
+ - Grid of <ProjectCard> (5 items) with titles, descriptions, and local images (github/demo empty strings). Pass :image="base + 'images/projects/<file>.svg'":
+   1) Title: “E-commerce Website (2020 – Present)”; Description: “Full-stack Laravel + Vue 3 project for Lyndakade.”; Image file: ecommerce.svg
+   2) Title: “Flutter Apps (2024)”; Description: “Developed mobile & desktop applications using Flutter.”; Image file: flutter-apps.svg
+   3) Title: “Python Automation Bot (2025)”; Description: “Built a scalable bot system to automate Plato game platform accounts.”; Image file: python-bot.svg
+   4) Title: “Game Development (2018–2020)”; Description: “Developed games for Legend Company.”; Image file: game-dev.svg
+   5) Title: “Academic Game Project (2018)”; Description: “Driving-based game with realistic maps of Torshiz city.”; Image file: academic-game.svg
 
 d) ContactPage.vue
 - Heading “Get in touch” + subtext “Have a project or idea? Let's talk.”
@@ -264,6 +271,7 @@ d) ContactPage.vue
 - Use descriptive alt attributes for images.
 - Use transition and shadow utilities as described; reuse .card, .btn, .btn-primary, .btn-outline, .heading-gradient utilities.
 - Ensure responsive layouts: one-column on small screens, two columns on md+ where specified.
+ - When referencing local images in templates, always prefix with import.meta.env.BASE_URL (e.g., :src="base + 'images/...'" where base = import.meta.env.BASE_URL) so assets resolve under the "/portfolio/" base.
 
 15) README.md
 - Title: “Hadi ZareZadeh — Portfolio (Vue 3 + Vite + Tailwind)”
