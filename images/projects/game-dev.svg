@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675">
+  <rect width="1200" height="675" fill="#f5f3ff"/>
+  <rect x="380" y="220" width="440" height="240" rx="36" fill="#8b5cf6"/>
+  <circle cx="500" cy="320" r="24" fill="#ddd6fe"/>
+  <circle cx="700" cy="320" r="24" fill="#ddd6fe"/>
+  <rect x="540" y="360" width="120" height="24" rx="12" fill="#c4b5fd"/>
+  <text x="600" y="620" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="28" fill="#4c1d95">Game Dev</text>
+</svg>

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675">
+  <rect width="1200" height="675" fill="#fffbeb"/>
+  <rect x="200" y="260" width="800" height="120" rx="24" fill="#f59e0b"/>
+  <rect x="280" y="220" width="120" height="40" rx="8" fill="#fde68a"/>
+  <rect x="800" y="220" width="120" height="40" rx="8" fill="#fde68a"/>
+  <text x="600" y="620" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="28" fill="#7c2d12">Academic Game</text>
+</svg>

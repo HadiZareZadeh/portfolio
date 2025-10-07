@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675">
+  <rect width="1200" height="675" fill="#eff6ff"/>
+  <rect x="280" y="200" width="640" height="240" rx="24" fill="#3b82f6"/>
+  <circle cx="420" cy="320" r="36" fill="#bfdbfe"/>
+  <circle cx="780" cy="320" r="36" fill="#bfdbfe"/>
+  <rect x="520" y="300" width="160" height="40" rx="20" fill="#93c5fd"/>
+  <text x="600" y="620" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="28" fill="#1e3a8a">Python Bot</text>
+</svg>
