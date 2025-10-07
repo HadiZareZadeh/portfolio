@@ -46,7 +46,7 @@
               @mouseleave="resetTilt"
             >
               <img 
-                :src="proxiedAvatar" 
+                :src="base + 'images/avatar.svg'" 
                 alt="Hadi ZareZadeh - Full-Stack Web Developer"
                 class="w-full h-full object-cover"
                 loading="eager"
@@ -60,22 +60,14 @@
 </template>
 
 <script setup>
-import { ref, computed, onMounted } from 'vue'
-import { proxyImageUrl } from '../utils/imageProxy.js'
+import { ref, onMounted } from 'vue'
 
 const avatarCard = ref(null)
 const isShown = ref(false)
 
-const proxiedAvatar = computed(() => {
-  return proxyImageUrl(
-    'https://images.unsplash.com/photo-1531123897727-8f129e1688ce?w=1200&q=80&auto=format&fit=crop',
-    {
-      width: 800,
-      quality: 85,
-      auto: 'format'
-    }
-  )
-})
+const base = import.meta.env.BASE_URL
+
+// uses local /images/avatar.jpg
 
 const handleMouseMove = (e) => {
   if (!avatarCard.value) return

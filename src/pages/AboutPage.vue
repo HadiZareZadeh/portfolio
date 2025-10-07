@@ -23,7 +23,7 @@
               @mouseleave="resetTilt"
             >
               <img 
-                :src="proxiedAvatar" 
+                :src="base + 'images/about-avatar.svg'" 
                 alt="Hadi ZareZadeh professional photo"
                 class="w-full h-full object-cover"
                 loading="lazy"
@@ -214,22 +214,13 @@
 </template>
 
 <script setup>
-import { ref, computed } from 'vue'
+import { ref } from 'vue'
 import SkillBadge from '../components/SkillBadge.vue'
-import { proxyImageUrl } from '../utils/imageProxy.js'
 
 const avatarCard = ref(null)
+const base = import.meta.env.BASE_URL
 
-const proxiedAvatar = computed(() => {
-  return proxyImageUrl(
-    'https://images.unsplash.com/photo-1546525848-3ce03ca516f6?w=1200&q=80&auto=format&fit=crop',
-    {
-      width: 600,
-      quality: 85,
-      auto: 'format'
-    }
-  )
-})
+// uses local /images/about-avatar.jpg
 
 const handleMouseMove = (e) => {
   if (!avatarCard.value) return

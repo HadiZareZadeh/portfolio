@@ -3,7 +3,7 @@
     <!-- Image Container -->
     <div class="relative aspect-video overflow-hidden">
       <img 
-        :src="proxiedImage" 
+        :src="image" 
         :alt="`${title} project screenshot`"
         class="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
         loading="lazy"
@@ -52,9 +52,7 @@
 </template>
 
 <script setup>
-import { computed } from 'vue'
 import { ArrowTopRightOnSquareIcon, PlayCircleIcon } from '@heroicons/vue/24/outline'
-import { proxyImageUrl } from '../utils/imageProxy.js'
 
 const props = defineProps({
   title: {
@@ -67,7 +65,7 @@ const props = defineProps({
   },
   image: {
     type: String,
-    default: 'https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200&q=80&auto=format&fit=crop'
+    default: '/images/placeholder.svg'
   },
   github: {
     type: String,
@@ -77,13 +75,5 @@ const props = defineProps({
     type: String,
     default: ''
   }
-})
-
-const proxiedImage = computed(() => {
-  return proxyImageUrl(props.image, {
-    width: 1200,
-    quality: 80,
-    auto: 'format'
-  })
 })
 </script>
