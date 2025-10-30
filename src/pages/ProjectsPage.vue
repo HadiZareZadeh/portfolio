@@ -7,7 +7,7 @@
           Projects
         </h1>
         <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-          Selected work and experiments showcasing my development skills
+          Selected experiments and products that bridge applied data science, AI, and software engineering.
         </p>
       </div>
       
@@ -15,9 +15,9 @@
       <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
         <div v-reveal>
           <ProjectCard
-            title="E-commerce Website (2020 – Present)"
-            description="Full-stack Laravel + Vue 3 project for Lyndakade."
-            :image="base + 'images/projects/ecommerce.svg'"
+            title="Supervised Learning Playbook"
+            description="End-to-end scikit-learn workflows for classification and regression with cross-validation, metrics dashboards, and reusable pipelines."
+            :image="base + 'images/placeholder.svg'"
             github=""
             demo=""
           />
@@ -25,9 +25,9 @@
         
         <div v-reveal>
           <ProjectCard
-            title="Flutter Apps (2024)"
-            description="Developed mobile & desktop applications using Flutter."
-            :image="base + 'images/projects/flutter-apps.svg'"
+            title="CNN Transfer Learning Experiments"
+            description="PyTorch and Keras projects fine-tuning compact CNNs for image classification with augmentation and regularization."
+            :image="base + 'images/placeholder.svg'"
             github=""
             demo=""
           />
@@ -35,8 +35,18 @@
         
         <div v-reveal>
           <ProjectCard
-            title="Python Automation Bot (2025)"
-            description="Built a scalable bot system to automate Plato game platform accounts."
+            title="EDA & Feature Engineering Toolkit"
+            description="Pandas-driven notebooks for cleaning, feature scaling/encoding, and visualization with Matplotlib and Seaborn."
+            :image="base + 'images/placeholder.svg'"
+            github=""
+            demo=""
+          />
+        </div>
+        
+        <div v-reveal>
+          <ProjectCard
+            title="Automation Platform for Plato"
+            description="Scalable Android emulator automation with logging, monitoring, and recovery workflows."
             :image="base + 'images/projects/python-bot.svg'"
             github=""
             demo=""
@@ -45,9 +55,9 @@
         
         <div v-reveal>
           <ProjectCard
-            title="Game Development (2018–2020)"
-            description="Developed games for Legend Company."
-            :image="base + 'images/projects/game-dev.svg'"
+            title="Lyndakade E-commerce Platform"
+            description="Laravel + Vue 3 stack powering marketplace operations with analytics-ready data flows."
+            :image="base + 'images/projects/ecommerce.svg'"
             github=""
             demo=""
           />
@@ -55,8 +65,8 @@
         
         <div v-reveal>
           <ProjectCard
-            title="Academic Game Project (2018)"
-            description="Driving-based game with realistic maps of Torshiz city."
+            title="Evolutionary Algorithm Research"
+            description="University projects implementing evolutionary and genetic optimization techniques with performance analysis."
             :image="base + 'images/projects/academic-game.svg'"
             github=""
             demo=""

@@ -7,7 +7,7 @@
           Get in touch
         </h1>
         <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-          Have a project or idea? Let's talk.
+          Have a data challenge, AI experiment, or analytics idea? Let's talk.
         </p>
       </div>
       
@@ -17,7 +17,7 @@
           <div v-reveal class="card p-8">
             <h2 class="text-2xl font-semibold text-gray-900 mb-6">Let's Connect</h2>
             <p class="text-gray-700 mb-8 leading-relaxed">
-              I'm always interested in hearing about new opportunities and exciting projects. Whether you have a question, want to collaborate, or just want to say hi, feel free to reach out!
+              I'm always interested in data-centric collaborations and opportunities to apply machine learning to real problems. Whether you need help exploring data, improving models, or building reliable pipelines, feel free to reach out.
             </p>
             
             <!-- Contact Links -->

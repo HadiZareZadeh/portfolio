@@ -1,6 +1,6 @@
 # Hadi ZareZadeh — Portfolio (Vue 3 + Vite + Tailwind)
 
-A modern, responsive portfolio website built with Vue 3, Vite, and Tailwind CSS. Showcasing the work and skills of Hadi ZareZadeh, a Full-Stack Web Developer.
+A modern, responsive portfolio website built with Vue 3, Vite, and Tailwind CSS. Showcasing the work and skills of Hadi ZareZadeh, a Data Science & AI-focused developer.
 
 ## 🚀 Quick Start
 

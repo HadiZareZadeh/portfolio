@@ -37,7 +37,7 @@
             <div class="space-y-3">
               <div class="flex items-center space-x-3">
                 <span class="text-gray-500">📍</span>
-                <span class="text-gray-700">Kashmar, Iran</span>
+                <span class="text-gray-700">Bandar Lengeh, Iran</span>
               </div>
               <div class="flex items-center space-x-3">
                 <span class="text-gray-500">📧</span>
@@ -47,8 +47,8 @@
               </div>
               <div class="flex items-center space-x-3">
                 <span class="text-gray-500">📱</span>
-                <a href="tel:+989123456789" class="text-brand-600 hover:text-brand-700">
-                  +98 912 345 6789
+                <a href="tel:+989211917302" class="text-brand-600 hover:text-brand-700">
+                  +98 921 191 7302
                 </a>
               </div>
               <div class="flex items-center space-x-3">
@@ -65,7 +65,7 @@
               </div>
               <div class="flex items-center space-x-3">
                 <span class="text-gray-500">🗣️</span>
-                <span class="text-gray-700">Persian, English</span>
+                <span class="text-gray-700">Persian (Native), English (B2), Spanish (A2)</span>
               </div>
             </div>
           </div>
@@ -77,7 +77,7 @@
           <div v-reveal class="card p-6">
             <h2 class="text-2xl font-semibold text-gray-900 mb-4">About Me</h2>
             <p class="text-gray-700 leading-relaxed">
-              I am a passionate Full-Stack Web Developer with a B.Sc. in Computer Science (Kashmar Higher Education Institute, 2020). Began programming at age 9, now specializing in modern frameworks (Laravel, Vue 3, Tailwind CSS) and Python automation. Experienced in building web applications, data mining, and automating workflows. Adaptable, analytical, and always seeking opportunities for growth.
+              I am a data science and AI oriented developer with a strong software engineering foundation and a B.Sc. in Computer Science (Kashmar Higher Education Institute, 2020). After several years delivering production web, automation, and game projects, I refocused on applied machine learning by reproducing and extending course labs covering scikit-learn pipelines, CNN-based computer vision, and experiment tracking. I enjoy translating real-world problems into analytical workflows that are reliable, explainable, and maintainable.
             </p>
           </div>
           
@@ -86,40 +86,50 @@
             <h2 class="text-2xl font-semibold text-gray-900 mb-6">Skills</h2>
             <div class="grid md:grid-cols-2 gap-6">
               <div>
-                <h3 class="font-medium text-gray-900 mb-3">Programming & Web Dev</h3>
+                <h3 class="font-medium text-gray-900 mb-3">Data Science & ML</h3>
+                <div class="flex flex-wrap gap-2">
+                  <SkillBadge>Data Wrangling</SkillBadge>
+                  <SkillBadge>Exploratory Data Analysis</SkillBadge>
+                  <SkillBadge>Supervised Learning</SkillBadge>
+                  <SkillBadge>Unsupervised Learning</SkillBadge>
+                  <SkillBadge>CNNs & Transfer Learning</SkillBadge>
+                  <SkillBadge>Model Evaluation</SkillBadge>
+                  <SkillBadge>Feature Engineering</SkillBadge>
+                </div>
+              </div>
+              
+              <div>
+                <h3 class="font-medium text-gray-900 mb-3">Python Ecosystem</h3>
+                <div class="flex flex-wrap gap-2">
+                  <SkillBadge>pandas</SkillBadge>
+                  <SkillBadge>NumPy</SkillBadge>
+                  <SkillBadge>scikit-learn</SkillBadge>
+                  <SkillBadge>PyTorch (Intro)</SkillBadge>
+                  <SkillBadge>TensorFlow/Keras (Intro)</SkillBadge>
+                  <SkillBadge>Matplotlib</SkillBadge>
+                  <SkillBadge>Seaborn</SkillBadge>
+                </div>
+              </div>
+              
+              <div>
+                <h3 class="font-medium text-gray-900 mb-3">Programming & Platforms</h3>
                 <div class="flex flex-wrap gap-2">
                   <SkillBadge>Python (Advanced)</SkillBadge>
-                  <SkillBadge>PHP</SkillBadge>
-                  <SkillBadge>Laravel</SkillBadge>
-                  <SkillBadge>Vue 3</SkillBadge>
-                  <SkillBadge>Tailwind</SkillBadge>
+                  <SkillBadge>PHP/Laravel</SkillBadge>
                   <SkillBadge>Java</SkillBadge>
-                </div>
-              </div>
-              
-              <div>
-                <h3 class="font-medium text-gray-900 mb-3">Data & Automation</h3>
-                <div class="flex flex-wrap gap-2">
-                  <SkillBadge>Python Data Mining</SkillBadge>
-                  <SkillBadge>Workflow Automation</SkillBadge>
-                  <SkillBadge>Basic AI/ML</SkillBadge>
-                </div>
-              </div>
-              
-              <div>
-                <h3 class="font-medium text-gray-900 mb-3">Databases</h3>
-                <div class="flex flex-wrap gap-2">
-                  <SkillBadge>MySQL (Advanced)</SkillBadge>
-                  <SkillBadge>MongoDB (Basic)</SkillBadge>
-                </div>
-              </div>
-              
-              <div>
-                <h3 class="font-medium text-gray-900 mb-3">Other</h3>
-                <div class="flex flex-wrap gap-2">
-                  <SkillBadge>Git/GitHub/GitLab</SkillBadge>
+                  <SkillBadge>JavaScript/Vue.js 3</SkillBadge>
                   <SkillBadge>Flutter (Basic)</SkillBadge>
-                  <SkillBadge>Unity (Basic)</SkillBadge>
+                  <SkillBadge>GPC Scripting (PS4/PS5)</SkillBadge>
+                </div>
+              </div>
+              
+              <div>
+                <h3 class="font-medium text-gray-900 mb-3">Data & DevOps</h3>
+                <div class="flex flex-wrap gap-2">
+                  <SkillBadge>MySQL/MariaDB</SkillBadge>
+                  <SkillBadge>MongoDB (Basic)</SkillBadge>
+                  <SkillBadge>GitHub</SkillBadge>
+                  <SkillBadge>GitLab</SkillBadge>
                   <SkillBadge>Google Cloud (Basic)</SkillBadge>
                   <SkillBadge>Linux & Windows</SkillBadge>
                 </div>
@@ -132,32 +142,58 @@
             <h2 class="text-2xl font-semibold text-gray-900 mb-6">Experience</h2>
             <div class="space-y-4">
               <div class="border-l-2 border-brand-600 pl-4">
-                <h3 class="font-medium text-gray-900">Full-stack Developer</h3>
-                <p class="text-gray-600">@ Lyndakade (2020 – Present)</p>
+                <h3 class="font-medium text-gray-900">AI Tutor — Freelance</h3>
+                <p class="text-gray-600">2024 – 2025 · Designed study guides and labs on CNNs, ML fundamentals, and evaluation techniques.</p>
               </div>
               <div class="border-l-2 border-brand-600 pl-4">
-                <h3 class="font-medium text-gray-900">Mobile/Desktop App Dev</h3>
-                <p class="text-gray-600">@ Lyndakade (2024)</p>
+                <h3 class="font-medium text-gray-900">Python Automation Developer — Plato Platform</h3>
+                <p class="text-gray-600">2025 · Built emulator-driven automation with logging, monitoring, and scaling practices.</p>
               </div>
               <div class="border-l-2 border-brand-600 pl-4">
-                <h3 class="font-medium text-gray-900">Python Bot Developer</h3>
-                <p class="text-gray-600">(2025)</p>
+                <h3 class="font-medium text-gray-900">Full-stack Developer — Lyndakade</h3>
+                <p class="text-gray-600">2020 – 2024 · Shipped e-commerce systems (Laravel + Vue 3) and maintained data-driven workflows.</p>
               </div>
               <div class="border-l-2 border-brand-600 pl-4">
-                <h3 class="font-medium text-gray-900">Game Developer</h3>
-                <p class="text-gray-600">@ Legend Company (2018–2020)</p>
+                <h3 class="font-medium text-gray-900">Mobile & Desktop App Developer — Lyndakade</h3>
+                <p class="text-gray-600">2024 · Created Flutter applications targeting mobile and desktop platforms.</p>
               </div>
               <div class="border-l-2 border-brand-600 pl-4">
-                <h3 class="font-medium text-gray-900">Teaching Assistant</h3>
-                <p class="text-gray-600">@ Kashmar Higher Education Institute (2017–2020)</p>
+                <h3 class="font-medium text-gray-900">Game Developer — Legend Company</h3>
+                <p class="text-gray-600">2018 – 2020 · Delivered cross-platform games and gameplay systems.</p>
               </div>
               <div class="border-l-2 border-brand-600 pl-4">
-                <h3 class="font-medium text-gray-900">Head of Education</h3>
-                <p class="text-gray-600">@ Scientific Association (2017–2020)</p>
+                <h3 class="font-medium text-gray-900">Teaching Assistant — Kashmar HEI</h3>
+                <p class="text-gray-600">2017 – 2020 · Supported C and C++ programming courses and algorithm mentoring.</p>
               </div>
               <div class="border-l-2 border-brand-600 pl-4">
-                <h3 class="font-medium text-gray-900">Secretary of Director</h3>
-                <p class="text-gray-600">@ Cargo Clearance Co. (2015)</p>
+                <h3 class="font-medium text-gray-900">Head of Education — Scientific Association</h3>
+                <p class="text-gray-600">2017 – 2020 · Coordinated academic initiatives and peer-led training.</p>
+              </div>
+            </div>
+          </div>
+
+          <div v-reveal class="card p-6">
+            <h2 class="text-2xl font-semibold text-gray-900 mb-6">Coursework & Labs</h2>
+            <div class="space-y-4 text-gray-700">
+              <div>
+                <h3 class="font-medium text-gray-900">Supervised Learning</h3>
+                <p>Logistic/linear regression, SVMs, tree ensembles, model selection, cross-validation, and metric analysis (accuracy, F1, ROC-AUC, MAE/RMSE).</p>
+              </div>
+              <div>
+                <h3 class="font-medium text-gray-900">Unsupervised Learning</h3>
+                <p>K-Means clustering, PCA for dimensionality reduction, and visualization-driven insights.</p>
+              </div>
+              <div>
+                <h3 class="font-medium text-gray-900">CNN Experiments</h3>
+                <p>Built and tuned convolutional models with augmentation, regularization, and transfer learning in PyTorch and Keras.</p>
+              </div>
+              <div>
+                <h3 class="font-medium text-gray-900">Data Wrangling & Features</h3>
+                <p>Pandas-based cleaning, joins, scaling, encoding, and exploratory visuals with Matplotlib/Seaborn.</p>
+              </div>
+              <div>
+                <h3 class="font-medium text-gray-900">Pipelines & Experimentation</h3>
+                <p>End-to-end pipelines using ColumnTransformer, GridSearchCV/RandomizedSearchCV, and reproducible notebook workflows.</p>
               </div>
             </div>
           </div>
@@ -193,6 +229,7 @@
             <div class="space-y-2">
               <div class="text-gray-700">• Karate-do: 2nd Dan Black Belt, 9 gold medals (2005–2016)</div>
               <div class="text-gray-700">• Self-Defense Training (2019–2020)</div>
+              <div class="text-gray-700">• Volleyball (2025 – Present)</div>
             </div>
           </div>
           

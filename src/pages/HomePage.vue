@@ -11,13 +11,13 @@
                 Hadi ZareZadeh
               </h1>
               <p class="text-2xl lg:text-3xl text-gray-600 mt-4">
-                Full-Stack Web Developer
+                Data Science & AI Developer
               </p>
             </div>
             
             <div v-reveal class="space-y-6">
               <p class="text-lg text-gray-700 leading-relaxed">
-                Highly motivated developer with 4+ years of experience in Laravel, Vue 3, Tailwind, and Python automation.
+                Data-focused developer bridging software engineering and applied machine learning. Experienced in Python analytics pipelines, scikit-learn experimentation, and CNN-based computer vision labs, and open to roles in data science, ML engineering, and analytics.
               </p>
               
               <div class="flex flex-col sm:flex-row gap-4">
@@ -47,7 +47,7 @@
             >
               <img 
                 :src="base + 'images/avatar.svg'" 
-                alt="Hadi ZareZadeh - Full-Stack Web Developer"
+                alt="Hadi ZareZadeh - Data Science & AI Developer"
                 class="w-full h-full object-cover"
                 loading="eager"
               />

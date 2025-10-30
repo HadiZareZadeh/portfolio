@@ -2,7 +2,7 @@
   "name": "hadi-portfolio",
   "type": "module",
   "version": "1.0.0",
-  "description": "Hadi ZareZadeh - Full-Stack Web Developer Portfolio",
+  "description": "Hadi ZareZadeh - Data Science & AI Portfolio",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -23,7 +23,7 @@
     "autoprefixer": "^10.4.20",
     "gh-pages": "^6.3.0"
   },
-  "keywords": ["portfolio", "vue", "vite", "tailwind", "web-developer"],
+  "keywords": ["portfolio", "vue", "vite", "data-science", "machine-learning"],
   "author": "Hadi ZareZadeh",
   "license": "MIT"
 }
