@@ -45,12 +45,14 @@
                   HadiZareZadeh00@gmail.com
                 </a>
               </div>
+              <!--
               <div class="flex items-center space-x-3">
                 <span class="text-gray-500">📱</span>
                 <a href="tel:+989211917302" class="text-brand-600 hover:text-brand-700">
                   +98 921 191 7302
                 </a>
               </div>
+              -->
               <div class="flex items-center space-x-3">
                 <span class="text-gray-500">💼</span>
                 <a href="https://github.com/HadiZareZadeh" target="_blank" rel="noopener noreferrer" class="text-brand-600 hover:text-brand-700">
