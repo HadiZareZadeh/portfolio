@@ -239,7 +239,7 @@
               <SkillBadge>Camping & Outdoor Adventures</SkillBadge>
               <SkillBadge>Socializing (Couchsurfing)</SkillBadge>
               <SkillBadge>Music & Movies</SkillBadge>
-              <SkillBadge>Algorithm Challenges</SkillBadge>
+              <!-- <SkillBadge>Algorithm Challenges</SkillBadge> -->
               <SkillBadge>Short Fiction</SkillBadge>
             </div>
           </div>

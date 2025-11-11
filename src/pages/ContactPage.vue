@@ -11,9 +11,8 @@
         </p>
       </div>
       
-      <div class="grid lg:grid-cols-2 gap-12">
-        <!-- Contact Information -->
-        <div class="space-y-8">
+      <div class="flex justify-center">
+        <div class="w-full max-w-2xl">
           <div v-reveal class="card p-8">
             <h2 class="text-2xl font-semibold text-gray-900 mb-6">Let's Connect</h2>
             <p class="text-gray-700 mb-8 leading-relaxed">
