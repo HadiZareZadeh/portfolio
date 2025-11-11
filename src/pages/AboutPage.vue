@@ -40,6 +40,10 @@
                 <span class="text-gray-700">Bandar Lengeh, Iran</span>
               </div>
               <div class="flex items-center space-x-3">
+                <span class="text-gray-500">🎓</span>
+                <span class="text-gray-700">Preparing applications for Data Science master's programs (Fall 2026 intake)</span>
+              </div>
+              <div class="flex items-center space-x-3">
                 <span class="text-gray-500">📧</span>
                 <a href="mailto:HadiZareZadeh00@gmail.com" class="text-brand-600 hover:text-brand-700">
                   HadiZareZadeh00@gmail.com
@@ -79,7 +83,7 @@
           <div v-reveal class="card p-6">
             <h2 class="text-2xl font-semibold text-gray-900 mb-4">About Me</h2>
             <p class="text-gray-700 leading-relaxed">
-              I am a data science and AI oriented developer with a strong software engineering foundation and a B.Sc. in Computer Science (Kashmar Higher Education Institute, 2020). After several years delivering production web, automation, and game projects, I refocused on applied machine learning by reproducing and extending course labs covering scikit-learn pipelines, CNN-based computer vision, and experiment tracking. I enjoy translating real-world problems into analytical workflows that are reliable, explainable, and maintainable.
+              I recently completed my B.Sc. in Computer Science (Kashmar Higher Education Institute, 2020) and I am building a graduate-school-ready foundation in data science. Through course projects, peer collaborations, and self-guided labs, I focus on understanding core concepts like data wrangling, model evaluation, and responsible experimentation. I am now seeking master's programs and research groups where I can grow as a student researcher and contribute to evidence-based decisions.
             </p>
           </div>
           
@@ -88,7 +92,7 @@
             <h2 class="text-2xl font-semibold text-gray-900 mb-6">Skills</h2>
             <div class="grid md:grid-cols-2 gap-6">
               <div>
-                <h3 class="font-medium text-gray-900 mb-3">Data Science & ML</h3>
+                <h3 class="font-medium text-gray-900 mb-3">Data Science & ML Foundations</h3>
                 <div class="flex flex-wrap gap-2">
                   <SkillBadge>Data Wrangling</SkillBadge>
                   <SkillBadge>Exploratory Data Analysis</SkillBadge>
@@ -101,7 +105,7 @@
               </div>
               
               <div>
-                <h3 class="font-medium text-gray-900 mb-3">Python Ecosystem</h3>
+                <h3 class="font-medium text-gray-900 mb-3">Python Ecosystem (Coursework)</h3>
                 <div class="flex flex-wrap gap-2">
                   <SkillBadge>pandas</SkillBadge>
                   <SkillBadge>NumPy</SkillBadge>
@@ -116,7 +120,7 @@
               <div>
                 <h3 class="font-medium text-gray-900 mb-3">Programming & Platforms</h3>
                 <div class="flex flex-wrap gap-2">
-                  <SkillBadge>Python (Advanced)</SkillBadge>
+                  <SkillBadge>Python (Academic & Internship)</SkillBadge>
                   <SkillBadge>PHP/Laravel</SkillBadge>
                   <SkillBadge>Java</SkillBadge>
                   <SkillBadge>JavaScript/Vue.js 3</SkillBadge>
@@ -126,7 +130,7 @@
               </div>
               
               <div>
-                <h3 class="font-medium text-gray-900 mb-3">Data & DevOps</h3>
+                <h3 class="font-medium text-gray-900 mb-3">Data & DevOps Basics</h3>
                 <div class="flex flex-wrap gap-2">
                   <SkillBadge>MySQL/MariaDB</SkillBadge>
                   <SkillBadge>MongoDB (Basic)</SkillBadge>
@@ -144,24 +148,20 @@
             <h2 class="text-2xl font-semibold text-gray-900 mb-6">Experience</h2>
             <div class="space-y-4">
               <div class="border-l-2 border-brand-600 pl-4">
-                <h3 class="font-medium text-gray-900">AI Tutor — Freelance</h3>
-                <p class="text-gray-600">2024 – 2025 · Designed study guides and labs on CNNs, ML fundamentals, and evaluation techniques.</p>
-              </div>
-              <div class="border-l-2 border-brand-600 pl-4">
                 <h3 class="font-medium text-gray-900">Python Automation Developer — Plato Platform</h3>
                 <p class="text-gray-600">2025 · Built emulator-driven automation with logging, monitoring, and scaling practices.</p>
-              </div>
-              <div class="border-l-2 border-brand-600 pl-4">
-                <h3 class="font-medium text-gray-900">Full-stack Developer — Lyndakade</h3>
-                <p class="text-gray-600">2020 – 2024 · Shipped e-commerce systems (Laravel + Vue 3) and maintained data-driven workflows.</p>
               </div>
               <div class="border-l-2 border-brand-600 pl-4">
                 <h3 class="font-medium text-gray-900">Mobile & Desktop App Developer — Lyndakade</h3>
                 <p class="text-gray-600">2024 · Created Flutter applications targeting mobile and desktop platforms.</p>
               </div>
               <div class="border-l-2 border-brand-600 pl-4">
+                <h3 class="font-medium text-gray-900">Full-stack Developer — Lyndakade</h3>
+                <p class="text-gray-600">2023 – 2024 · Shipped e-commerce systems (Laravel + Vue 3) and maintained data-driven workflows.</p>
+              </div>
+              <div class="border-l-2 border-brand-600 pl-4">
                 <h3 class="font-medium text-gray-900">Game Developer — Legend Company</h3>
-                <p class="text-gray-600">2018 – 2020 · Delivered cross-platform games and gameplay systems.</p>
+                <p class="text-gray-600">2018 – 2020 · Built student-led game prototypes and gameplay systems as part of early career exploration.</p>
               </div>
               <div class="border-l-2 border-brand-600 pl-4">
                 <h3 class="font-medium text-gray-900">Teaching Assistant — Kashmar HEI</h3>
@@ -177,6 +177,7 @@
           <div v-reveal class="card p-6">
             <h2 class="text-2xl font-semibold text-gray-900 mb-6">Coursework & Labs</h2>
             <div class="space-y-4 text-gray-700">
+              <p>Highlights from university courses, teaching assistant work, and self-paced labs that prepared me for graduate-level data science study.</p>
               <div>
                 <h3 class="font-medium text-gray-900">Supervised Learning</h3>
                 <p>Logistic/linear regression, SVMs, tree ensembles, model selection, cross-validation, and metric analysis (accuracy, F1, ROC-AUC, MAE/RMSE).</p>
@@ -192,10 +193,6 @@
               <div>
                 <h3 class="font-medium text-gray-900">Data Wrangling & Features</h3>
                 <p>Pandas-based cleaning, joins, scaling, encoding, and exploratory visuals with Matplotlib/Seaborn.</p>
-              </div>
-              <div>
-                <h3 class="font-medium text-gray-900">Pipelines & Experimentation</h3>
-                <p>End-to-end pipelines using ColumnTransformer, GridSearchCV/RandomizedSearchCV, and reproducible notebook workflows.</p>
               </div>
             </div>
           </div>

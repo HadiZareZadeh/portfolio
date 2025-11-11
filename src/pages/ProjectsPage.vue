@@ -7,41 +7,12 @@
           Projects
         </h1>
         <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-          Selected experiments and products that bridge applied data science, AI, and software engineering.
+          Coursework, internships, and self-directed projects that prepared me for graduate study in data science.
         </p>
       </div>
       
       <!-- Projects Grid -->
       <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-        <div v-reveal>
-          <ProjectCard
-            title="Supervised Learning Playbook"
-            description="End-to-end scikit-learn workflows for classification and regression with cross-validation, metrics dashboards, and reusable pipelines."
-            :image="base + 'images/placeholder.svg'"
-            github=""
-            demo=""
-          />
-        </div>
-        
-        <div v-reveal>
-          <ProjectCard
-            title="CNN Transfer Learning Experiments"
-            description="PyTorch and Keras projects fine-tuning compact CNNs for image classification with augmentation and regularization."
-            :image="base + 'images/placeholder.svg'"
-            github=""
-            demo=""
-          />
-        </div>
-        
-        <div v-reveal>
-          <ProjectCard
-            title="EDA & Feature Engineering Toolkit"
-            description="Pandas-driven notebooks for cleaning, feature scaling/encoding, and visualization with Matplotlib and Seaborn."
-            :image="base + 'images/placeholder.svg'"
-            github=""
-            demo=""
-          />
-        </div>
         
         <div v-reveal>
           <ProjectCard
@@ -66,7 +37,7 @@
         <div v-reveal>
           <ProjectCard
             title="Evolutionary Algorithm Research"
-            description="University projects implementing evolutionary and genetic optimization techniques with performance analysis."
+            description="Undergraduate research projects implementing evolutionary and genetic optimization techniques with comparative analysis."
             :image="base + 'images/projects/academic-game.svg'"
             github=""
             demo=""
@@ -78,10 +49,10 @@
       <div class="text-center mt-16" v-reveal>
         <div class="card p-8 max-w-2xl mx-auto">
           <h2 class="text-2xl font-semibold text-gray-900 mb-4">
-            Interested in working together?
+            Interested in collaborating?
           </h2>
           <p class="text-gray-600 mb-6">
-            I'm always open to discussing new projects and opportunities. Let's create something amazing together!
+            I'm eager to connect with research labs, graduate programs, and mentors who explore data-driven questions. Let's learn and build together!
           </p>
           <RouterLink to="/contact" class="btn btn-primary">
             Get In Touch
