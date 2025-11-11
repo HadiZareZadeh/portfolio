@@ -164,7 +164,7 @@
                 <p class="text-gray-600">2018 – 2020 · Built student-led game prototypes and gameplay systems as part of early career exploration.</p>
               </div>
               <div class="border-l-2 border-brand-600 pl-4">
-                <h3 class="font-medium text-gray-900">Teaching Assistant — Kashmar HEI</h3>
+                <h3 class="font-medium text-gray-900">Teaching Assistant — Kashmar Higher Education Institute</h3>
                 <p class="text-gray-600">2017 – 2020 · Supported C and C++ programming courses and algorithm mentoring.</p>
               </div>
               <div class="border-l-2 border-brand-600 pl-4">
