@@ -75,10 +75,10 @@
         </div>
         
         <!-- Contact Form -->
-        <div v-reveal class="card p-8">
+        <!-- <div v-reveal class="card p-8">
           <h2 class="text-2xl font-semibold text-gray-900 mb-6">Send a Message</h2>
           <ContactForm />
-        </div>
+        </div> -->
       </div>
     </div>
   </div>
