@@ -75,6 +75,31 @@ B.Sc. Kashmar Higher Education Institute, Kashmar, Iran
 High School Diploma Dr. Shariati School, Bandar Lengeh, Iran
 	Major: Physics and mathematics
 	Graduate Date: Jun 2014  
+
+Selected Undergraduate Course Scores (Scale: 20-point)
+Core Programming & CS Fundamentals
+•	Computer Fundamentals and Programming (C) – 18.50
+•	Computer Workshop – 20.00
+•	Advanced Programming (C++) – 20.00
+•	Pre-University English – 20.00
+•	English Language – 19.50
+•	Data Structures and Algorithms – 20.00
+•	Topics in Computer Science – 20.00
+•	Digital Logic Circuits – 20.00
+•	Technical English – 20.00
+
+Systems, Data & Graphics
+•	Computer Systems Principles – 15.50
+•	Database Systems – 17.00
+•	Computer Graphics – 15.00
+
+Advanced Topics, Research & Project
+•	Data Mining – 20.00
+•	Research Methods and Presentation – 17.00
+•	Linear Optimization – 15.00
+•	Artificial Intelligence – 12.50
+•	Computer Science Capstone Project – 18.50
+•	Mathematical Software – 17.00
 Languages
 •	Persian: Native
 •	English: B2 - Upper Intermediate
