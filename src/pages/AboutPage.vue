@@ -196,6 +196,32 @@
               </div>
             </div>
           </div>
+
+          <div v-reveal class="card p-6">
+            <h2 class="text-2xl font-semibold text-gray-900 mb-6">Course Grades</h2>
+            <p class="text-gray-700 mb-4">
+              Selected undergraduate coursework with final scores on the 20-point grading scale.
+            </p>
+            <div class="space-y-6">
+              <div
+                v-for="group in courseGroups"
+                :key="group.title"
+                class="space-y-3"
+              >
+                <h3 v-if="group.title" class="font-medium text-gray-900">{{ group.title }}</h3>
+                <div class="divide-y divide-gray-200 border border-gray-100 rounded-xl overflow-hidden">
+                  <div
+                    v-for="course in group.courses"
+                    :key="course.name"
+                    class="flex items-center justify-between px-4 py-3 bg-white/80"
+                  >
+                    <span class="text-gray-800">{{ course.name }}</span>
+                    <span class="text-gray-600 font-semibold">{{ course.score }}</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
           
           <!-- Education Section -->
           <div v-reveal class="card p-6">
@@ -255,6 +281,42 @@ import SkillBadge from '../components/SkillBadge.vue'
 
 const avatarCard = ref(null)
 const base = import.meta.env.BASE_URL
+
+const courseGroups = [
+  {
+    title: 'Core Programming & CS Fundamentals',
+    courses: [
+      { name: 'Computer Fundamentals and Programming (C)', score: '18.50' },
+      { name: 'Computer Workshop', score: '20.00' },
+      { name: 'Advanced Programming (C++)', score: '20.00' },
+      { name: 'Pre-University English', score: '20.00' },
+      { name: 'English Language', score: '19.50' },
+      { name: 'Data Structures and Algorithms', score: '20.00' },
+      { name: 'Topics in Computer Science', score: '20.00' },
+      { name: 'Digital Logic Circuits', score: '20.00' },
+      { name: 'Technical English', score: '20.00' }
+    ]
+  },
+  {
+    title: 'Systems, Data & Graphics',
+    courses: [
+      { name: 'Computer Systems Principles', score: '15.50' },
+      { name: 'Database Systems', score: '17.00' },
+      { name: 'Computer Graphics', score: '15.00' }
+    ]
+  },
+  {
+    title: 'Advanced Topics, Research & Project',
+    courses: [
+      { name: 'Data Mining', score: '20.00' },
+      { name: 'Research Methods and Presentation', score: '17.00' },
+      { name: 'Linear Optimization', score: '15.00' },
+      { name: 'Artificial Intelligence', score: '12.50' },
+      { name: 'Computer Science Capstone Project', score: '18.50' },
+      { name: 'Mathematical Software', score: '17.00' }
+    ]
+  }
+]
 
 // uses local /images/about-avatar.jpg
 
