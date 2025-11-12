@@ -71,7 +71,7 @@
               </div>
               <div class="flex items-center space-x-3">
                 <span class="text-gray-500">🗣️</span>
-                <span class="text-gray-700">Persian (Native), English (B2), Spanish (A2)</span>
+                <span class="text-gray-700">Persian (Native), English (B2 — preparing for IELTS/TOEFL), Spanish (A2)</span>
               </div>
             </div>
           </div>
