@@ -8,7 +8,7 @@ const __dirname = path.dirname(__filename);
 const projectRoot = path.resolve(__dirname, '..');
 
 const inputPath = path.join(projectRoot, 'public', 'images', 'avatar.jpg');
-const outputPath = path.join(projectRoot, 'public', 'images', 'avatar.svg');
+const outputPath = path.join(projectRoot, 'public', 'images', 'avatar.png');
 
 async function main() {
   const buffer = await fs.readFile(inputPath);

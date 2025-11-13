@@ -23,7 +23,7 @@
               @mouseleave="resetTilt"
             >
               <img 
-                :src="base + 'images/avatar.svg'" 
+                :src="base + 'images/avatar.png'" 
                 alt="Hadi ZareZadeh professional photo"
                 class="w-full h-full object-cover"
                 loading="lazy"
@@ -318,7 +318,7 @@ const courseGroups = [
   }
 ]
 
-// uses local /images/avatar.svg
+// uses local /images/avatar.png
 
 const handleMouseMove = (e) => {
   if (!avatarCard.value) return

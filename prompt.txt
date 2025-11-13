@@ -18,8 +18,8 @@ Project structure to generate
 - index.html
 - public/404.html
  - public/images/
-   - avatar.svg
-   - about-avatar.svg
+   - avatar.png
+   - about-avatar.png
    - placeholder.svg
    - projects/
      - ecommerce.svg
@@ -166,7 +166,7 @@ Exact implementation details
 
 11) Local images
 - Place SVG placeholders under public/images as listed above.
-- When referencing local images in templates, prefix with import.meta.env.BASE_URL (e.g., const base = import.meta.env.BASE_URL; <img :src="base + 'images/avatar.svg'" />) so assets resolve under the "/portfolio/" base.
+- When referencing local images in templates, prefix with import.meta.env.BASE_URL (e.g., const base = import.meta.env.BASE_URL; <img :src="base + 'images/avatar.png'" />) so assets resolve under the "/portfolio/" base.
 
 12) Components
 a) SiteNavbar.vue
@@ -210,7 +210,7 @@ e) ContactForm.vue
     - Secondary: "Contact" → RouterLink to "/contact" with .btn-outline.
 - Right column:
   - Square avatar card with overflow-hidden rounded-2xl; tilt effect on mousemove: compute tiltX/tiltY based on cursor position; transform: perspective(800px) rotateX(...) rotateY(...); transition transform 200ms.
-  - Avatar image is local: bind src to base + 'images/avatar.svg' where base = import.meta.env.BASE_URL.
+  - Avatar image is local: bind src to base + 'images/avatar.png' where base = import.meta.env.BASE_URL.
 - On mount: reveal hero columns via CSS transition (opacity/translate) toggled by a local isShown flag.
 
  b) AboutPage.vue
@@ -244,7 +244,7 @@ e) ContactForm.vue
       - Self-Defense Training (2019–2020)
     - Section “Hobbies & Interests” badges:
       - Camping & Outdoor Adventures, Socializing (Couchsurfing), Music & Movies, Algorithm Challenges, Short Fiction
-- Avatar image is local: bind src to base + 'images/about-avatar.svg' where base = import.meta.env.BASE_URL.
+- Avatar image is local: bind src to base + 'images/about-avatar.png' where base = import.meta.env.BASE_URL.
 
  c) ProjectsPage.vue
  - Heading “Projects” + subtext “Selected work and experiments.”
