@@ -1,9 +1,62 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675">
-  <rect width="1200" height="675" fill="#ecfeff"/>
-  <rect x="220" y="160" width="760" height="360" rx="20" fill="#0ea5e9"/>
-  <rect x="260" y="200" width="680" height="100" rx="12" fill="#f0f9ff"/>
-  <rect x="260" y="330" width="200" height="140" rx="12" fill="#38bdf8"/>
-  <rect x="480" y="330" width="200" height="140" rx="12" fill="#38bdf8"/>
-  <rect x="700" y="330" width="240" height="140" rx="12" fill="#0284c7"/>
+  <defs>
+    <linearGradient id="bg-sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#ecfeff"/>
+      <stop offset="100%" stop-color="#cffafe"/>
+    </linearGradient>
+    <linearGradient id="blue-accent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#0ea5e9"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="675" fill="url(#bg-sky)"/>
+
+  <!-- storefront window -->
+  <g>
+    <rect x="200" y="120" width="800" height="420" rx="28" fill="#ffffff" stroke="#bae6fd" stroke-width="4"/>
+    <!-- awning -->
+    <g>
+      <rect x="200" y="120" width="800" height="80" rx="24" fill="url(#blue-accent)"/>
+      <g>
+        <path d="M240 200 q20 30 40 0 q20 30 40 0 q20 30 40 0 q20 30 40 0 q20 30 40 0 q20 30 40 0 q20 30 40 0 q20 30 40 0 q20 30 40 0 q20 30 40 0 q20 30 40 0 q20 30 40 0 q20 30 40 0 q20 30 40 0" fill="#e0f2fe"/>
+      </g>
+    </g>
+
+    <!-- hero banner -->
+    <rect x="240" y="230" width="720" height="120" rx="16" fill="#f0f9ff" stroke="#bae6fd" stroke-width="2"/>
+
+    <!-- product tiles -->
+    <rect x="240" y="370" width="200" height="130" rx="16" fill="#e0f2fe"/>
+    <rect x="460" y="370" width="200" height="130" rx="16" fill="#e0f2fe"/>
+    <rect x="680" y="370" width="280" height="130" rx="16" fill="#bae6fd"/>
+  </g>
+
+  <!-- shopping cart -->
+  <g transform="translate(260,260)">
+    <path d="M0 0 h90 l18 72 h180 l18 -54 h-230" fill="none" stroke="#0369a1" stroke-width="8" stroke-linejoin="round"/>
+    <circle cx="90" cy="100" r="14" fill="#0ea5e9"/>
+    <circle cx="250" cy="100" r="14" fill="#0ea5e9"/>
+  </g>
+
+  <!-- credit card -->
+  <g transform="translate(820,210)">
+    <rect x="0" y="0" width="200" height="120" rx="16" fill="#0ea5e9"/>
+    <rect x="0" y="34" width="200" height="16" rx="8" fill="#0284c7" opacity="0.7"/>
+    <rect x="20" y="70" width="80" height="12" rx="6" fill="#e0f2fe"/>
+    <rect x="110" y="70" width="60" height="12" rx="6" fill="#e0f2fe" opacity="0.8"/>
+  </g>
+
+  <!-- analytics line -->
+  <polyline points="260,320 320,310 380,330 440,300 500,305 560,280 620,290 680,250 740,270 800,230 860,235 920,210" fill="none" stroke="#0284c7" stroke-width="6" stroke-linecap="round"/>
+  <g fill="#0ea5e9">
+    <circle cx="260" cy="320" r="5"/>
+    <circle cx="440" cy="300" r="5"/>
+    <circle cx="560" cy="280" r="5"/>
+    <circle cx="680" cy="250" r="5"/>
+    <circle cx="800" cy="230" r="5"/>
+    <circle cx="920" cy="210" r="5"/>
+  </g>
+
   <text x="600" y="620" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="28" fill="#0c4a6e">E-commerce</text>
 </svg>
