@@ -114,6 +114,19 @@ Replace placeholder content in the following files:
 - `npm run build` - Build for production
 - `npm run preview` - Preview production build
 - `npm run deploy` - Deploy to GitHub Pages
+- `npm run vectorize:avatar:inline` - Generate an SVG wrapper that embeds `public/images/avatar.jpg` as inline data at `public/images/avatar-inline.svg`
+
+## 🖼️ Image Vectorization (Inline SVG)
+
+To create an SVG file from your `public/images/avatar.jpg` without changing the build pipeline:
+
+1. Place your photo at `public/images/avatar.jpg`.
+2. Run:
+   ```bash
+   npm run vectorize:avatar:inline
+   ```
+3. The generated file will be saved as `public/images/avatar-inline.svg`.  
+   You can reference it like any other SVG in the app.
 
 ## 📄 License
 

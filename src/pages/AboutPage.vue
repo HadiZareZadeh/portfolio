@@ -23,7 +23,7 @@
               @mouseleave="resetTilt"
             >
               <img 
-                :src="base + 'images/about-avatar.svg'" 
+                :src="base + 'images/avatar.jpg'" 
                 alt="Hadi ZareZadeh professional photo"
                 class="w-full h-full object-cover"
                 loading="lazy"

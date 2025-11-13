@@ -8,22 +8,30 @@
     "build": "vite build",
     "preview": "vite preview",
     "predeploy": "vite build",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d dist",
+    "vectorize:avatar:inline": "node scripts/inline-avatar-svg.mjs"
   },
   "dependencies": {
+    "@heroicons/vue": "^2.1.5",
     "vue": "^3.4.21",
-    "vue-router": "^4.3.2",
-    "@heroicons/vue": "^2.1.5"
+    "vue-router": "^4.3.2"
   },
   "devDependencies": {
-    "vite": "^5.3.1",
     "@vitejs/plugin-vue": "^5.0.5",
-    "tailwindcss": "^3.4.6",
-    "postcss": "^8.4.41",
     "autoprefixer": "^10.4.20",
-    "gh-pages": "^6.3.0"
+    "gh-pages": "^6.3.0",
+    "image-size": "^2.0.2",
+    "postcss": "^8.4.41",
+    "tailwindcss": "^3.4.6",
+    "vite": "^5.3.1"
   },
-  "keywords": ["portfolio", "vue", "vite", "data-science", "machine-learning"],
+  "keywords": [
+    "portfolio",
+    "vue",
+    "vite",
+    "data-science",
+    "machine-learning"
+  ],
   "author": "Hadi ZareZadeh",
   "license": "MIT"
 }

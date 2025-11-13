@@ -46,7 +46,7 @@
               @mouseleave="resetTilt"
             >
               <img 
-                :src="base + 'images/avatar.svg'" 
+                :src="base + 'images/avatar.jpg'" 
                 alt="Hadi ZareZadeh - Computer Science Graduate focused on Data Science"
                 class="w-full h-full object-cover"
                 loading="eager"
