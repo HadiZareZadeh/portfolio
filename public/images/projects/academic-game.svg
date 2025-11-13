@@ -1,7 +1,83 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675">
-  <rect width="1200" height="675" fill="#fffbeb"/>
-  <rect x="200" y="260" width="800" height="120" rx="24" fill="#f59e0b"/>
-  <rect x="280" y="220" width="120" height="40" rx="8" fill="#fde68a"/>
-  <rect x="800" y="220" width="120" height="40" rx="8" fill="#fde68a"/>
+  <defs>
+    <linearGradient id="bg-amber" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#fff7ed"/>
+      <stop offset="100%" stop-color="#ffedd5"/>
+    </linearGradient>
+    <linearGradient id="accent-amber" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#f59e0b"/>
+      <stop offset="100%" stop-color="#b45309"/>
+    </linearGradient>
+    <linearGradient id="light-amber" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#fde68a"/>
+      <stop offset="100%" stop-color="#fcd34d"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="675" fill="url(#bg-amber)"/>
+
+  <!-- stage card -->
+  <g transform="translate(0,0)">
+    <rect x="180" y="110" width="840" height="420" rx="36" fill="#fff" stroke="#fed7aa" stroke-width="4"/>
+    <rect x="220" y="150" width="760" height="340" rx="28" fill="#fff7ed" stroke="#fed7aa" stroke-width="2"/>
+  </g>
+
+  <!-- graduation cap -->
+  <g transform="translate(0,0)">
+    <polygon points="420,210 600,160 780,210 600,260" fill="url(#accent-amber)"/>
+    <rect x="535" y="260" width="130" height="24" rx="12" fill="#fbbf24"/>
+    <circle cx="780" cy="210" r="6" fill="#7c2d12"/>
+    <path d="M780 210 C830 230, 830 270, 800 300" fill="none" stroke="#7c2d12" stroke-width="6" stroke-linecap="round"/>
+    <circle cx="800" cy="300" r="10" fill="#b45309"/>
+  </g>
+
+  <!-- controller -->
+  <g transform="translate(0,0)">
+    <rect x="390" y="300" width="420" height="150" rx="44" fill="url(#light-amber)" stroke="#f59e0b" stroke-width="6"/>
+    <!-- dpad -->
+    <g fill="#9a3412">
+      <rect x="450" y="345" width="24" height="66" rx="6"/>
+      <rect x="423" y="372" width="78" height="24" rx="6"/>
+    </g>
+    <!-- thumb sticks -->
+    <circle cx="600" cy="365" r="22" fill="#fff" stroke="#f59e0b" stroke-width="6"/>
+    <circle cx="600" cy="365" r="8" fill="#f59e0b"/>
+    <!-- buttons -->
+    <g fill="#f97316">
+      <circle cx="720" cy="350" r="12"/>
+      <circle cx="750" cy="380" r="12"/>
+      <circle cx="690" cy="380" r="12"/>
+      <circle cx="720" cy="410" r="12"/>
+    </g>
+  </g>
+
+  <!-- laurel -->
+  <g fill="none" stroke="#f59e0b" stroke-width="6" stroke-linecap="round">
+    <path d="M420 420 C360 400, 330 360, 330 320" />
+    <path d="M780 420 C840 400, 870 360, 870 320" />
+    <!-- left leaves -->
+    <g transform="translate(0,0)" stroke-width="5">
+      <path d="M365 402 l-18 -8" />
+      <path d="M350 385 l-18 -10" />
+      <path d="M338 365 l-16 -10" />
+      <path d="M332 343 l-14 -10" />
+    </g>
+    <!-- right leaves -->
+    <g transform="translate(0,0)" stroke-width="5">
+      <path d="M835 402 l18 -8" />
+      <path d="M850 385 l18 -10" />
+      <path d="M862 365 l16 -10" />
+      <path d="M868 343 l14 -10" />
+    </g>
+  </g>
+
+  <!-- sparkles -->
+  <g fill="#f59e0b">
+    <circle cx="280" cy="190" r="3"/>
+    <circle cx="920" cy="170" r="4"/>
+    <circle cx="960" cy="260" r="3"/>
+    <circle cx="240" cy="260" r="3"/>
+  </g>
+
   <text x="600" y="620" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="28" fill="#7c2d12">Academic Game</text>
 </svg>

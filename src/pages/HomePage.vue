@@ -46,7 +46,7 @@
               @mouseleave="resetTilt"
             >
               <img 
-                :src="base + 'images/avatar.jpg'" 
+                :src="base + 'images/avatar.svg'" 
                 alt="Hadi ZareZadeh - Computer Science Graduate focused on Data Science"
                 class="w-full h-full object-cover"
                 loading="eager"
@@ -67,7 +67,7 @@ const isShown = ref(false)
 
 const base = import.meta.env.BASE_URL
 
-// uses local /images/avatar.jpg
+// uses local /images/avatar.svg
 
 const handleMouseMove = (e) => {
   if (!avatarCard.value) return

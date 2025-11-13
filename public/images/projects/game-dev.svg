@@ -1,8 +1,79 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675">
-  <rect width="1200" height="675" fill="#f5f3ff"/>
-  <rect x="380" y="220" width="440" height="240" rx="36" fill="#8b5cf6"/>
-  <circle cx="500" cy="320" r="24" fill="#ddd6fe"/>
-  <circle cx="700" cy="320" r="24" fill="#ddd6fe"/>
-  <rect x="540" y="360" width="120" height="24" rx="12" fill="#c4b5fd"/>
+  <defs>
+    <linearGradient id="bg-violet" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f5f3ff"/>
+      <stop offset="100%" stop-color="#ede9fe"/>
+    </linearGradient>
+    <linearGradient id="violet-accent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#a78bfa"/>
+      <stop offset="100%" stop-color="#8b5cf6"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="675" fill="url(#bg-violet)"/>
+
+  <!-- controller -->
+  <g>
+    <rect x="360" y="260" width="480" height="180" rx="56" fill="url(#violet-accent)"/>
+    <!-- grips highlight -->
+    <path d="M360 340 q40 -40 80 0" fill="none" stroke="#c4b5fd" stroke-width="8" stroke-linecap="round"/>
+    <path d="M840 340 q-40 -40 -80 0" fill="none" stroke="#c4b5fd" stroke-width="8" stroke-linecap="round"/>
+    <!-- d-pad -->
+    <g fill="#ede9fe">
+      <rect x="420" y="315" width="26" height="74" rx="8"/>
+      <rect x="391" y="345" width="84" height="26" rx="8"/>
+    </g>
+    <!-- sticks -->
+    <g>
+      <circle cx="560" cy="330" r="24" fill="#ede9fe"/>
+      <circle cx="560" cy="330" r="10" fill="#8b5cf6"/>
+      <circle cx="740" cy="330" r="24" fill="#ede9fe"/>
+      <circle cx="740" cy="330" r="10" fill="#8b5cf6"/>
+    </g>
+    <!-- face buttons -->
+    <g fill="#f5f3ff">
+      <circle cx="790" cy="310" r="12"/>
+      <circle cx="820" cy="340" r="12"/>
+      <circle cx="760" cy="340" r="12"/>
+      <circle cx="790" cy="370" r="12"/>
+    </g>
+  </g>
+
+  <!-- gear (dev) -->
+  <g fill="none" stroke="#7c3aed" stroke-width="8" transform="translate(0,0)">
+    <circle cx="300" cy="220" r="34"/>
+    <g stroke-linecap="round">
+      <path d="M300 170 v20"/>
+      <path d="M300 250 v20"/>
+      <path d="M250 220 h20"/>
+      <path d="M330 220 h20"/>
+      <path d="M270 190 l14 14"/>
+      <path d="M316 236 l14 14"/>
+      <path d="M330 190 l-14 14"/>
+      <path d="M284 236 l-14 14"/>
+    </g>
+  </g>
+
+  <!-- code window -->
+  <g>
+    <rect x="820" y="150" width="200" height="150" rx="12" fill="#f5f3ff" stroke="#c4b5fd" stroke-width="3"/>
+    <g>
+      <circle cx="840" cy="170" r="6" fill="#ef4444"/>
+      <circle cx="860" cy="170" r="6" fill="#f59e0b"/>
+      <circle cx="880" cy="170" r="6" fill="#22c55e"/>
+    </g>
+    <rect x="840" y="190" width="160" height="8" rx="4" fill="#ddd6fe"/>
+    <rect x="840" y="208" width="120" height="8" rx="4" fill="#c4b5fd"/>
+    <rect x="840" y="226" width="100" height="8" rx="4" fill="#ddd6fe"/>
+    <rect x="840" y="244" width="140" height="8" rx="4" fill="#c4b5fd"/>
+  </g>
+
+  <!-- sparkles -->
+  <g fill="#a78bfa">
+    <circle cx="240" cy="420" r="3"/>
+    <circle cx="960" cy="420" r="3"/>
+    <circle cx="920" cy="120" r="3"/>
+  </g>
+
   <text x="600" y="620" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="28" fill="#4c1d95">Game Dev</text>
 </svg>

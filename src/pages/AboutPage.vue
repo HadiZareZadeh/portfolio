@@ -23,7 +23,7 @@
               @mouseleave="resetTilt"
             >
               <img 
-                :src="base + 'images/avatar.jpg'" 
+                :src="base + 'images/avatar.svg'" 
                 alt="Hadi ZareZadeh professional photo"
                 class="w-full h-full object-cover"
                 loading="lazy"
@@ -87,6 +87,37 @@
             </p>
           </div>
           
+          <!-- Experience Section -->
+          <div v-reveal class="card p-6">
+            <h2 class="text-2xl font-semibold text-gray-900 mb-6">Experience</h2>
+            <div class="space-y-4">
+              <div class="border-l-2 border-brand-600 pl-4">
+                <h3 class="font-medium text-gray-900">Python Automation Developer — Plato Platform</h3>
+                <p class="text-gray-600">2025 · Built emulator-driven automation with logging, monitoring, and scaling practices.</p>
+              </div>
+              <div class="border-l-2 border-brand-600 pl-4">
+                <h3 class="font-medium text-gray-900">Mobile & Desktop App Developer — Lyndakade</h3>
+                <p class="text-gray-600">2024 · Created Flutter applications targeting mobile and desktop platforms.</p>
+              </div>
+              <div class="border-l-2 border-brand-600 pl-4">
+                <h3 class="font-medium text-gray-900">Full-stack Developer — Lyndakade</h3>
+                <p class="text-gray-600">2023 – 2024 · Shipped e-commerce systems (Laravel + Vue 3) and maintained data-driven workflows.</p>
+              </div>
+              <div class="border-l-2 border-brand-600 pl-4">
+                <h3 class="font-medium text-gray-900">Game Developer — Legend Company</h3>
+                <p class="text-gray-600">2018 – 2020 · Built student-led game prototypes and gameplay systems as part of early career exploration.</p>
+              </div>
+              <div class="border-l-2 border-brand-600 pl-4">
+                <h3 class="font-medium text-gray-900">Teaching Assistant — Kashmar Higher Education Institute</h3>
+                <p class="text-gray-600">2017 – 2020 · Supported C and C++ programming courses and algorithm mentoring.</p>
+              </div>
+              <div class="border-l-2 border-brand-600 pl-4">
+                <h3 class="font-medium text-gray-900">Head of Education — Scientific Association</h3>
+                <p class="text-gray-600">2017 – 2020 · Coordinated academic initiatives and peer-led training.</p>
+              </div>
+            </div>
+          </div>
+          
           <!-- Skills Section -->
           <div v-reveal class="card p-6">
             <h2 class="text-2xl font-semibold text-gray-900 mb-6">Skills</h2>
@@ -142,34 +173,18 @@
               </div>
             </div>
           </div>
-          
-          <!-- Experience Section -->
+
+          <!-- Education Section -->
           <div v-reveal class="card p-6">
-            <h2 class="text-2xl font-semibold text-gray-900 mb-6">Experience</h2>
-            <div class="space-y-4">
-              <div class="border-l-2 border-brand-600 pl-4">
-                <h3 class="font-medium text-gray-900">Python Automation Developer — Plato Platform</h3>
-                <p class="text-gray-600">2025 · Built emulator-driven automation with logging, monitoring, and scaling practices.</p>
+            <h2 class="text-2xl font-semibold text-gray-900 mb-4">Education</h2>
+            <div class="space-y-3">
+              <div>
+                <h3 class="font-medium text-gray-900">B.Sc. Computer Science</h3>
+                <p class="text-gray-600">Kashmar Higher Education Institute (2016–2020)</p>
               </div>
-              <div class="border-l-2 border-brand-600 pl-4">
-                <h3 class="font-medium text-gray-900">Mobile & Desktop App Developer — Lyndakade</h3>
-                <p class="text-gray-600">2024 · Created Flutter applications targeting mobile and desktop platforms.</p>
-              </div>
-              <div class="border-l-2 border-brand-600 pl-4">
-                <h3 class="font-medium text-gray-900">Full-stack Developer — Lyndakade</h3>
-                <p class="text-gray-600">2023 – 2024 · Shipped e-commerce systems (Laravel + Vue 3) and maintained data-driven workflows.</p>
-              </div>
-              <div class="border-l-2 border-brand-600 pl-4">
-                <h3 class="font-medium text-gray-900">Game Developer — Legend Company</h3>
-                <p class="text-gray-600">2018 – 2020 · Built student-led game prototypes and gameplay systems as part of early career exploration.</p>
-              </div>
-              <div class="border-l-2 border-brand-600 pl-4">
-                <h3 class="font-medium text-gray-900">Teaching Assistant — Kashmar Higher Education Institute</h3>
-                <p class="text-gray-600">2017 – 2020 · Supported C and C++ programming courses and algorithm mentoring.</p>
-              </div>
-              <div class="border-l-2 border-brand-600 pl-4">
-                <h3 class="font-medium text-gray-900">Head of Education — Scientific Association</h3>
-                <p class="text-gray-600">2017 – 2020 · Coordinated academic initiatives and peer-led training.</p>
+              <div>
+                <h3 class="font-medium text-gray-900">High School Diploma in Physics & Mathematics</h3>
+                <p class="text-gray-600">Dr. Shariati School (2014)</p>
               </div>
             </div>
           </div>
@@ -219,21 +234,6 @@
                     <span class="text-gray-600 font-semibold">{{ course.score }}</span>
                   </div>
                 </div>
-              </div>
-            </div>
-          </div>
-          
-          <!-- Education Section -->
-          <div v-reveal class="card p-6">
-            <h2 class="text-2xl font-semibold text-gray-900 mb-4">Education</h2>
-            <div class="space-y-3">
-              <div>
-                <h3 class="font-medium text-gray-900">B.Sc. Computer Science</h3>
-                <p class="text-gray-600">Kashmar Higher Education Institute (2016–2020)</p>
-              </div>
-              <div>
-                <h3 class="font-medium text-gray-900">High School Diploma in Physics & Mathematics</h3>
-                <p class="text-gray-600">Dr. Shariati School (2014)</p>
               </div>
             </div>
           </div>
@@ -318,7 +318,7 @@ const courseGroups = [
   }
 ]
 
-// uses local /images/about-avatar.jpg
+// uses local /images/avatar.svg
 
 const handleMouseMove = (e) => {
   if (!avatarCard.value) return
