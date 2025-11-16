@@ -1,137 +1,37 @@
-# Hadi ZareZadeh — Portfolio (Vue 3 + Vite + Tailwind)
+# Hadi ZareZadeh — Portfolio
 
-A modern, responsive portfolio website built with Vue 3, Vite, and Tailwind CSS. Showcasing the work and skills of Hadi ZareZadeh, a Data Science & AI-focused developer.
+A modern, responsive portfolio showcasing my projects, skills, and experience with a focus on Data Science, AI, and full‑stack development.
 
-## 🚀 Quick Start
+## Visit the website
 
-1. **Install dependencies:**
-   ```bash
-   npm install
-   ```
+- Live site: [Hadi ZareZadeh — Portfolio](https://HadiZareZadeh.github.io/portfolio/)
 
-2. **Start development server:**
-   ```bash
-   npm run dev
-   ```
+## What you'll find
 
-3. **Open your browser:**
-   Navigate to `http://localhost:5173`
+- Project highlights with clean summaries and visuals
+- Skills across data science, machine learning, and software engineering
+- Work experience and education
+- Contact information for collaboration and opportunities
 
-## 🛠️ Tech Stack
+## Quick navigation
 
-- **Vue 3** - Progressive JavaScript framework with Composition API
-- **Vite** - Fast build tool and development server
-- **Vue Router** - Official router for Vue.js
-- **Tailwind CSS** - Utility-first CSS framework
-- **@heroicons/vue** - Beautiful hand-crafted SVG icons
-- **ESM** - Modern JavaScript modules
+- Home: [`/`](https://HadiZareZadeh.github.io/portfolio/)
+- About: [`/about`](https://HadiZareZadeh.github.io/portfolio/about)
+- Projects: [`/projects`](https://HadiZareZadeh.github.io/portfolio/projects)
+- Contact: [`/contact`](https://HadiZareZadeh.github.io/portfolio/contact)
 
-## 📁 Project Structure
+## Tech at a glance
 
-```
-portfolio/
-├── public/
-│   └── 404.html              # GitHub Pages SPA redirect
-├── src/
-│   ├── assets/
-│   │   └── tailwind.css      # Global styles and utilities
-│   ├── components/
-│   │   ├── SiteNavbar.vue    # Navigation component
-│   │   ├── SiteFooter.vue    # Footer with scroll-to-top
-│   │   ├── ProjectCard.vue   # Project showcase card
-│   │   ├── SkillBadge.vue    # Skill tag component
-│   │   └── ContactForm.vue   # Contact form component
-│   ├── pages/
-│   │   ├── HomePage.vue      # Landing page
-│   │   ├── AboutPage.vue     # About and skills page
-│   │   ├── ProjectsPage.vue  # Portfolio showcase
-│   │   └── ContactPage.vue   # Contact information
-│   ├── router/
-│   │   └── index.js          # Vue Router configuration
-│   ├── utils/
-│   │   └── imageProxy.js     # Image optimization utility
-│   ├── App.vue               # Main app component
-│   └── main.js               # App entry point
-├── index.html                # HTML template
-├── package.json              # Dependencies and scripts
-├── vite.config.js            # Vite configuration
-├── tailwind.config.js        # Tailwind configuration
-└── postcss.config.js         # PostCSS configuration
-```
+- Vue 3 + Vite
+- Tailwind CSS
+- Vue Router
 
-## 🎨 Features
+## Contact
 
-- **Responsive Design** - Mobile-first approach with Tailwind CSS
-- **Smooth Animations** - Custom CSS animations and transitions
-- **Image Optimization** - Automatic image proxying via wsrv.nl
-- **SEO Optimized** - Meta tags and semantic HTML
-- **Accessibility** - ARIA labels and keyboard navigation
-- **Performance** - Lazy loading and code splitting
-- **GitHub Pages Ready** - Configured for easy deployment
+- Email: [HadiZareZadeh00@gmail.com](mailto:HadiZareZadeh00@gmail.com)
+- LinkedIn: [hadi-zare-zadeh-686113182](https://www.linkedin.com/in/hadi-zare-zadeh-686113182)
+- GitHub: [@HadiZareZadeh](https://github.com/HadiZareZadeh)
 
-## 🚀 Deployment
+## License
 
-### GitHub Pages
-
-1. **Initialize Git repository:**
-   ```bash
-   git init
-   git add .
-   git commit -m "chore: init portfolio with Vue 3 + Vite + Tailwind"
-   ```
-
-2. **Set up remote repository:**
-   ```bash
-   git branch -M main
-   git remote add origin https://github.com/HadiZareZadeh/portfolio.git
-   git push -u origin main
-   ```
-
-3. **Deploy to GitHub Pages:**
-   ```bash
-   npm run deploy
-   ```
-
-4. **Enable GitHub Pages:**
-   - Go to repository Settings → Pages
-   - Select "Deploy from a branch"
-   - Choose "gh-pages" branch and "/ (root)" folder
-   - Your site will be available at: `https://HadiZareZadeh.github.io/portfolio/`
-
-## 📝 Customization
-
-Replace placeholder content in the following files:
-
-- `src/pages/HomePage.vue` - Hero section and introduction
-- `src/pages/AboutPage.vue` - Personal information and skills
-- `src/pages/ProjectsPage.vue` - Project showcase
-- `src/pages/ContactPage.vue` - Contact information
-- `src/components/` - Component-specific content
-
-## 🔧 Available Scripts
-
-- `npm run dev` - Start development server
-- `npm run build` - Build for production
-- `npm run preview` - Preview production build
-- `npm run deploy` - Deploy to GitHub Pages
-- `npm run vectorize:avatar:inline` - Generate an SVG wrapper that embeds `public/images/avatar.jpg` as inline data at `public/images/avatar-inline.svg`
-
-## 🖼️ Image Vectorization (Inline SVG)
-
-To create an SVG file from your `public/images/avatar.jpg` without changing the build pipeline:
-
-1. Place your photo at `public/images/avatar.jpg`.
-2. Run:
-   ```bash
-   npm run vectorize:avatar:inline
-   ```
-3. The generated file will be saved as `public/images/avatar-inline.svg`.  
-   You can reference it like any other SVG in the app.
-
-## 📄 License
-
-MIT License - feel free to use this template for your own portfolio!
-
----
-
-**Note:** This is a demo portfolio. Replace placeholder images and content with your actual information before deploying.
+MIT — you’re welcome to browse the code and take inspiration.
