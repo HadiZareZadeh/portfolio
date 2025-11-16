@@ -65,7 +65,7 @@
               </div>
               <div class="flex items-center space-x-3">
                 <span class="text-gray-500">🔗</span>
-                <a href="https://www.linkedin.com/in/hadi-zare-zadeh-686113182" target="_blank" rel="noopener noreferrer" class="text-brand-600 hover:text-brand-700">
+                <a href="https://www.linkedin.com/in/hadi-zare-zadeh" target="_blank" rel="noopener noreferrer" class="text-brand-600 hover:text-brand-700">
                   LinkedIn
                 </a>
               </div>
@@ -83,7 +83,7 @@
           <div v-reveal class="card p-6">
             <h2 class="text-2xl font-semibold text-gray-900 mb-4">About Me</h2>
             <p class="text-gray-700 leading-relaxed">
-              I recently completed my B.Sc. in Computer Science (Kashmar Higher Education Institute, 2020) and I am building a graduate-school-ready foundation in data science. Through course projects, peer collaborations, and self-guided labs, I focus on understanding core concepts like data wrangling, model evaluation, and responsible experimentation. I am now seeking master's programs and research groups where I can grow as a student researcher and contribute to evidence-based decisions.
+              Computer Science graduate with a solid theoretical background and a growing focus on Data Science and AI. I’ve completed structured online coursework in data analysis and machine learning fundamentals and previously assisted in programming courses at the university level. I’m seeking a Master’s program to develop research abilities and advance toward professional specialization in intelligent systems.
             </p>
           </div>
           
@@ -245,6 +245,21 @@
               <div class="text-gray-700">• Thesis: Lyndakade (2020)</div>
               <div class="text-gray-700">• Evolutionary Algorithms (2019)</div>
               <div class="text-gray-700">• Genetic Algorithm (2019)</div>
+            </div>
+          </div>
+
+          <!-- Publications Section -->
+          <div v-reveal class="card p-6">
+            <h2 class="text-2xl font-semibold text-gray-900 mb-4">Publications</h2>
+            <div class="space-y-2">
+              <a 
+                href="https://ieeexplore.ieee.org/document/8712031" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                class="text-brand-600 hover:text-brand-700 underline"
+              >
+                Developed a driving-based game using realistic maps for the city of Torshiz
+              </a>
             </div>
           </div>
           

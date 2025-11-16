@@ -22,7 +22,7 @@
             <!-- Contact Links -->
             <div class="space-y-4">
               <a 
-                href="https://www.linkedin.com/in/hadi-zare-zadeh-686113182" 
+                href="https://www.linkedin.com/in/hadi-zare-zadeh" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 class="flex items-center space-x-4 p-4 rounded-lg border border-gray-200 hover:border-brand-300 hover:bg-brand-50 transition-all duration-200 group"

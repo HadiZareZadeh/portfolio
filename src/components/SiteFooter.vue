@@ -22,7 +22,7 @@
           </a>
           
           <a 
-            href="https://www.linkedin.com/in/hadi-zare-zadeh-686113182" 
+            href="https://www.linkedin.com/in/hadi-zare-zadeh" 
             target="_blank" 
             rel="noopener noreferrer"
             class="text-gray-600 hover:text-gray-900 transition-colors duration-200"

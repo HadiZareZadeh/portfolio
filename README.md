@@ -29,7 +29,7 @@ A modern, responsive portfolio showcasing my projects, skills, and experience wi
 ## Contact
 
 - Email: [HadiZareZadeh00@gmail.com](mailto:HadiZareZadeh00@gmail.com)
-- LinkedIn: [hadi-zare-zadeh-686113182](https://www.linkedin.com/in/hadi-zare-zadeh-686113182)
+- LinkedIn: [hadi-zare-zadeh](https://www.linkedin.com/in/hadi-zare-zadeh)
 - GitHub: [@HadiZareZadeh](https://github.com/HadiZareZadeh)
 
 ## License
