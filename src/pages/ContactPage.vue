@@ -7,7 +7,7 @@
           Get in touch
         </h1>
         <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-          Exploring graduate programs, assistantships, or collaborative data projects? I would love to connect.
+          Motivated by long-term research-driven challenges and seeking opportunities to develop advanced AI systems. Let's connect!
         </p>
       </div>
       
@@ -16,7 +16,7 @@
           <div v-reveal class="card p-8">
             <h2 class="text-2xl font-semibold text-gray-900 mb-6">Let's Connect</h2>
             <p class="text-gray-700 mb-8 leading-relaxed">
-              I'm a recent computer science graduate preparing for a data science master's program and seeking opportunities to contribute to research groups, labs, and collaborative projects. If you're looking for a motivated learner to support data exploration, model prototyping, or teaching efforts, please reach out.
+              Computer Science graduate with strong foundations in algorithms, optimization, and software engineering, now transitioning toward Machine Learning and AI research. Passionate about deep learning, computer vision, NLP, and reinforcement learning. Motivated by long-term research-driven challenges and seeking opportunities to develop advanced AI systems while contributing to innovative and impactful projects.
             </p>
             
             <!-- Contact Links -->

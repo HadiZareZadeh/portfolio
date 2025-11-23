@@ -11,13 +11,13 @@
                 Hadi ZareZadeh
               </h1>
               <p class="text-2xl lg:text-3xl text-gray-600 mt-4">
-                Computer Science Graduate & Aspiring Data Science Master's Student
+                Computer Science Graduate & Aspiring ML/AI Researcher
               </p>
             </div>
             
             <div v-reveal class="space-y-6">
               <p class="text-lg text-gray-700 leading-relaxed">
-                Recent computer science graduate building a strong foundation in data science through coursework projects, collaborative research labs, and mentorship. I enjoy using Python to explore datasets, prototype models, and support professors and research groups tackling real-world questions.
+                Computer Science graduate with strong foundations in algorithms, optimization, and software engineering, now transitioning toward Machine Learning and AI research. Passionate about deep learning, computer vision, NLP, and reinforcement learning, with a growing portfolio of Python-based projects involving automation, data processing, and algorithmic problem-solving.
               </p>
               
               <div class="flex flex-col sm:flex-row gap-4">
@@ -47,7 +47,7 @@
             >
               <img 
                 :src="base + 'images/avatar.png'" 
-                alt="Hadi ZareZadeh - Computer Science Graduate focused on Data Science"
+                alt="Hadi ZareZadeh - Computer Science Graduate transitioning toward ML/AI Research"
                 class="w-full h-full object-cover"
                 loading="eager"
               />

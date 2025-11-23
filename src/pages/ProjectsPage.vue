@@ -7,7 +7,7 @@
           Projects
         </h1>
         <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-          Coursework, internships, and self-directed projects that prepared me for graduate study in data science.
+          A collection of projects showcasing my work in automation, mobile development, full-stack applications, and game development.
         </p>
       </div>
       
@@ -16,8 +16,8 @@
         
         <div v-reveal>
           <ProjectCard
-            title="Automation Platform for Plato"
-            description="Scalable Android emulator automation with logging, monitoring, and recovery workflows."
+            title="Plato Mobile Game Automation System"
+            description="Built an automation framework for mobile game interactions using Appium and Android emulators, supporting 50+ game types with modular strategy-based architecture. Implemented multi-instance parallel processing and resource management system."
             :image="base + 'images/projects/python-bot.svg'"
             github=""
             demo=""
@@ -26,8 +26,28 @@
         
         <div v-reveal>
           <ProjectCard
-            title="Lyndakade E-commerce Platform"
-            description="Laravel + Vue 3 stack powering marketplace operations with analytics-ready data flows."
+            title="Telegram Automation Bot for Hamster Kombat & Web3 Games"
+            description="Developed automation bot for Hamster Kombat, TapSwap, Notcoin, Gemz, Dotcoin, and W-coin. Implemented using Python, Telegram Bot API + Web3/TON blockchain integrations with multi-account management and concurrency."
+            :image="base + 'images/projects/python-bot.svg'"
+            github=""
+            demo=""
+          />
+        </div>
+        
+        <div v-reveal>
+          <ProjectCard
+            title="Lyndakade Mobile & Desktop App"
+            description="Delivered a production-ready Flutter app with custom video player, background downloads, end-to-end payments (Zarinpal/Zibal), search, notifications, and in-app chat. Organized code into reusable widgets, screens, controllers, and services."
+            :image="base + 'images/projects/flutter-apps.svg'"
+            github=""
+            demo=""
+          />
+        </div>
+        
+        <div v-reveal>
+          <ProjectCard
+            title="Lyndakade E-learning Platform"
+            description="Built a full-stack e-learning app using Laravel + Inertia.js Vue 3. Implemented course management, chapters, videos, comments, user progress tracking, Vue 3 SSR, fast faceted search using Meilisearch, authentication, and payment flows."
             :image="base + 'images/projects/ecommerce.svg'"
             github=""
             demo=""
@@ -36,8 +56,18 @@
         
         <div v-reveal>
           <ProjectCard
-            title="Evolutionary Algorithm Research"
-            description="Undergraduate research projects implementing evolutionary and genetic optimization techniques with comparative analysis."
+            title="3D Car Racing Game for Educational Research"
+            description="Developed 3D car racing game for desktop platforms using Unity. Worked as a Game Developer on a research-led game under Ms. Dolkhani, contributing to an IEEE paper (ID 8712031)."
+            :image="base + 'images/projects/game-dev.svg'"
+            github=""
+            demo=""
+          />
+        </div>
+        
+        <div v-reveal>
+          <ProjectCard
+            title="Oxford Learning - Android Vocabulary App"
+            description="Built an Android application to browse and study IT vocabulary. Integrated a collaboratively compiled lexicon based on the Oxford English for Information Technology textbook."
             :image="base + 'images/projects/academic-game.svg'"
             github=""
             demo=""
@@ -52,7 +82,7 @@
             Interested in collaborating?
           </h2>
           <p class="text-gray-600 mb-6">
-            I'm eager to connect with research labs, graduate programs, and mentors who explore data-driven questions. Let's learn and build together!
+            Motivated by long-term research-driven challenges and seeking opportunities to develop advanced AI systems while contributing to innovative and impactful projects. Let's connect!
           </p>
           <RouterLink to="/contact" class="btn btn-primary">
             Get In Touch
