@@ -28,6 +28,13 @@
             About
           </RouterLink>
           <RouterLink 
+            to="/story" 
+            class="nav-link"
+            exact-active-class="active"
+          >
+            My Story
+          </RouterLink>
+          <RouterLink 
             to="/projects" 
             class="nav-link"
             exact-active-class="active"
@@ -75,6 +82,14 @@
             exact-active-class="active"
           >
             About
+          </RouterLink>
+          <RouterLink 
+            to="/story" 
+            class="mobile-link"
+            @click="closeMobileMenu"
+            exact-active-class="active"
+          >
+            My Story
           </RouterLink>
           <RouterLink 
             to="/projects" 

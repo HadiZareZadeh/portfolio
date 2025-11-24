@@ -4,6 +4,7 @@ const HomePage = () => import('../pages/HomePage.vue')
 const AboutPage = () => import('../pages/AboutPage.vue')
 const ProjectsPage = () => import('../pages/ProjectsPage.vue')
 const ContactPage = () => import('../pages/ContactPage.vue')
+const StoryPage = () => import('../pages/StoryPage.vue')
 
 const routes = [
   {
@@ -25,6 +26,11 @@ const routes = [
     path: '/contact',
     name: 'Contact',
     component: ContactPage
+  },
+  {
+    path: '/story',
+    name: 'Story',
+    component: StoryPage
   }
 ]
 
