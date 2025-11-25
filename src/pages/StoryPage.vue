@@ -23,7 +23,7 @@
               I started learning programming when I was 9 years old by secretly reading my sister's books on the Visual Basic programming language. I built a simple calculator with four basic operators (addition, subtraction, multiplication, and division) using Visual Basic as my first project. After just 6 months, I realized that the best way to learn was to study English and read English books, since it was too difficult to find solutions in my native language (Persian) back then. That was when I first truly discovered programming, and I haven't loved anything more ever since.
             </p>
             <p>
-              My brothers, my sisters, and I were all using only one computer, so I had no more than half an hour per day. That meant I had to make the most of it. Two years later, at the age of 11, I managed to convince my family to let me take English classes. Just a few months after that, my dear cousin Hamid introduced me to Visual Studio for building desktop applications using C#. Those were important moments in my life, because I had someone as my mentor. He's 6 years older than me, and I used to use his books and writings to learn.
+              My siblings, and I were all using only one computer, so I had no more than half an hour per day. That meant I had to make the most of it. Two years later, at the age of 11, I managed to convince my family to let me take English classes. Just a few months after that, my dear cousin Hamid introduced me to Visual Studio for building desktop applications using C#. Those were important moments in my life, because I had someone as my mentor. He's 6 years older than me, and I used to use his books and writings to learn.
             </p>
           </div>
         </section>

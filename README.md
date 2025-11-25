@@ -8,23 +8,26 @@ A modern, responsive portfolio showcasing my projects, skills, and experience wi
 
 ## What you'll find
 
-- Project highlights with clean summaries and visuals
-- Skills across data science, machine learning, and software engineering
-- Work experience and education
-- Contact information for collaboration and opportunities
+- **Home**: Hero section with introduction and call-to-action
+- **About**: Comprehensive profile including education, experience, skills, publications, and academic achievements
+- **Projects**: Showcase of automation systems, mobile apps, e-learning platforms, and game development projects
+- **Story**: Personal journey through my passion for programming and computer science
+- **Contact**: Connect via LinkedIn, GitHub, or email
 
 ## Quick navigation
 
 - Home: [`/`](https://HadiZareZadeh.github.io/portfolio/)
 - About: [`/about`](https://HadiZareZadeh.github.io/portfolio/about)
 - Projects: [`/projects`](https://HadiZareZadeh.github.io/portfolio/projects)
+- Story: [`/story`](https://HadiZareZadeh.github.io/portfolio/story)
 - Contact: [`/contact`](https://HadiZareZadeh.github.io/portfolio/contact)
 
 ## Tech at a glance
 
-- Vue 3 + Vite
-- Tailwind CSS
-- Vue Router
+- **Framework**: Vue 3 + Vite
+- **Styling**: Tailwind CSS
+- **Routing**: Vue Router
+- **Icons**: @heroicons/vue
 
 ## Contact
 
