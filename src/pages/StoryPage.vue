@@ -11,6 +11,13 @@
         </p>
       </div>
 
+      <!-- Version Note -->
+      <div class="mb-8 p-4 bg-blue-50 border-l-4 border-blue-500 rounded" v-reveal>
+        <p class="text-sm text-blue-800 italic">
+          <strong>Note:</strong> This is the first version of my story and will be refined soon.
+        </p>
+      </div>
+
       <!-- Story Content -->
       <article>
         <!-- Chapter 1 -->
@@ -166,6 +173,13 @@
               <li>I was quiet everywhere except in computer-related classes.</li>
             </ol>
           </div>
+        </section>
+
+        <!-- To Be Continued -->
+        <section v-reveal class="mb-12 mt-16 p-6 bg-gray-50 border-l-4 border-gray-400 rounded">
+          <p class="text-gray-700 leading-relaxed italic">
+            There's more to include in the last 5 years from 2020 (my graduation year from KHEI) until right now...
+          </p>
         </section>
       </article>
     </div>
