@@ -1,0 +1,90 @@
+# My Story
+
+*A journey through my passion for programming and computer science*
+
+---
+
+> **Note:** This is the first version of my story and will be refined soon.
+
+---
+
+## Chapter 1 — The First Discovery (Age 9–11, 2005–2007)
+
+I started learning programming when I was 9 years old by secretly reading my sister's books on the Visual Basic programming language. I built a simple calculator with four basic operators (addition, subtraction, multiplication, and division) using Visual Basic as my first project. After just 6 months, I realized that the best way to learn was to study English and read English books, since it was too difficult to find solutions in my native language (Persian) back then. That was when I first truly discovered programming, and I haven't loved anything more ever since.
+
+My siblings, and I were all using only one computer, so I had no more than half an hour per day. That meant I had to make the most of it. Two years later, at the age of 11, I managed to convince my family to let me take English classes. Just a few months after that, my dear cousin Hamid introduced me to Visual Studio for building desktop applications using C#. Those were important moments in my life, because I had someone as my mentor. He's 6 years older than me, and I used to use his books and writings to learn.
+
+## Chapter 2 — Testing New Paths (Age 13–15, 2009–2011)
+
+At the age of 13, I saw a book called "Networking Plus" on my brother's shelves. I was amazed when I found out that we could connect computers and share data between them. It took 2 years of my life to come to the conclusion that I was not that interested in networking, not as much as I was in programming.
+
+By the age of 15, I was unable to convince my family to let me choose the computer major in high school, so I took mathematics and physics in order to change to computers at university. I was not very good at mathematics, but I had hope, and no one could take that from me.
+
+## Chapter 3 — A Detour in University (Age 18–20, 2014–2016)
+
+By the age of 18, in 2014, I was forced to study the Industrial Management major at Payam Noor University of Bandar-e Lengeh. I hadn't passed any technical courses in four semesters. I was actually on academic probation for all semesters, but still the head of the university wanted me to stay because I won two medals in Karate competitions between universities in those two years (2014–2015).
+
+In the second year at that university, I finally managed to convince my family to let me study computers — the one thing I had loved the most. It was my moment to choose the best major in computers, so after a lot of research, I chose Computer Science. The reason I chose this one was that its alternative name is the "mother of computer," meaning I could basically study any field for my Master's degree later.
+
+After choosing Computer Science, I had to choose which university to study at. I only had one goal: the university had to be so far away from my hometown that I would have to come back only two times a year. So I picked all universities in the north of my country — at least 1000 km away.
+
+At the age of 20, in 2016, I started studying Computer Science at Kashmar Higher Education Institution (KHEI).
+
+## Chapter 4 — Stepping Into a New World (First–Third Semester, 2016–2017)
+
+I had planned what courses I would take for each semester before even setting foot there. The goal was simple: get the most out of my instructors, and I did my best to do so. I started making connections with them by being a teacher's assistant.
+
+At first, I wasn't aware that the role of "teacher assistant" even existed. I thought it would be illegal to teach my own classmates, so I quietly started helping my classmates in the Fundamentals of Programming course after three weeks in my first semester. Later that semester, I found out that our instructor, Dr. Saeide Yousefzadeh, knew about it and chose to stay quiet. I became her TA for 2 years (2017–2019).
+
+The very first year I was at KHEI, my communication skills were terrible. Most of the time, it was very hard for me to step up and make the first contact — especially with females, because of my childhood and the way I grew up. I knew I had to make friends in order to improve in that area. So I continued being a TA for the Fundamentals of Programming course, which I was good at.
+
+It was in my third semester that I met Mohammad Mousavi Nezhad. He was a year above me at university, and he not only taught me many things, but also introduced me to a whole new group of friends.
+
+In my third semester, I also attended Ms. Elham Dolkhani's Operating Systems Lab class as a guest, where she taught scheduling and resource management. I answered her questions so quickly that I was almost thrown out of the class. That was the first time I met Ms. Dolkhani, and she offered me the chance to help improve a paper she had published the year before (IEEE, paper ID: 7881902). We worked on it for almost a year, and although it wasn't successful, it opened a whole new world of problem-solving for me.
+
+It was then that I realized how much I still had to learn.
+
+## Chapter 5 — Building Confidence (Second–Fourth Semester, 2017–2018)
+
+In my second semester, I had the pleasure of having class with one of the best instructors I have ever seen in my life: Ms. Zeynab Asoodeh. I took the Computer Workshop course with her. In our first session, she mentioned that we might have a final project, such as a Tic-Tac-Toe or Snake game.
+
+My curiosity got the better of me, so I started researching and building the game right after that session. I was able to complete an abstract version of the Snake game in just one week.
+
+In the next session, she said:
+
+> "You won't have to be in our class anymore since you already know everything I'm about to teach you."
+
+In my fourth semester, I joined Ms. Dolkhani's development team to build a 3D car racing game based on Kashmar's map using Unity. My role was Game Developer, and I was responsible for implementing the game logic and game flow. We were told to prepare a preview version of the game in order to receive equipment and high-end computers from the university.
+
+No matter how hard we tried, they did not keep their promise, because they didn't know how to make a profit from it. That's why we couldn't finish the game. However, the preview version was strong enough to publish a conference paper on IEEE (paper ID: 8712031), and still, they were not satisfied.
+
+## Chapter 6 — Finding My True Interest (Fifth–Sixth Semester, 2018–2019)
+
+In my fifth semester, I had the absolute pleasure of taking the Database Systems course with Dr. Atefeh Khazaei. She not only introduced me to a field that perfectly matched my interests, but also taught in the best way possible. What I loved most about her was that her PowerPoint slides were all in English. That was the moment I realized we shared the same belief: computers cannot truly be taught in Persian.
+
+During that semester, I was also nominated as the Head of Education of the Science Association.
+
+In my sixth semester, I took the Data Mining course with Dr. Khazaei. That was when I was introduced to the field of Data Science — and she became my role model.
+
+She gave us a two-week project from the Kaggle website that we had to complete in teams of two. That's when I had a teammate named Milad Mahaki. He was just as curious as I was, but smarter.
+
+I was very lucky to have both Database Systems and Data Mining with her.
+
+I also had a Research Methods and Presentation course with Dr. Yousefzadeh, where I presented Genetic Algorithms in a way that she described as:
+
+> "Excellent, but with too many details for a bachelor's-level presentation."
+
+## Chapter 7 — Later Semesters and Reputation (Seventh Semester, 2019)
+
+In my seventh semester, I had an Artificial Intelligence course with the head of the Computer Department, Dr. Faezeh Ramezani. I was very excited to have the course with her, but she surprised all of us by changing the whole concept of the class to something that had never been taught in our universities before — and was never used again in the years after.
+
+There were a few things I was known for at KHEI:
+
+1. I always attended other classes in addition to my own (only computer-related courses).
+2. I usually helped other students learn and solve their exercises.
+3. I was quiet everywhere except in computer-related classes.
+
+---
+
+*There's more to include in the last 5 years from 2020 (my graduation year from KHEI) until right now...*
+

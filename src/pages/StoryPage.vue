@@ -23,7 +23,7 @@
         <!-- Chapter 1 -->
         <section v-reveal class="mb-12">
           <h2 class="text-3xl font-bold text-gray-900 mb-6 pb-2 border-b-2 border-brand-600">
-            Chapter 1 — The First Discovery (Age 9–11)
+            Chapter 1 — The First Discovery (Age 9–11, 2005–2007)
           </h2>
           <div class="space-y-4 text-gray-700 leading-relaxed">
             <p>
@@ -38,7 +38,7 @@
         <!-- Chapter 2 -->
         <section v-reveal class="mb-12">
           <h2 class="text-3xl font-bold text-gray-900 mb-6 pb-2 border-b-2 border-brand-600">
-            Chapter 2 — Testing New Paths (Age 13–15)
+            Chapter 2 — Testing New Paths (Age 13–15, 2009–2011)
           </h2>
           <div class="space-y-4 text-gray-700 leading-relaxed">
             <p>
@@ -53,11 +53,11 @@
         <!-- Chapter 3 -->
         <section v-reveal class="mb-12">
           <h2 class="text-3xl font-bold text-gray-900 mb-6 pb-2 border-b-2 border-brand-600">
-            Chapter 3 — A Detour in University (Age 18–20)
+            Chapter 3 — A Detour in University (Age 18–20, 2014–2016)
           </h2>
           <div class="space-y-4 text-gray-700 leading-relaxed">
             <p>
-              By the age of 18, I was forced to study the Industrial Management major at Payam Noor University of Bandar-e Lengeh. I hadn't passed any technical courses in four semesters. I was actually on academic probation for all semesters, but still the head of the university wanted me to stay because I won two medals in Karate competitions between universities in those two years.
+              By the age of 18, in 2014, I was forced to study the Industrial Management major at Payam Noor University of Bandar-e Lengeh. I hadn't passed any technical courses in four semesters. I was actually on academic probation for all semesters, but still the head of the university wanted me to stay because I won two medals in Karate competitions between universities in those two years (2014–2015).
             </p>
             <p>
               In the second year at that university, I finally managed to convince my family to let me study computers — the one thing I had loved the most. It was my moment to choose the best major in computers, so after a lot of research, I chose Computer Science. The reason I chose this one was that its alternative name is the "mother of computer," meaning I could basically study any field for my Master's degree later.
@@ -66,7 +66,7 @@
               After choosing Computer Science, I had to choose which university to study at. I only had one goal: the university had to be so far away from my hometown that I would have to come back only two times a year. So I picked all universities in the north of my country — at least 1000 km away.
             </p>
             <p>
-              At the age of 20, I started studying Computer Science at Kashmar Higher Education Institution (KHEI).
+              At the age of 20, in 2016, I started studying Computer Science at Kashmar Higher Education Institution (KHEI).
             </p>
           </div>
         </section>
@@ -74,7 +74,7 @@
         <!-- Chapter 4 -->
         <section v-reveal class="mb-12">
           <h2 class="text-3xl font-bold text-gray-900 mb-6 pb-2 border-b-2 border-brand-600">
-            Chapter 4 — Stepping Into a New World (First–Third Semester)
+            Chapter 4 — Stepping Into a New World (First–Third Semester, 2016–2017)
           </h2>
           <div class="space-y-4 text-gray-700 leading-relaxed">
             <p>
@@ -101,7 +101,7 @@
         <!-- Chapter 5 -->
         <section v-reveal class="mb-12">
           <h2 class="text-3xl font-bold text-gray-900 mb-6 pb-2 border-b-2 border-brand-600">
-            Chapter 5 — Building Confidence (Second–Fourth Semester)
+            Chapter 5 — Building Confidence (Second–Fourth Semester, 2017–2018)
           </h2>
           <div class="space-y-4 text-gray-700 leading-relaxed">
             <p>
@@ -128,7 +128,7 @@
         <!-- Chapter 6 -->
         <section v-reveal class="mb-12">
           <h2 class="text-3xl font-bold text-gray-900 mb-6 pb-2 border-b-2 border-brand-600">
-            Chapter 6 — Finding My True Interest (Fifth–Sixth Semester)
+            Chapter 6 — Finding My True Interest (Fifth–Sixth Semester, 2018–2019)
           </h2>
           <div class="space-y-4 text-gray-700 leading-relaxed">
             <p>
@@ -158,7 +158,7 @@
         <!-- Chapter 7 -->
         <section v-reveal class="mb-12">
           <h2 class="text-3xl font-bold text-gray-900 mb-6 pb-2 border-b-2 border-brand-600">
-            Chapter 7 — Later Semesters and Reputation (Seventh Semester)
+            Chapter 7 — Later Semesters and Reputation (Seventh Semester, 2019)
           </h2>
           <div class="space-y-4 text-gray-700 leading-relaxed">
             <p>
