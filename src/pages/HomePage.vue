@@ -22,10 +22,16 @@
               
               <div class="flex flex-col sm:flex-row gap-4">
                 <RouterLink 
-                  to="/projects" 
+                  to="/about" 
                   class="btn btn-primary animate-float"
                 >
-                  View My Work
+                  Get to Know Me
+                </RouterLink>
+                <RouterLink 
+                  to="/story" 
+                  class="btn btn-outline"
+                >
+                  My Story
                 </RouterLink>
                 <RouterLink 
                   to="/contact" 

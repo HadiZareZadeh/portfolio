@@ -168,7 +168,9 @@
                     class="flex items-center justify-between px-4 py-3 bg-white/80"
                   >
                     <span class="text-gray-800">{{ course.name }}</span>
-                    <span class="text-gray-600 font-semibold">{{ course.score }}</span>
+                    <span class="text-gray-600 font-semibold">
+                      {{ course.score }} ({{ convertToLetterGrade(course.score) }})
+                    </span>
                   </div>
                 </div>
               </div>
@@ -333,6 +335,16 @@ import SkillBadge from '../components/SkillBadge.vue'
 
 const avatarCard = ref(null)
 const base = import.meta.env.BASE_URL
+
+// Convert 20-point scale to letter grade
+const convertToLetterGrade = (score) => {
+  const numScore = parseFloat(score)
+  if (numScore >= 18) return 'A'
+  if (numScore >= 16) return 'B'
+  if (numScore >= 14) return 'C'
+  if (numScore >= 12) return 'D'
+  return 'F'
+}
 
 const courseGroups = [
   {

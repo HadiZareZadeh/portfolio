@@ -1,27 +1,30 @@
 <template>
   <div class="min-h-screen pt-16">
-    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-      <!-- Page Header -->
-      <div class="text-center mb-16" v-reveal>
-        <h1 class="text-4xl lg:text-5xl font-bold heading-gradient mb-4">
-          My Story
-        </h1>
-        <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-          A journey through my passion for programming and computer science
-        </p>
-      </div>
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <div class="flex gap-8">
+        <!-- Main Content -->
+        <div class="flex-1 max-w-4xl">
+          <!-- Page Header -->
+          <div class="text-center mb-16" v-reveal>
+            <h1 class="text-4xl lg:text-5xl font-bold heading-gradient mb-4">
+              My Story
+            </h1>
+            <p class="text-xl text-gray-600 max-w-3xl mx-auto">
+              A journey through my passion for programming and computer science
+            </p>
+          </div>
 
-      <!-- Version Note -->
-      <div class="mb-8 p-4 bg-blue-50 border-l-4 border-blue-500 rounded" v-reveal>
-        <p class="text-sm text-blue-800 italic">
-          <strong>Note:</strong> This is the first version of my story and will be refined soon.
-        </p>
-      </div>
+          <!-- Version Note -->
+          <div class="mb-8 p-4 bg-blue-50 border-l-4 border-blue-500 rounded" v-reveal>
+            <p class="text-sm text-blue-800 italic">
+              <strong>Note:</strong> This is the first version of my story and will be refined soon.
+            </p>
+          </div>
 
-      <!-- Story Content -->
-      <article>
+          <!-- Story Content -->
+          <article>
         <!-- Chapter 1 -->
-        <section v-reveal class="mb-12">
+        <section id="chapter-1" v-reveal class="mb-12 scroll-mt-24">
           <h2 class="text-3xl font-bold text-gray-900 mb-6 pb-2 border-b-2 border-brand-600">
             Chapter 1 — The First Discovery (Age 9–11, 2005–2007)
           </h2>
@@ -36,7 +39,7 @@
         </section>
 
         <!-- Chapter 2 -->
-        <section v-reveal class="mb-12">
+        <section id="chapter-2" v-reveal class="mb-12 scroll-mt-24">
           <h2 class="text-3xl font-bold text-gray-900 mb-6 pb-2 border-b-2 border-brand-600">
             Chapter 2 — Testing New Paths (Age 13–15, 2009–2011)
           </h2>
@@ -51,7 +54,7 @@
         </section>
 
         <!-- Chapter 3 -->
-        <section v-reveal class="mb-12">
+        <section id="chapter-3" v-reveal class="mb-12 scroll-mt-24">
           <h2 class="text-3xl font-bold text-gray-900 mb-6 pb-2 border-b-2 border-brand-600">
             Chapter 3 — A Detour in University (Age 18–20, 2014–2016)
           </h2>
@@ -72,7 +75,7 @@
         </section>
 
         <!-- Chapter 4 -->
-        <section v-reveal class="mb-12">
+        <section id="chapter-4" v-reveal class="mb-12 scroll-mt-24">
           <h2 class="text-3xl font-bold text-gray-900 mb-6 pb-2 border-b-2 border-brand-600">
             Chapter 4 — Stepping Into a New World (First–Third Semester, 2016–2017)
           </h2>
@@ -99,7 +102,7 @@
         </section>
 
         <!-- Chapter 5 -->
-        <section v-reveal class="mb-12">
+        <section id="chapter-5" v-reveal class="mb-12 scroll-mt-24">
           <h2 class="text-3xl font-bold text-gray-900 mb-6 pb-2 border-b-2 border-brand-600">
             Chapter 5 — Building Confidence (Second–Fourth Semester, 2017–2018)
           </h2>
@@ -126,7 +129,7 @@
         </section>
 
         <!-- Chapter 6 -->
-        <section v-reveal class="mb-12">
+        <section id="chapter-6" v-reveal class="mb-12 scroll-mt-24">
           <h2 class="text-3xl font-bold text-gray-900 mb-6 pb-2 border-b-2 border-brand-600">
             Chapter 6 — Finding My True Interest (Fifth–Sixth Semester, 2018–2019)
           </h2>
@@ -156,7 +159,7 @@
         </section>
 
         <!-- Chapter 7 -->
-        <section v-reveal class="mb-12">
+        <section id="chapter-7" v-reveal class="mb-12 scroll-mt-24">
           <h2 class="text-3xl font-bold text-gray-900 mb-6 pb-2 border-b-2 border-brand-600">
             Chapter 7 — Later Semesters and Reputation (Seventh Semester, 2019)
           </h2>
@@ -182,12 +185,86 @@
           </p>
         </section>
       </article>
+        </div>
+
+        <!-- Chapter Navigation Sidebar -->
+        <aside class="hidden lg:block w-64 flex-shrink-0">
+          <div class="sticky top-24">
+            <div class="bg-white rounded-lg shadow-md p-4 border border-gray-200">
+              <h3 class="text-lg font-semibold text-gray-900 mb-4 pb-2 border-b border-gray-200">
+                Chapters
+              </h3>
+              <nav class="space-y-2">
+                <a
+                  v-for="chapter in chapters"
+                  :key="chapter.id"
+                  :href="`#${chapter.id}`"
+                  @click.prevent="scrollToChapter(chapter.id)"
+                  :class="[
+                    'block px-3 py-2 rounded-md text-sm transition-colors',
+                    activeChapter === chapter.id
+                      ? 'bg-brand-100 text-brand-700 font-medium'
+                      : 'text-gray-600 hover:bg-gray-100 hover:text-gray-900'
+                  ]"
+                >
+                  {{ chapter.title }}
+                </a>
+              </nav>
+            </div>
+          </div>
+        </aside>
+      </div>
     </div>
   </div>
 </template>
 
 <script setup>
-// No additional script needed for this page
+import { ref, onMounted, onUnmounted } from 'vue'
+
+const chapters = [
+  { id: 'chapter-1', title: 'Chapter 1 — The First Discovery' },
+  { id: 'chapter-2', title: 'Chapter 2 — Testing New Paths' },
+  { id: 'chapter-3', title: 'Chapter 3 — A Detour in University' },
+  { id: 'chapter-4', title: 'Chapter 4 — Stepping Into a New World' },
+  { id: 'chapter-5', title: 'Chapter 5 — Building Confidence' },
+  { id: 'chapter-6', title: 'Chapter 6 — Finding My True Interest' },
+  { id: 'chapter-7', title: 'Chapter 7 — Later Semesters and Reputation' }
+]
+
+const activeChapter = ref('chapter-1')
+
+const scrollToChapter = (chapterId) => {
+  const element = document.getElementById(chapterId)
+  if (element) {
+    element.scrollIntoView({ behavior: 'smooth', block: 'start' })
+    activeChapter.value = chapterId
+  }
+}
+
+const updateActiveChapter = () => {
+  const scrollPosition = window.scrollY + 150 // Offset for header
+  const sections = chapters.map(ch => ({
+    id: ch.id,
+    element: document.getElementById(ch.id)
+  })).filter(s => s.element)
+
+  for (let i = sections.length - 1; i >= 0; i--) {
+    const section = sections[i]
+    if (section.element.offsetTop <= scrollPosition) {
+      activeChapter.value = section.id
+      break
+    }
+  }
+}
+
+onMounted(() => {
+  window.addEventListener('scroll', updateActiveChapter)
+  updateActiveChapter() // Set initial active chapter
+})
+
+onUnmounted(() => {
+  window.removeEventListener('scroll', updateActiveChapter)
+})
 </script>
 
 <style scoped>
