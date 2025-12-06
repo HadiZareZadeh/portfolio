@@ -95,11 +95,9 @@
               <SkillBadge>Computer Vision</SkillBadge>
               <SkillBadge>NLP & Transformer Models</SkillBadge>
               <SkillBadge>Reinforcement Learning</SkillBadge>
-              <SkillBadge>Unstructured Data Processing</SkillBadge>
               <SkillBadge>Representation Learning</SkillBadge>
               <SkillBadge>Optimization Algorithms</SkillBadge>
-              <SkillBadge>Robotics & Autonomous Systems</SkillBadge>
-              <SkillBadge>Algorithmic Trading</SkillBadge>
+              <SkillBadge>Autonomous Systems</SkillBadge>
               <SkillBadge>Applied AI Research</SkillBadge>
             </div>
           </div>
@@ -148,6 +146,18 @@
             </div>
           </div>
 
+          <!-- Online Coursework Section -->
+          <div v-reveal class="card p-6">
+            <h2 class="text-2xl font-semibold text-gray-900 mb-4">Online Coursework (Self-Study)</h2>
+            <div class="space-y-2">
+              <div class="text-gray-700">• Python for Data Science & Machine Learning — Essential Training, Part 1 (LinkedIn)</div>
+              <div class="text-gray-700">• Python for Data Science & Machine Learning — Essential Training, Part 2 (LinkedIn)</div>
+              <div class="text-gray-700">• Deep Learning: Getting Started (LinkedIn)</div>
+              <div class="text-gray-700">• Deep Learning Foundations: Natural Language Processing with TensorFlow (LinkedIn)</div>
+              <div class="text-gray-700">• Machine Learning Foundations: Linear Algebra (LinkedIn)</div>
+            </div>
+          </div>
+
           <!-- Selected Undergraduate Course Scores -->
           <div v-reveal class="card p-6">
             <h2 class="text-2xl font-semibold text-gray-900 mb-6">Selected Undergraduate Course Scores</h2>
@@ -184,27 +194,24 @@
               <div class="border-l-2 border-brand-600 pl-4">
                 <h3 class="font-medium text-gray-900">Game Developer — Legend Company</h3>
                 <p class="text-gray-600 mb-2">2018-2020 · Kashmar, Iran</p>
-                <p class="text-gray-600 mb-2">Worked in a startup game development team to build Uranus, a 2D educational platform game targeting elementary-school students.</p>
                 <ul class="text-sm text-gray-600 space-y-1 ml-4 list-disc">
-                  <li>Created gameplay systems inspired by classic platformers like Super Mario, including movement physics, obstacles, collectibles, and progression mechanics</li>
-                  <li>Integrated quiz-based learning modules into the levels to reinforce curriculum concepts through interactive challenges</li>
-                  <li>Designed UI flow, game states, and event triggers to connect gameplay with educational quiz outcomes</li>
-                  <li>Contributed to playtesting, balancing difficulty, and improving accessibility for younger age groups</li>
+                  <li>Developed a 2D educational game in a 7-member team using Unity & C#</li>
+                  <li>Implemented core gameplay mechanics and integrated quiz-based learning modules</li>
+                  <li>Improved user experience based on playtesting and iteration</li>
                 </ul>
-                <p class="text-sm text-gray-500 mt-2">Team Size: 7</p>
               </div>
             </div>
           </div>
 
-          <!-- Publications & Research Section -->
+          <!-- Research & Publications Section -->
           <div v-reveal class="card p-6">
-            <h2 class="text-2xl font-semibold text-gray-900 mb-4">Publications & Research Projects</h2>
+            <h2 class="text-2xl font-semibold text-gray-900 mb-4">Research & Publications</h2>
             <div class="space-y-3">
               <div class="text-gray-700">
-                • Contributed to the development of a driving-based simulation game used in an IEEE-published study (Paper ID: 8712031), supervised by Ms. Dolkhani
+                • Co-developed a driving simulation game used in an IEEE-published study (Paper ID: 8712031)
               </div>
               <div class="text-gray-700">
-                • Analyzed potential improvements to HEFT-based load-balancing algorithm (referencing IEEE 7881902), supervised by Ms. Dolkhani
+                • Investigated improvements to HEFT-based load-balancing algorithms (referencing IEEE 7881902)
               </div>
             </div>
           </div>
@@ -218,20 +225,18 @@
                 <div class="flex flex-wrap gap-2">
                   <SkillBadge>Python (advanced)</SkillBadge>
                   <SkillBadge>PHP/Laravel</SkillBadge>
-                  <SkillBadge>Java</SkillBadge>
-                  <SkillBadge>JavaScript/Vue 3</SkillBadge>
-                  <SkillBadge>Dart/Flutter</SkillBadge>
+                  <SkillBadge>JavaScript (Vue 3)</SkillBadge>
                 </div>
               </div>
               
               <div>
                 <h3 class="font-medium text-gray-900 mb-3">Data & ML</h3>
                 <div class="flex flex-wrap gap-2">
-                  <SkillBadge>pandas</SkillBadge>
                   <SkillBadge>NumPy</SkillBadge>
+                  <SkillBadge>pandas</SkillBadge>
                   <SkillBadge>scikit-learn</SkillBadge>
-                  <SkillBadge>PyTorch (intro)</SkillBadge>
-                  <SkillBadge>TensorFlow/Keras (intro)</SkillBadge>
+                  <SkillBadge>PyTorch (basic)</SkillBadge>
+                  <SkillBadge>TensorFlow/Keras (basic)</SkillBadge>
                   <SkillBadge>EDA</SkillBadge>
                   <SkillBadge>Data Wrangling</SkillBadge>
                 </div>
@@ -240,32 +245,27 @@
               <div>
                 <h3 class="font-medium text-gray-900 mb-3">Databases</h3>
                 <div class="flex flex-wrap gap-2">
-                  <SkillBadge>MySQL/MariaDB (advanced)</SkillBadge>
+                  <SkillBadge>MySQL/MariaDB</SkillBadge>
                 </div>
               </div>
               
               <div>
-                <h3 class="font-medium text-gray-900 mb-3">Automation</h3>
+                <h3 class="font-medium text-gray-900 mb-3">Automation & Tools</h3>
                 <div class="flex flex-wrap gap-2">
-                  <SkillBadge>Python Scripting</SkillBadge>
-                  <SkillBadge>Web/Desktop Workflows</SkillBadge>
-                </div>
-              </div>
-              
-              <div>
-                <h3 class="font-medium text-gray-900 mb-3">Version Control & Cloud</h3>
-                <div class="flex flex-wrap gap-2">
-                  <SkillBadge>GitHub</SkillBadge>
-                  <SkillBadge>GitLab</SkillBadge>
-                  <SkillBadge>Google Cloud (basic)</SkillBadge>
-                </div>
-              </div>
-              
-              <div>
-                <h3 class="font-medium text-gray-900 mb-3">Operating Systems</h3>
-                <div class="flex flex-wrap gap-2">
+                  <SkillBadge>Python Automation</SkillBadge>
+                  <SkillBadge>Appium</SkillBadge>
+                  <SkillBadge>Selenium</SkillBadge>
+                  <SkillBadge>Git/GitHub</SkillBadge>
                   <SkillBadge>Linux</SkillBadge>
-                  <SkillBadge>Windows</SkillBadge>
+                  <SkillBadge>REST APIs</SkillBadge>
+                </div>
+              </div>
+              
+              <div>
+                <h3 class="font-medium text-gray-900 mb-3">Other</h3>
+                <div class="flex flex-wrap gap-2">
+                  <SkillBadge>Google Cloud (basic)</SkillBadge>
+                  <SkillBadge>Unit Testing</SkillBadge>
                 </div>
               </div>
             </div>
@@ -276,11 +276,7 @@
             <h2 class="text-2xl font-semibold text-gray-900 mb-4">Competitions</h2>
             <div class="space-y-2">
               <div class="text-gray-700">
-                <h3 class="font-medium text-gray-900 mb-2">ACM Programming Competitions</h3>
-                <div class="ml-4 space-y-1">
-                  <div>• Sharif University, Tehran (2018)</div>
-                  <div>• Ferdowsi University, Mashhad (2018)</div>
-                </div>
+                Participated in ACM programming competitions: Sharif 2018, Ferdowsi 2018
               </div>
             </div>
           </div>
@@ -300,16 +296,12 @@
             <h2 class="text-2xl font-semibold text-gray-900 mb-4">Presentations</h2>
             <div class="space-y-3">
               <div>
-                <h3 class="font-medium text-gray-900">Thesis Presentation: Lyndakade</h3>
-                <p class="text-gray-600">Kashmar Higher Education Institute · Year: 2020</p>
-              </div>
-              <div>
                 <h3 class="font-medium text-gray-900">Evolutionary Algorithms</h3>
-                <p class="text-gray-600">Presented at Kashmar Higher Education Institute · Year: 2019</p>
+                <p class="text-gray-600">2019</p>
               </div>
               <div>
                 <h3 class="font-medium text-gray-900">Genetic Algorithm</h3>
-                <p class="text-gray-600">Presented at Kashmar Higher Education Institute · Year: 2019</p>
+                <p class="text-gray-600">2019</p>
               </div>
             </div>
           </div>
@@ -319,7 +311,6 @@
             <h2 class="text-2xl font-semibold text-gray-900 mb-4">Sports</h2>
             <div class="space-y-2">
               <div class="text-gray-700">• Karate-do: 2nd Dan Black Belt, April 2005 - 2016</div>
-              <div class="text-gray-700">• Self-Defense: September 2019 - April 2020</div>
               <div class="text-gray-700">• Volleyball: February 2025 - Present</div>
             </div>
           </div>
@@ -353,8 +344,7 @@ const courseGroups = [
       { name: 'Data Structures & Algorithms', score: '20.00' },
       { name: 'Advanced Programming (C++)', score: '20.00' },
       { name: 'Introduction to Programming (C)', score: '18.50' },
-      { name: 'Topics in Computer Science', score: '20.00' },
-      { name: 'Digital Logic Design', score: '20.00' },
+      { name: 'Digital Logic', score: '20.00' },
       { name: 'Linear Optimization', score: '15.00' },
       { name: 'Data Mining', score: '20.00' },
       { name: 'Scientific Computing Tools', score: '17.00' },

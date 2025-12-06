@@ -10,7 +10,31 @@ Computer Science graduate with strong foundations in algorithms, optimization, a
 
 __INTERESTS__
 
-Deep Learning, Computer Vision, NLP & Transformer Models, Reinforcement Learning, Unstructured Data Processing, Representation Learning, Optimization Algorithms, Robotics & Autonomous Systems, Algorithmic Trading, Applied AI Research
+Deep Learning, Computer Vision, NLP & Transformer Models, Reinforcement Learning, Representation Learning, Optimization Algorithms, Autonomous Systems, Applied AI Research
+
+__SKILLS__
+
+Programming: Python \(advanced\), PHP/Laravel, JavaScript \(Vue 3\)
+
+Data & ML: NumPy, pandas, scikit\-learn, PyTorch \(basic\), TensorFlow/Keras \(basic\), EDA, data wrangling
+
+Databases: MySQL/MariaDB
+
+Automation & Tools: Python automation, Appium, Selenium, Git/GitHub, Linux, REST APIs
+
+Other: Basic Google Cloud, unit testing
+
+__ONLINE COURSEWORK \(SELF\-STUDY\)__
+
+• Python for Data Science & Machine Learning — Essential Training, Part 1 LinkedIn
+
+• Python for Data Science & Machine Learning — Essential Training, Part 2 LinkedIn
+
+• Deep Learning: Getting Started LinkedIn
+
+• Deep Learning Foundations: Natural Language Processing with TensorFlow LinkedIn
+
+• Machine Learning Foundations: Linear Algebra LinkedIn
 
 __EDUCATION__
 
@@ -34,11 +58,7 @@ __Head of Education, Scientific Association, Kashmar Higher Education Institute_
 
 __Research Projects: Evolutionary Algorithms – Kashmar Higher Education Institute__  2019
 
-• Implemented and presented optimization techniques based on evolutionary computation
-
 __Research Projects: Genetic Algorithm – Kashmar Higher Education Institute__  2019
-
-• Explored GA fundamentals and applications; presented findings at university
 
 __SELECTED UNDERGRADUATE COURSE SCORES \(SCALE: 20\-POINT\)__
 
@@ -48,9 +68,7 @@ __SELECTED UNDERGRADUATE COURSE SCORES \(SCALE: 20\-POINT\)__
 
 • Introduction to Programming \(C\) – 18\.50
 
-• Topics in Computer Science – 20\.00
-
-• Digital Logic Design – 20\.00
+• Digital Logic – 20\.00
 
 • Linear Optimization – 15\.00
 
@@ -70,145 +88,57 @@ __Legend Company, Kashmar, Iran__  2018–2020
 
 Game Developer
 
-• Worked in a startup game development team to build Uranus, a 2D educational platform game targeting elementary\-school students\.
+• Developed a 2D educational game in a 7\-member team using Unity & C#\.
 
-• Created gameplay systems inspired by classic platformers like Super Mario, including movement physics, obstacles, collectibles, and progression mechanics\.
+• Implemented core gameplay mechanics and integrated quiz\-based learning modules\.
 
-• Integrated quiz\-based learning modules into the levels to reinforce curriculum concepts through interactive challenges\.
-
-• Designed UI flow, game states, and event triggers to connect gameplay with educational quiz outcomes\.
-
-• Contributed to playtesting, balancing difficulty, and improving accessibility for younger age groups\.
-
-Team Size: 7
+• Improved user experience based on playtesting and iteration\.
 
 __PROJECTS__
 
 __Plato Mobile Game Automation System__  2025
 
-• Built an automation framework for mobile game interactions using Appium and Android emulators \(LDPlayer/Nox\), supporting 50\+ game types with modular strategy\-based architecture
-
-• Implemented multi\-instance parallel processing to run automation across multiple emulator instances simultaneously, improving throughput
-
-• Designed extensible game strategy pattern with factory\-based registration, enabling easy addition of new game types without modifying core logic
-
-• Developed resource management system with automatic Appium server lifecycle management, health monitoring, and graceful error recovery with exponential backoff retry mechanisms
-
-• Created thread\-safe configuration management system with GUI\-based configuration tool and JSON\-based settings for flexible deployment
-
-• Integrated image processing using OpenCV and PIL for UI element detection and game state recognition
-
-• Built data management utilities for account creation, progress tracking, and automated daily task execution with scheduling capabilities
-
 Tech: Python, Appium, Selenium
 
-Code: Private repo \(available on request\) | Team size: 3
+• Built a scalable automation system for 50\+ mobile game types using modular strategy\-based design\.
 
-__Telegram Automation Bot for Hamster Kombat & Web3 Clicker Games__  2024
+• Added multi\-instance parallel processing and automatic Appium server lifecycle management\.
 
-• Developed an automation bot for Hamster, as well as for TapSwap, Notcoin, Gemz, Dotcoin, and W\-coin
+• Integrated OpenCV/PIL for UI element detection and game state recognition\.
 
-• Implemented in Python, using Telegram Bot API \+ Web3 / TON blockchain integrations
+__Telegram Automation Bot for Hamster Kombat & Web3 Games__  2024
 
-• Automated repetitive "tap\-to\-earn" actions and task completion
+Tech: Python, Telegram API, TON/Web3
 
-• Handled multi\-account management, concurrency, and error\-handling to ensure bot stability over long\-running sessions
+• Created a bot to automate tap\-to\-earn tasks, multi\-account workflows, and long\-running sessions\.
 
-• Built monitoring and logging so that all bot actions \(earnings, tasks, wallet balances\) were recorded, enabling performance tracking and debugging
+• Implemented concurrency, monitoring, and blockchain integrations for stable performance\.
 
-Code: Private repo \(available on request\) | Team size: 3
+__Full\-Stack E\-Learning Platform – Lyndakade__  2020\-2023
 
-__Mobile & Desktop Application Developer, Lyndakade__  2024
+Tech: Laravel, MySQL, Vue 3, Meilisearch
 
-• Delivered a production\-ready Flutter app spanning catalog, course detail, lists, and user profile flows
+• Built an e\-learning system with SSR, optimized DB queries, and integrated authentication and payments\.
 
-• Built a custom video player with background downloads and resume support
+• Implemented search with Meilisearch and improved page performance via backend optimizations\.
 
-• Launched end\-to\-end payments \(Zarinpal/Zibal\) with cart, orders, and receipts
+__3D Car Racing Game for Educational Research__  2017–2018
 
-• Shipped search, notifications, and in\-app chat \(Goftino\)
+Tech: Unity, C#
 
-• Implemented QR course activation and robust empty/loading states for a smoother first\-run experience
+• Developed core gameplay modules for a research\-based simulation game\.
 
-• Organized code into reusable widgets, screens, controllers, and services to speed feature delivery and maintenance
+• Contributed to an IEEE\-published study through feature implementation and user testing\.
 
-Flutter \(Dart\), REST/JSON APIs, custom video player \+ background downloads, local storage/caching, push notifications, QR scanning, payment gateways \(Zarinpal, Zibal\), in\-app chat \(Goftino\)
+__RESEARCH & PUBLICATIONS__
 
-Code: Private repo \(available on request\) | Team size: 3
+Co\-developed a driving simulation game used in an IEEE\-published study \(Paper ID: 8712031\)
 
-__Full\-stack Developer, Lyndakade__  2020\-2023
-
-• Built a full\-stack e\-learning app using Laravel \+ Inertia\.js Vue 3
-
-• Implemented course management, chapters, videos, comments, and user progress tracking
-
-• Implemented Vue 3 SSR via Inertia to improve SEO and initial render; managed the Node SSR service and deployment scripts
-
-• Integrated fast, faceted search using Meilisearch \+ Laravel Scout; added type\-ahead and relevance tuning
-
-• Added authentication and access control with Laravel Fortify/Sanctum; implemented notifications and email flows
-
-• Designed payment flows \(multi\-gateway\), invoices, wallet/credit, and failure handling with idempotent verification
-
-• Wrote feature/unit tests and optimized DB queries with eager loading and indexes; improved page TTFB and Core Web Vitals
-
-• Automated deploys with bash/Windows scripts, system services for SSR, and environment\-specific configs
-
-Tech: Laravel, PHP, MySQL, Inertia\.js, Vue 3, SSR, Tailwind, Meilisearch, Laravel Scout, Sanctum/Fortify, PHPUnit, NPM/Vite
-
-Code: Private repo \(available on request\) | Team size: 3
-
-__Game Development for Educational Research, Kashmar Higher Education Institute__  2017–2018
-
-• Developed 3D car racing game for desktop platforms using Unity\.
-
-• Worked as a Game Developer on a research\-led game under Ms\. Dolkhani, contributing to an IEEE paper \(ID 8712031\)\.
-
-• Architected game modules \(levels, UI, logic\) and implemented them using C#\.
-
-• Participated in design discussions to align game features with the research hypotheses and educational objectives\.
-
-• Conducted playtesting sessions, collected data, and refined gameplay based on user feedback and research requirements\.
-
-Team size: 4
-
-__Oxford Learning \- Android Vocabulary App \(Course Project\), Kashmar Higher Education Institute__  Fall 2017
-
-• Built an Android application to browse and study IT vocabulary\. Integrated a collaboratively compiled lexicon based on the Oxford English for Information Technology textbook, collected by the entire class under instructor supervision; implemented app structure, resource packaging, and data integration\.
-
-Tech: Android \(Java\), Android Studio
-
-Code: Github link
-
-__PUBLICATIONS & RESEARCH PROJECTS__
-
-• Contributed to the development of a driving\-based simulation game used in an IEEE\-published study \(Paper ID: 8712031\), supervised by Ms\. Dolkhani
-
-• Analyzed potential improvements to HEFT\-based load\-balancing algorithm \(referencing IEEE 7881902\), supervised by Ms\. Dolkhani
-
-__SKILLS__
-
-Programming: Python \(advanced\); PHP/Laravel, Java, JavaScript/Vue 3, Dart/Flutter
-
-Data & ML: pandas, NumPy, scikit\-learn, PyTorch \(intro\), TensorFlow/Keras \(intro\), EDA, data wrangling
-
-Databases: MySQL/MariaDB \(advanced\)
-
-Automation: Python scripting for web/desktop workflows
-
-Version Control & Cloud: GitHub, GitLab; Google Cloud \(basic\)
-
-Operating Systems: Linux, Windows
-
-Microsoft Office Suite: Word, Excel, PowerPoint
+Investigated improvements to HEFT\-based load\-balancing algorithms \(referencing IEEE 7881902\)
 
 __COMPETITIONS__
 
-__ACM Programming Competitions__
-
-• Sharif University, Tehran  \(2018\)
-
-• Ferdowsi University, Mashhad  \(2018\)
+Participated in ACM programming competitions  Sharif 2018, Ferdowsi 2018
 
 __LANGUAGES__
 
@@ -220,29 +150,13 @@ Spanish: A2 \(on Duolingo, [View Profile](https://www.duolingo.com/u/610954713)\
 
 __PRESENTATIONS__
 
-__Thesis Presentation: Lyndakade__
+Evolutionary Algorithms  2019
 
-• Kashmar Higher Education Institute
-
-• Year: 2020
-
-__Evolutionary Algorithms__
-
-• Presented at Kashmar Higher Education Institute
-
-• Year: 2019
-
-__Genetic Algorithm__
-
-• Presented at Kashmar Higher Education Institute
-
-• Year: 2019
+Genetic Algorithm  2019
 
 __SPORTS__
 
 Karate\-do: 2nd Dan Black Belt, April 2005 – 2016
-
-Self\-Defense: September 2019 \- April 2020
 
 Volleyball: February 2025 \- Present
 
@@ -268,6 +182,6 @@ Instructor – project leader – co\-author
 
 __Mohammad Mousavi Nezhad__
 
-Founder of Legend Startup – Head of Scientific Association at Kashmar Higher Education Institute
+Founder of Legend Startup – Head of Scientific Association at KHEI
 
 [mimzhad@gmail.com](mailto:mimzhad@gmail.com)

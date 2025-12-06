@@ -17,7 +17,7 @@
         <div v-reveal>
           <ProjectCard
             title="Plato Mobile Game Automation System"
-            description="Built an automation framework for mobile game interactions using Appium and Android emulators, supporting 50+ game types with modular strategy-based architecture. Implemented multi-instance parallel processing and resource management system."
+            description="Built a scalable automation system for 50+ mobile game types using modular strategy-based design. Added multi-instance parallel processing and automatic Appium server lifecycle management. Integrated OpenCV/PIL for UI element detection and game state recognition."
             :image="base + 'images/projects/python-bot.svg'"
             github=""
             demo=""
@@ -27,7 +27,7 @@
         <div v-reveal>
           <ProjectCard
             title="Telegram Automation Bot for Hamster Kombat & Web3 Games"
-            description="Developed automation bot for Hamster Kombat, TapSwap, Notcoin, Gemz, Dotcoin, and W-coin. Implemented using Python, Telegram Bot API + Web3/TON blockchain integrations with multi-account management and concurrency."
+            description="Created a bot to automate tap-to-earn tasks, multi-account workflows, and long-running sessions. Implemented concurrency, monitoring, and blockchain integrations for stable performance."
             :image="base + 'images/projects/python-bot.svg'"
             github=""
             demo=""
@@ -36,18 +36,8 @@
         
         <div v-reveal>
           <ProjectCard
-            title="Lyndakade Mobile & Desktop App"
-            description="Delivered a production-ready Flutter app with custom video player, background downloads, end-to-end payments (Zarinpal/Zibal), search, notifications, and in-app chat. Organized code into reusable widgets, screens, controllers, and services."
-            :image="base + 'images/projects/flutter-apps.svg'"
-            github=""
-            demo=""
-          />
-        </div>
-        
-        <div v-reveal>
-          <ProjectCard
-            title="Lyndakade E-learning Platform"
-            description="Built a full-stack e-learning app using Laravel + Inertia.js Vue 3. Implemented course management, chapters, videos, comments, user progress tracking, Vue 3 SSR, fast faceted search using Meilisearch, authentication, and payment flows."
+            title="Full-Stack E-Learning Platform – Lyndakade"
+            description="Built an e-learning system with SSR, optimized DB queries, and integrated authentication and payments. Implemented search with Meilisearch and improved page performance via backend optimizations."
             :image="base + 'images/projects/ecommerce.svg'"
             github=""
             demo=""
@@ -57,18 +47,8 @@
         <div v-reveal>
           <ProjectCard
             title="3D Car Racing Game for Educational Research"
-            description="Developed 3D car racing game for desktop platforms using Unity. Worked as a Game Developer on a research-led game under Ms. Dolkhani, contributing to an IEEE paper (ID 8712031)."
+            description="Developed core gameplay modules for a research-based simulation game. Contributed to an IEEE-published study through feature implementation and user testing."
             :image="base + 'images/projects/game-dev.svg'"
-            github=""
-            demo=""
-          />
-        </div>
-        
-        <div v-reveal>
-          <ProjectCard
-            title="Oxford Learning - Android Vocabulary App"
-            description="Built an Android application to browse and study IT vocabulary. Integrated a collaboratively compiled lexicon based on the Oxford English for Information Technology textbook."
-            :image="base + 'images/projects/academic-game.svg'"
             github=""
             demo=""
           />
