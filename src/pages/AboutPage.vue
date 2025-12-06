@@ -102,6 +102,73 @@
             </div>
           </div>
 
+          <!-- Skills Section -->
+          <div v-reveal class="card p-6">
+            <h2 class="text-2xl font-semibold text-gray-900 mb-6">Skills</h2>
+            <div class="grid md:grid-cols-2 gap-6">
+              <div>
+                <h3 class="font-medium text-gray-900 mb-3">Programming</h3>
+                <div class="flex flex-wrap gap-2">
+                  <SkillBadge>Python (advanced)</SkillBadge>
+                  <SkillBadge>PHP/Laravel</SkillBadge>
+                  <SkillBadge>JavaScript (Vue 3)</SkillBadge>
+                </div>
+              </div>
+              
+              <div>
+                <h3 class="font-medium text-gray-900 mb-3">Data & ML</h3>
+                <div class="flex flex-wrap gap-2">
+                  <SkillBadge>NumPy</SkillBadge>
+                  <SkillBadge>pandas</SkillBadge>
+                  <SkillBadge>scikit-learn</SkillBadge>
+                  <SkillBadge>PyTorch (basic)</SkillBadge>
+                  <SkillBadge>TensorFlow/Keras (basic)</SkillBadge>
+                  <SkillBadge>EDA</SkillBadge>
+                  <SkillBadge>Data Wrangling</SkillBadge>
+                </div>
+              </div>
+              
+              <div>
+                <h3 class="font-medium text-gray-900 mb-3">Databases</h3>
+                <div class="flex flex-wrap gap-2">
+                  <SkillBadge>MySQL/MariaDB</SkillBadge>
+                </div>
+              </div>
+              
+              <div>
+                <h3 class="font-medium text-gray-900 mb-3">Automation & Tools</h3>
+                <div class="flex flex-wrap gap-2">
+                  <SkillBadge>Python Automation</SkillBadge>
+                  <SkillBadge>Appium</SkillBadge>
+                  <SkillBadge>Selenium</SkillBadge>
+                  <SkillBadge>Git/GitHub</SkillBadge>
+                  <SkillBadge>Linux</SkillBadge>
+                  <SkillBadge>REST APIs</SkillBadge>
+                </div>
+              </div>
+              
+              <div>
+                <h3 class="font-medium text-gray-900 mb-3">Other</h3>
+                <div class="flex flex-wrap gap-2">
+                  <SkillBadge>Google Cloud (basic)</SkillBadge>
+                  <SkillBadge>Unit Testing</SkillBadge>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Online Coursework Section -->
+          <div v-reveal class="card p-6">
+            <h2 class="text-2xl font-semibold text-gray-900 mb-4">Online Coursework (Self-Study)</h2>
+            <div class="space-y-2">
+              <div class="text-gray-700">• Python for Data Science & Machine Learning — Essential Training, Part 1 (LinkedIn)</div>
+              <div class="text-gray-700">• Python for Data Science & Machine Learning — Essential Training, Part 2 (LinkedIn)</div>
+              <div class="text-gray-700">• Deep Learning: Getting Started (LinkedIn)</div>
+              <div class="text-gray-700">• Deep Learning Foundations: Natural Language Processing with TensorFlow (LinkedIn)</div>
+              <div class="text-gray-700">• Machine Learning Foundations: Linear Algebra (LinkedIn)</div>
+            </div>
+          </div>
+
           <!-- Education Section -->
           <div v-reveal class="card p-6">
             <h2 class="text-2xl font-semibold text-gray-900 mb-4">Education</h2>
@@ -143,18 +210,6 @@
                 <p class="text-gray-600 mb-2">2019 · Kashmar Higher Education Institute</p>
                 <p class="text-gray-600">Explored GA fundamentals and applications; presented findings at university</p>
               </div>
-            </div>
-          </div>
-
-          <!-- Online Coursework Section -->
-          <div v-reveal class="card p-6">
-            <h2 class="text-2xl font-semibold text-gray-900 mb-4">Online Coursework (Self-Study)</h2>
-            <div class="space-y-2">
-              <div class="text-gray-700">• Python for Data Science & Machine Learning — Essential Training, Part 1 (LinkedIn)</div>
-              <div class="text-gray-700">• Python for Data Science & Machine Learning — Essential Training, Part 2 (LinkedIn)</div>
-              <div class="text-gray-700">• Deep Learning: Getting Started (LinkedIn)</div>
-              <div class="text-gray-700">• Deep Learning Foundations: Natural Language Processing with TensorFlow (LinkedIn)</div>
-              <div class="text-gray-700">• Machine Learning Foundations: Linear Algebra (LinkedIn)</div>
             </div>
           </div>
 
@@ -212,61 +267,6 @@
               </div>
               <div class="text-gray-700">
                 • Investigated improvements to HEFT-based load-balancing algorithms (referencing IEEE 7881902)
-              </div>
-            </div>
-          </div>
-          
-          <!-- Skills Section -->
-          <div v-reveal class="card p-6">
-            <h2 class="text-2xl font-semibold text-gray-900 mb-6">Skills</h2>
-            <div class="grid md:grid-cols-2 gap-6">
-              <div>
-                <h3 class="font-medium text-gray-900 mb-3">Programming</h3>
-                <div class="flex flex-wrap gap-2">
-                  <SkillBadge>Python (advanced)</SkillBadge>
-                  <SkillBadge>PHP/Laravel</SkillBadge>
-                  <SkillBadge>JavaScript (Vue 3)</SkillBadge>
-                </div>
-              </div>
-              
-              <div>
-                <h3 class="font-medium text-gray-900 mb-3">Data & ML</h3>
-                <div class="flex flex-wrap gap-2">
-                  <SkillBadge>NumPy</SkillBadge>
-                  <SkillBadge>pandas</SkillBadge>
-                  <SkillBadge>scikit-learn</SkillBadge>
-                  <SkillBadge>PyTorch (basic)</SkillBadge>
-                  <SkillBadge>TensorFlow/Keras (basic)</SkillBadge>
-                  <SkillBadge>EDA</SkillBadge>
-                  <SkillBadge>Data Wrangling</SkillBadge>
-                </div>
-              </div>
-              
-              <div>
-                <h3 class="font-medium text-gray-900 mb-3">Databases</h3>
-                <div class="flex flex-wrap gap-2">
-                  <SkillBadge>MySQL/MariaDB</SkillBadge>
-                </div>
-              </div>
-              
-              <div>
-                <h3 class="font-medium text-gray-900 mb-3">Automation & Tools</h3>
-                <div class="flex flex-wrap gap-2">
-                  <SkillBadge>Python Automation</SkillBadge>
-                  <SkillBadge>Appium</SkillBadge>
-                  <SkillBadge>Selenium</SkillBadge>
-                  <SkillBadge>Git/GitHub</SkillBadge>
-                  <SkillBadge>Linux</SkillBadge>
-                  <SkillBadge>REST APIs</SkillBadge>
-                </div>
-              </div>
-              
-              <div>
-                <h3 class="font-medium text-gray-900 mb-3">Other</h3>
-                <div class="flex flex-wrap gap-2">
-                  <SkillBadge>Google Cloud (basic)</SkillBadge>
-                  <SkillBadge>Unit Testing</SkillBadge>
-                </div>
               </div>
             </div>
           </div>
