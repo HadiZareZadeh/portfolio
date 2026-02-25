@@ -8,7 +8,7 @@
     "build": "vite build",
     "preview": "vite preview",
     "predeploy": "vite build",
-    "deploy": "gh-pages -d dist",
+    "deploy": "gh-pages -d dist -r https://github.com/HadiZareZadeh/portfolio.git",
     "vectorize:avatar:inline": "node scripts/inline-avatar-svg.mjs",
     "generate:favicon": "node scripts/generate-favicon.mjs"
   },
