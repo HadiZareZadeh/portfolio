@@ -6,7 +6,7 @@ Email: [HadiZareZadeh00@gmail.com](mailto:HadiZareZadeh00@gmail.com) | LinkedIn:
 
 __SUMMARY__
 
-Computer Science graduate with strong foundations in algorithms, optimization, and software engineering, now transitioning toward Machine Learning and AI research\. Passionate about deep learning, computer vision, NLP, and reinforcement learning, with a growing portfolio of Python\-based projects involving automation, data processing, and algorithmic problem\-solving\. Motivated by long\-term research\-driven challenges and seeking opportunities to develop advanced AI systems while contributing to innovative and impactful projects\.
+Computer Science graduate with strong foundations in algorithms, optimization, and software engineering, now transitioning toward Machine Learning and AI research\. Passionate about deep learning, computer vision, NLP, and reinforcement learning, with a growing portfolio of Python\-based projects involving automation, data processing, and algorithmic problem\-solving\. Experienced with LLM\-assisted development workflows \(ChatGPT, Cursor\) for prototyping, debugging, and accelerating project delivery since 2023\. Motivated by long\-term research\-driven challenges and seeking opportunities to develop advanced AI systems while contributing to innovative and impactful projects\.
 
 __INTERESTS__
 
@@ -21,6 +21,8 @@ Data & ML: NumPy, pandas, scikit\-learn, PyTorch \(basic\), TensorFlow/Keras \(b
 Databases: MySQL/MariaDB
 
 Automation & Tools: Python automation, Appium, Selenium, Git/GitHub, Linux, REST APIs
+
+AI\-Assisted Development: ChatGPT, Cursor \(prototyping, debugging, code review\) since 2023
 
 Other: Basic Google Cloud, unit testing
 

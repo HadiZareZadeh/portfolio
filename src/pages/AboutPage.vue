@@ -83,7 +83,7 @@
           <div v-reveal class="card p-6">
             <h2 class="text-2xl font-semibold text-gray-900 mb-4">Summary</h2>
             <p class="text-gray-700 leading-relaxed">
-              Computer Science graduate with strong foundations in algorithms, optimization, and software engineering, now transitioning toward Machine Learning and AI research. Passionate about deep learning, computer vision, NLP, and reinforcement learning, with a growing portfolio of Python-based projects involving automation, data processing, and algorithmic problem-solving. Motivated by long-term research-driven challenges and seeking opportunities to develop advanced AI systems while contributing to innovative and impactful projects.
+              Computer Science graduate with strong foundations in algorithms, optimization, and software engineering, now transitioning toward Machine Learning and AI research. Passionate about deep learning, computer vision, NLP, and reinforcement learning, with a growing portfolio of Python-based projects involving automation, data processing, and algorithmic problem-solving. Experienced with LLM-assisted development workflows (ChatGPT, Cursor) for prototyping, debugging, and accelerating project delivery since 2023. Motivated by long-term research-driven challenges and seeking opportunities to develop advanced AI systems while contributing to innovative and impactful projects.
             </p>
           </div>
           
@@ -147,6 +147,17 @@
                 </div>
               </div>
               
+              <div>
+                <h3 class="font-medium text-gray-900 mb-3">AI-Assisted Development</h3>
+                <div class="flex flex-wrap gap-2">
+                  <SkillBadge>ChatGPT</SkillBadge>
+                  <SkillBadge>Cursor</SkillBadge>
+                  <SkillBadge>Prototyping</SkillBadge>
+                  <SkillBadge>Debugging</SkillBadge>
+                  <SkillBadge>Code Review</SkillBadge>
+                </div>
+              </div>
+
               <div>
                 <h3 class="font-medium text-gray-900 mb-3">Other</h3>
                 <div class="flex flex-wrap gap-2">

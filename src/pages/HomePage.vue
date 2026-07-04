@@ -17,7 +17,7 @@
             
             <div v-reveal class="space-y-6">
               <p class="text-lg text-gray-700 leading-relaxed">
-                Computer Science graduate with strong foundations in algorithms, optimization, and software engineering, now transitioning toward Machine Learning and AI research. Passionate about deep learning, computer vision, NLP, and reinforcement learning, with a growing portfolio of Python-based projects involving automation, data processing, and algorithmic problem-solving.
+                Computer Science graduate with strong foundations in algorithms, optimization, and software engineering, now transitioning toward Machine Learning and AI research. Passionate about deep learning, computer vision, NLP, and reinforcement learning, with a growing portfolio of Python-based projects involving automation, data processing, and algorithmic problem-solving. Experienced with LLM-assisted development workflows (ChatGPT, Cursor) for prototyping, debugging, and accelerating project delivery since 2023.
               </p>
               
               <div class="flex flex-col sm:flex-row gap-4">
