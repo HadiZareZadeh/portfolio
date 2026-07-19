@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="675" viewBox="0 0 1200 675">
+  <defs>
+    <linearGradient id="bg-violet" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0%" stop-color="#f5f3ff"/>
+      <stop offset="100%" stop-color="#ede9fe"/>
+    </linearGradient>
+    <linearGradient id="violet-accent" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#a78bfa"/>
+      <stop offset="100%" stop-color="#7c3aed"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1200" height="675" fill="url(#bg-violet)"/>
+
+  <!-- main meeting window -->
+  <g>
+    <rect x="180" y="90" width="840" height="480" rx="28" fill="#ffffff" stroke="#ddd6fe" stroke-width="4"/>
+    <rect x="180" y="90" width="840" height="56" rx="28" fill="url(#violet-accent)"/>
+    <rect x="180" y="122" width="840" height="24" fill="url(#violet-accent)"/>
+
+    <!-- window controls -->
+    <circle cx="220" cy="118" r="8" fill="#ede9fe" opacity="0.9"/>
+    <circle cx="248" cy="118" r="8" fill="#ede9fe" opacity="0.7"/>
+    <circle cx="276" cy="118" r="8" fill="#ede9fe" opacity="0.5"/>
+
+    <!-- video tiles -->
+    <rect x="210" y="170" width="380" height="220" rx="16" fill="#ede9fe"/>
+    <rect x="610" y="170" width="380" height="220" rx="16" fill="#ddd6fe"/>
+
+    <!-- participant avatars in tiles -->
+    <circle cx="400" cy="250" r="48" fill="#c4b5fd"/>
+    <circle cx="800" cy="250" r="48" fill="#a78bfa"/>
+
+    <!-- name labels -->
+    <rect x="260" y="350" width="100" height="20" rx="10" fill="#c4b5fd" opacity="0.8"/>
+    <rect x="660" y="350" width="100" height="20" rx="10" fill="#a78bfa" opacity="0.8"/>
+
+    <!-- bottom row tiles -->
+    <rect x="210" y="410" width="240" height="130" rx="14" fill="#f5f3ff" stroke="#ddd6fe" stroke-width="2"/>
+    <rect x="480" y="410" width="240" height="130" rx="14" fill="#f5f3ff" stroke="#ddd6fe" stroke-width="2"/>
+    <rect x="750" y="410" width="240" height="130" rx="14" fill="#f5f3ff" stroke="#ddd6fe" stroke-width="2"/>
+
+    <!-- control bar -->
+    <rect x="380" y="560" width="440" height="56" rx="28" fill="#ffffff" stroke="#ddd6fe" stroke-width="3"/>
+    <circle cx="440" cy="588" r="16" fill="#7c3aed"/>
+    <circle cx="520" cy="588" r="16" fill="#a78bfa"/>
+    <circle cx="600" cy="588" r="16" fill="#c4b5fd"/>
+    <circle cx="680" cy="588" r="16" fill="#ef4444"/>
+    <circle cx="760" cy="588" r="16" fill="#7c3aed"/>
+  </g>
+
+  <!-- camera icon -->
+  <g transform="translate(920,130)">
+    <rect x="0" y="20" width="120" height="80" rx="14" fill="#7c3aed"/>
+    <polygon points="120,35 170,20 170,100 120,85" fill="#6d28d9"/>
+    <circle cx="60" cy="60" r="22" fill="#ede9fe" opacity="0.5"/>
+  </g>
+
+  <!-- connection nodes -->
+  <g stroke="#7c3aed" stroke-width="3" fill="none" opacity="0.5">
+    <line x1="590" y1="280" x2="610" y2="280"/>
+    <circle cx="600" cy="280" r="6" fill="#7c3aed"/>
+  </g>
+
+  <text x="600" y="640" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="28" fill="#4c1d95">Video Call</text>
+</svg>
