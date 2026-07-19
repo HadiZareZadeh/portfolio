@@ -53,6 +53,16 @@
             demo=""
           />
         </div>
+
+        <div v-reveal>
+          <ProjectCard
+            title="Self-Hosted Video Call Platform – Open Huddle"
+            description="Built a Google Meet–style meeting app with mesh WebRTC for up to 8 participants. Implemented React + Express signaling via Socket.IO, self-hosted coturn TURN, host approval lobby, in-meeting chat, and client-side background blur with TensorFlow.js."
+            :image="base + 'images/projects/video-call.svg'"
+            github="https://github.com/HadiZareZadeh/open-huddle"
+            demo=""
+          />
+        </div>
       </div>
       
       <!-- Call to Action -->
