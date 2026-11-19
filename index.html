@@ -3,28 +3,28 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Hadi ZareZadeh — Portfolio</title>
-  <meta name="description" content="Data Science & AI developer specializing in Python analytics, scikit-learn pipelines, CNN experimentation, and automation.">
-  <meta name="keywords" content="data science, machine learning, AI, Python, scikit-learn, PyTorch, portfolio">
+  <title>Hadi ZareZadeh — Software Developer (Python, Backend, Automation)</title>
+  <meta name="description" content="Software developer working in Python, PHP/Laravel and Vue. Backend, automation and applied AI. Freelance since 2021.">
+  <meta name="keywords" content="software developer, Python, backend, Laravel, Vue, automation, Appium, machine learning, local LLM, portfolio">
   <meta name="author" content="Hadi ZareZadeh">
   
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
   <meta property="og:title" content="Hadi ZareZadeh — Portfolio">
-  <meta property="og:description" content="Data Science & AI developer focusing on Python analytics, scikit-learn pipelines, and CNN experimentation.">
-  <meta property="og:url" content="https://HadiZareZadeh.github.io/portfolio/">
+  <meta property="og:description" content="Software developer: Python, backend, automation and applied AI. Freelance since 2021.">
+  <meta property="og:url" content="https://hadizarezadeh.github.io/portfolio/">
   
   <!-- Twitter -->
   <meta property="twitter:card" content="summary_large_image">
   <meta property="twitter:title" content="Hadi ZareZadeh — Portfolio">
-  <meta property="twitter:description" content="Data Science & AI developer focusing on Python analytics, scikit-learn pipelines, and CNN experimentation.">
+  <meta property="twitter:description" content="Software developer: Python, backend, automation and applied AI. Freelance since 2021.">
   
   <!-- Favicon -->
   <link rel="icon" type="image/svg+xml" href="/portfolio/favicon.svg">
   <link rel="icon" type="image/png" href="/portfolio/favicon.png">
-  <script type="module" crossorigin src="/portfolio/assets/index-BfFmw_OO.js"></script>
+  <script type="module" crossorigin src="/portfolio/assets/index-DVYntr87.js"></script>
   <link rel="modulepreload" crossorigin href="/portfolio/assets/vendor-pmylTInK.js">
-  <link rel="stylesheet" crossorigin href="/portfolio/assets/index-DkQT_3rL.css">
+  <link rel="stylesheet" crossorigin href="/portfolio/assets/index-Bigw_ZP9.css">
 </head>
 <body>
   <!-- GitHub Pages SPA Redirect Script -->
@@ -36,7 +36,8 @@
         if (redirect) {
           try {
             const { pathname, search, hash } = JSON.parse(redirect);
-            const newPath = pathname + search + hash;
+            // Keep the repo base (/portfolio) so the router can match the route
+            const newPath = '/portfolio' + pathname + search + hash;
             sessionStorage.removeItem('gh_redirect');
             window.history.replaceState(null, '', newPath);
           } catch (e) {
@@ -47,6 +48,6 @@
     })();
   </script>
   
-  <div id="app"></div>
+  <div id="app"></div>
 </body>
 </html>
