@@ -1,189 +1,53 @@
-__Hadi ZareZadeh__
-
-__Computer Science__
-
-Email: [HadiZareZadeh00@gmail.com](mailto:HadiZareZadeh00@gmail.com) | LinkedIn: [Link](https://www.linkedin.com/in/hadi-zare-zadeh) | Portfolio: [Link](https://hadizarezadeh.github.io/portfolio/)
-
-__SUMMARY__
-
-Computer Science graduate with strong foundations in algorithms, optimization, and software engineering, now transitioning toward Machine Learning and AI research\. Passionate about deep learning, computer vision, NLP, and reinforcement learning, with a growing portfolio of Python\-based projects involving automation, data processing, and algorithmic problem\-solving\. Experienced with LLM\-assisted development workflows \(ChatGPT, Cursor\) for prototyping, debugging, and accelerating project delivery since 2023\. Motivated by long\-term research\-driven challenges and seeking opportunities to develop advanced AI systems while contributing to innovative and impactful projects\.
-
-__INTERESTS__
-
-Deep Learning, Computer Vision, NLP & Transformer Models, Reinforcement Learning, Representation Learning, Optimization Algorithms, Autonomous Systems, Applied AI Research
-
-__SKILLS__
-
-Programming: Python \(advanced\), PHP/Laravel, JavaScript \(Vue 3\)
-
-Data & ML: NumPy, pandas, scikit\-learn, PyTorch \(basic\), TensorFlow/Keras \(basic\), EDA, data wrangling
-
-Databases: MySQL/MariaDB
-
-Automation & Tools: Python automation, Appium, Selenium, Git/GitHub, Linux, REST APIs
-
-AI\-Assisted Development: ChatGPT, Cursor \(prototyping, debugging, code review\) since 2023
-
-Other: Basic Google Cloud, unit testing
-
-__ONLINE COURSEWORK \(SELF\-STUDY\)__
-
-• Python for Data Science & Machine Learning — Essential Training, Part 1 LinkedIn
-
-• Python for Data Science & Machine Learning — Essential Training, Part 2 LinkedIn
-
-• Deep Learning: Getting Started LinkedIn
-
-• Deep Learning Foundations: Natural Language Processing with TensorFlow LinkedIn
-
-• Machine Learning Foundations: Linear Algebra LinkedIn
-
-__EDUCATION__
-
-__Kashmar Higher Education Institute, Kashmar, Iran__  Fall 2016 – Summer 2020
-
-B\.Sc\. of Computer Science
-
-__Dr\. Shariati School, Bandar Lengeh, Iran__  Spring 2014
-
-High School Diploma of Physics and mathematics
-
-__ACADEMIC & TEACHING EXPERIENCE__
-
-__Kashmar Higher Education Institute, Kashmar, Iran__  2017–2020
-
-Teacher Assistant
-
-• Assisted in Introduction to Programming \(C\), Advanced Programming \(C\+\+\) \- Dr\. Yousef Zadeh
-
-__Head of Education, Scientific Association, Kashmar Higher Education Institute__  2017–2020
-
-__Research Projects: Evolutionary Algorithms – Kashmar Higher Education Institute__  2019
-
-__Research Projects: Genetic Algorithm – Kashmar Higher Education Institute__  2019
-
-__SELECTED UNDERGRADUATE COURSE SCORES \(SCALE: 20\-POINT\)__
-
-• Data Structures & Algorithms – 20\.00
-
-• Advanced Programming \(C\+\+\) – 20\.00
-
-• Introduction to Programming \(C\) – 18\.50
-
-• Digital Logic – 20\.00
-
-• Linear Optimization – 15\.00
-
-• Data Mining – 20\.00
-
-• Scientific Computing Tools – 17\.00
-
-• Technical English for CS – 20\.00
-
-• Database Systems – 17\.00
-
-• Computer Systems – 15\.50
-
-__PROFESSIONAL EXPERIENCE__
-
-__Legend Company, Kashmar, Iran__  2018–2020
-
-Game Developer
-
-• Developed a 2D educational game in a 7\-member team using Unity & C#\.
-
-• Implemented core gameplay mechanics and integrated quiz\-based learning modules\.
-
-• Improved user experience based on playtesting and iteration\.
-
-__PROJECTS__
-
-__Plato Mobile Game Automation System__  2025
-
-Tech: Python, Appium, Selenium
-
-• Built a scalable automation system for 50\+ mobile game types using modular strategy\-based design\.
-
-• Added multi\-instance parallel processing and automatic Appium server lifecycle management\.
-
-• Integrated OpenCV/PIL for UI element detection and game state recognition\.
-
-__Telegram Automation Bot for Hamster Kombat & Web3 Games__  2024
-
-Tech: Python, Telegram API, TON/Web3
-
-• Created a bot to automate tap\-to\-earn tasks, multi\-account workflows, and long\-running sessions\.
-
-• Implemented concurrency, monitoring, and blockchain integrations for stable performance\.
-
-__Full\-Stack E\-Learning Platform – Lyndakade__  2020\-2023
-
-Tech: Laravel, MySQL, Vue 3, Meilisearch
-
-• Built an e\-learning system with SSR, optimized DB queries, and integrated authentication and payments\.
-
-• Implemented search with Meilisearch and improved page performance via backend optimizations\.
-
-__3D Car Racing Game for Educational Research__  2017–2018
-
-Tech: Unity, C#
-
-• Developed core gameplay modules for a research\-based simulation game\.
-
-• Contributed to an IEEE\-published study through feature implementation and user testing\.
-
-__RESEARCH & PUBLICATIONS__
-
-Co\-developed a driving simulation game used in an IEEE\-published study \(Paper ID: 8712031\)
-
-Investigated improvements to HEFT\-based load\-balancing algorithms \(referencing IEEE 7881902\)
-
-__COMPETITIONS__
-
-Participated in ACM programming competitions  Sharif 2018, Ferdowsi 2018
-
-__LANGUAGES__
-
-Persian: Native
-
-English: B2 \(IELTS preparation in progress\)
-
-Spanish: A2 \(on Duolingo, [View Profile](https://www.duolingo.com/u/610954713)\)
-
-__PRESENTATIONS__
-
-Evolutionary Algorithms  2019
-
-Genetic Algorithm  2019
-
-__SPORTS__
-
-Karate\-do: 2nd Dan Black Belt, April 2005 – 2016
-
-Volleyball: February 2025 \- Present
-
-__REFERENCES__
-
-__Dr Atefeh Khazaei__
-
-Instructor \(Database, Data mining\) – role\-model
-
-[Atefeh.Khazaei@port.ac.uk](mailto:Atefeh.Khazaei@port.ac.uk)
-
-__Dr\. Saeideh Yousefzadeh__
-
-Instructor \(Introduction to Programming\)
-
-[sa.yousefzadehmaghani@mail.um.ac.ir](mailto:sa.yousefzadehmaghani@mail.um.ac.ir)
-
-__Elham Dolkhani__
-
-Instructor – project leader – co\-author
-
-[dolkhani.e@gmail.com](mailto:dolkhani.e@gmail.com)
-
-__Mohammad Mousavi Nezhad__
-
-Founder of Legend Startup – Head of Scientific Association at KHEI
-
-[mimzhad@gmail.com](mailto:mimzhad@gmail.com)
+Hadi ZareZadeh
+Software Developer  |  Python � Backend � Automation � Applied AI
+HadiZareZadeh00@gmail.com   |   linkedin.com/in/hadi-zare-zadeh   |   hadizarezadeh.github.io/portfolio
+PROFESSIONAL SUMMARY
+Software developer with a B.Sc. in Computer Science, working mainly in Python and PHP. Freelance since 2021, building full-stack web platforms with Laravel and Vue.js, a Flutter mobile app, and Python automation tools for Android. Also experiments with machine learning and locally hosted LLMs. Seeking software engineering roles in Python, backend development, automation, and applied AI.
+TECHNICAL SKILLS
+Languages	Python, PHP, JavaScript, TypeScript, Java, SQL; C, C++ and C# from coursework and game development
+Backend	Laravel, REST APIs, authentication and authorization (Laravel Sanctum), PostgreSQL, MySQL, SQLite, Redis, Meilisearch, Laravel Reverb
+Frontend	Vue.js 3, Inertia.js, TypeScript, HTML, CSS, Tailwind CSS, DaisyUI, Vite
+Mobile & Automation	Appium (UiAutomator2), ADB, Selenium, OpenCV, Flutter
+AI & Data	PyTorch, TensorFlow/Keras, NumPy, pandas, Ollama, llama.cpp; AI-assisted development (Claude, ChatGPT, Cursor)
+Tools & Infrastructure	Git, GitHub, GitLab CI/CD, Linux (Ubuntu), Apache, FFmpeg, Windows
+Interests	Computer vision, reinforcement learning, NLP, optimization algorithms, robotics, local AI infrastructure
+PROFESSIONAL EXPERIENCE
+Freelance Software Developer	2021 - Present
+    - Design and build full-stack web applications with Laravel, Vue.js, and Inertia.js, including search, authentication, role-based access, and payment gateway integration.
+    - Develop Python automation tools for Android using Appium, ADB, and OpenCV.
+Game Developer  Legend Company, Kashmar, Iran	2018 - 2020
+SELECTED PROJECTS
+Lyndakade - Online Learning Platform	2020 - 2023
+lyndakade.ir  �  Laravel 9, PHP, Vue.js 3, Inertia.js, Tailwind CSS, DaisyUI, Meilisearch, Flutter, Ubuntu, Apache
+    - Built a full-stack learning platform with a catalog of about 10,000 courses, 650 learning paths, 2,277 authors, and 1,527 subjects, in Persian and English.
+    - Implemented subscription-based course access, a separate download-credit system, signed download URLs, and embedded subtitles.
+    - Integrated Meilisearch for catalog search.
+    - Developed the Flutter mobile app (v2.1.7), including encrypted video handling.
+Academy ZareZadeh - Educational Platform	
+zarezadeh.academy  �  Laravel 12, PHP 8.2, Vue.js, Inertia.js, TypeScript, Tailwind CSS 4, Vite 7, PostgreSQL, Redis, Meilisearch
+    - Designed a multi-role platform (Student, Instructor, Admin) with authentication and authorization using Laravel Sanctum.
+    - Integrated the ZarinPal and Zibal payment gateways with Toman-based pricing.
+    - Added real-time communication with Laravel Reverb and search with Meilisearch.
+    - Built a Persian right-to-left interface with Jalali calendar support.
+    - Deployed on Ubuntu 24 without Docker, using GitLab Runner.
+Plato Farm Bot - Android Automation	2025
+Python, Appium (UiAutomator2), ADB, OpenCV
+    - Built a Python tool that automates the Plato Android app through Appium and ADB.
+    - Used OpenCV image matching to recognize on-screen elements.
+    - Managed Android emulators and ran multiple automation instances concurrently.
+Local AI Infrastructure - Personal Experiments	
+Ollama, llama.cpp, Qwen3-Coder, Gemma
+    - Ran open models locally for inference and exposed them through local APIs, including VS Code integrations.
+    - Explored multimodal models and offline AI setups.
+EDUCATION
+B.Sc. in Computer Science  Kashmar Higher Education Institute, Kashmar, Iran	2016 - 2020
+    - Teaching Assistant for Introduction to Programming (C) and Advanced Programming (C++), 2017 - 2020.
+    - Head of Education, Scientific Association, 2017 - 2020.
+    - Research projects and presentations on Evolutionary Algorithms and Genetic Algorithms (2019).
+    - Co-developed a driving simulation game used in an IEEE-published study (Paper ID 8712031).
+    - Investigated improvements to HEFT-based load-balancing algorithms, building on IEEE paper 7881902.
+    - Competed in ACM programming contests at Sharif University and Ferdowsi University (2018).
+ONLINE COURSEWORK
+LinkedIn Learning (self-study): Python for Data Science and Machine Learning, Parts 1-2; Deep Learning: Getting Started; Deep Learning Foundations: Natural Language Processing with TensorFlow; Machine Learning Foundations: Linear Algebra.
+LANGUAGES
+Persian - Native    English - B2 (self-assessed)    Spanish - approx. A2

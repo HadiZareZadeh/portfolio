@@ -17,7 +17,7 @@
           <!-- Version Note -->
           <div class="mb-8 p-4 bg-blue-50 border-l-4 border-blue-500 rounded" v-reveal>
             <p class="text-sm text-blue-800 italic">
-              <strong>Note:</strong> This is the first version of my story and will be refined soon.
+              <strong>Note:</strong> This story is still being written. The university years are told in detail; the years since graduation are shorter for now.
             </p>
           </div>
 
@@ -184,7 +184,25 @@
             There's more to include in the last 5 years from 2020 (my graduation year from KHEI) until right now...
           </p>
         </section>
-      </article>
+              <!-- Chapter 8 -->
+        <section id="chapter-8" v-reveal class="mb-12 scroll-mt-24">
+          <h2 class="text-3xl font-bold text-gray-900 mb-6 pb-2 border-b-2 border-brand-600">
+            Chapter 8 — Building Real Products (2020–Today)
+          </h2>
+          <div class="space-y-4 text-gray-700 leading-relaxed">
+            <p>
+              After graduating in 2020, I kept building. Since 2021 I have worked as a freelance developer, mostly in Python and PHP. I wrote Lyndakade, an online learning platform with about 10,000 courses in Persian and English, together with its Flutter mobile app, and later Academy ZareZadeh, a Laravel and Vue platform with real-time features and local payment gateways.
+            </p>
+            <p>
+              In parallel I wrote Python tools that automate Android apps and Telegram bots, which taught me a lot about concurrency, long-running processes and computer vision with OpenCV. Since 2023 I have used ChatGPT and Cursor to prototype faster, and I now study machine learning and run language models locally with Ollama and llama.cpp.
+            </p>
+            <p>
+              What I want next is a team where I can do backend and automation work, with some AI in it, and keep learning from people better than me, the way I did at university.
+            </p>
+          </div>
+        </section>
+
+          </article>
         </div>
 
         <!-- Chapter Navigation Sidebar -->
@@ -228,7 +246,8 @@ const chapters = [
   { id: 'chapter-4', title: 'Chapter 4 — Stepping Into a New World' },
   { id: 'chapter-5', title: 'Chapter 5 — Building Confidence' },
   { id: 'chapter-6', title: 'Chapter 6 — Finding My True Interest' },
-  { id: 'chapter-7', title: 'Chapter 7 — Later Semesters and Reputation' }
+  { id: 'chapter-7', title: 'Chapter 7 — Later Semesters and Reputation' },
+  { id: 'chapter-8', title: 'Chapter 8 — Building Real Products' }
 ]
 
 const activeChapter = ref('chapter-1')

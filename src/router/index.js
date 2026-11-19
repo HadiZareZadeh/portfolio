@@ -31,6 +31,10 @@ const routes = [
     path: '/story',
     name: 'Story',
     component: StoryPage
+  },
+  {
+    path: '/:pathMatch(.*)*',
+    redirect: '/'
   }
 ]
 

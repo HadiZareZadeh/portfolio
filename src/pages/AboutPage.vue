@@ -7,7 +7,7 @@
           About Me
         </h1>
         <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-          Get to know more about my background, skills, and experience
+          My background, skills and what I have built
         </p>
       </div>
       
@@ -49,14 +49,12 @@
                   HadiZareZadeh00@gmail.com
                 </a>
               </div>
-              <!--
               <div class="flex items-center space-x-3">
-                <span class="text-gray-500">📱</span>
-                <a href="tel:+989211917302" class="text-brand-600 hover:text-brand-700">
-                  +98 921 191 7302
+                <span class="text-gray-500">📄</span>
+                <a :href="base + 'Hadi_ZareZadeh_Resume.pdf'" target="_blank" rel="noopener noreferrer" class="text-brand-600 hover:text-brand-700">
+                  Download resume (PDF)
                 </a>
               </div>
-              -->
               <div class="flex items-center space-x-3">
                 <span class="text-gray-500">💼</span>
                 <a href="https://github.com/HadiZareZadeh" target="_blank" rel="noopener noreferrer" class="text-brand-600 hover:text-brand-700">
@@ -71,7 +69,7 @@
               </div>
               <div class="flex items-center space-x-3">
                 <span class="text-gray-500">🗣️</span>
-                <span class="text-gray-700">Persian (Native), English (B2 — preparing for IELTS/TOEFL), Spanish (A2)</span>
+                <span class="text-gray-700">Persian (native), English (B2, self-assessed), Spanish (about A2)</span>
               </div>
             </div>
           </div>
@@ -83,7 +81,7 @@
           <div v-reveal class="card p-6">
             <h2 class="text-2xl font-semibold text-gray-900 mb-4">Summary</h2>
             <p class="text-gray-700 leading-relaxed">
-              Computer Science graduate with strong foundations in algorithms, optimization, and software engineering, now transitioning toward Machine Learning and AI research. Passionate about deep learning, computer vision, NLP, and reinforcement learning, with a growing portfolio of Python-based projects involving automation, data processing, and algorithmic problem-solving. Experienced with LLM-assisted development workflows (ChatGPT, Cursor) for prototyping, debugging, and accelerating project delivery since 2023. Motivated by long-term research-driven challenges and seeking opportunities to develop advanced AI systems while contributing to innovative and impactful projects.
+              Computer science graduate, freelancing as a developer since 2021. I mostly write Python and PHP: e-learning platforms in Laravel and Vue, automation for Android apps, and a Telegram bot. Alongside that I study machine learning (computer vision and NLP so far) and run language models locally. I'm looking for a backend, automation or Python role, ideally with some AI work in it.
             </p>
           </div>
           
@@ -95,10 +93,9 @@
               <SkillBadge>Computer Vision</SkillBadge>
               <SkillBadge>NLP & Transformer Models</SkillBadge>
               <SkillBadge>Reinforcement Learning</SkillBadge>
-              <SkillBadge>Representation Learning</SkillBadge>
               <SkillBadge>Optimization Algorithms</SkillBadge>
-              <SkillBadge>Autonomous Systems</SkillBadge>
-              <SkillBadge>Applied AI Research</SkillBadge>
+              <SkillBadge>Robotics</SkillBadge>
+              <SkillBadge>Local AI Infrastructure</SkillBadge>
             </div>
           </div>
 
@@ -106,63 +103,10 @@
           <div v-reveal class="card p-6">
             <h2 class="text-2xl font-semibold text-gray-900 mb-6">Skills</h2>
             <div class="grid md:grid-cols-2 gap-6">
-              <div>
-                <h3 class="font-medium text-gray-900 mb-3">Programming</h3>
+              <div v-for="group in skillGroups" :key="group.title">
+                <h3 class="font-medium text-gray-900 mb-3">{{ group.title }}</h3>
                 <div class="flex flex-wrap gap-2">
-                  <SkillBadge>Python (advanced)</SkillBadge>
-                  <SkillBadge>PHP/Laravel</SkillBadge>
-                  <SkillBadge>JavaScript (Vue 3)</SkillBadge>
-                </div>
-              </div>
-              
-              <div>
-                <h3 class="font-medium text-gray-900 mb-3">Data & ML</h3>
-                <div class="flex flex-wrap gap-2">
-                  <SkillBadge>NumPy</SkillBadge>
-                  <SkillBadge>pandas</SkillBadge>
-                  <SkillBadge>scikit-learn</SkillBadge>
-                  <SkillBadge>PyTorch (basic)</SkillBadge>
-                  <SkillBadge>TensorFlow/Keras (basic)</SkillBadge>
-                  <SkillBadge>EDA</SkillBadge>
-                  <SkillBadge>Data Wrangling</SkillBadge>
-                </div>
-              </div>
-              
-              <div>
-                <h3 class="font-medium text-gray-900 mb-3">Databases</h3>
-                <div class="flex flex-wrap gap-2">
-                  <SkillBadge>MySQL/MariaDB</SkillBadge>
-                </div>
-              </div>
-              
-              <div>
-                <h3 class="font-medium text-gray-900 mb-3">Automation & Tools</h3>
-                <div class="flex flex-wrap gap-2">
-                  <SkillBadge>Python Automation</SkillBadge>
-                  <SkillBadge>Appium</SkillBadge>
-                  <SkillBadge>Selenium</SkillBadge>
-                  <SkillBadge>Git/GitHub</SkillBadge>
-                  <SkillBadge>Linux</SkillBadge>
-                  <SkillBadge>REST APIs</SkillBadge>
-                </div>
-              </div>
-              
-              <div>
-                <h3 class="font-medium text-gray-900 mb-3">AI-Assisted Development</h3>
-                <div class="flex flex-wrap gap-2">
-                  <SkillBadge>ChatGPT</SkillBadge>
-                  <SkillBadge>Cursor</SkillBadge>
-                  <SkillBadge>Prototyping</SkillBadge>
-                  <SkillBadge>Debugging</SkillBadge>
-                  <SkillBadge>Code Review</SkillBadge>
-                </div>
-              </div>
-
-              <div>
-                <h3 class="font-medium text-gray-900 mb-3">Other</h3>
-                <div class="flex flex-wrap gap-2">
-                  <SkillBadge>Google Cloud (basic)</SkillBadge>
-                  <SkillBadge>Unit Testing</SkillBadge>
+                  <SkillBadge v-for="s in group.items" :key="s">{{ s }}</SkillBadge>
                 </div>
               </div>
             </div>
@@ -258,12 +202,21 @@
             <h2 class="text-2xl font-semibold text-gray-900 mb-6">Experience</h2>
             <div class="space-y-4">
               <div class="border-l-2 border-brand-600 pl-4">
-                <h3 class="font-medium text-gray-900">Game Developer — Legend Company</h3>
-                <p class="text-gray-600 mb-2">2018-2020 · Kashmar, Iran</p>
+                <h3 class="font-medium text-gray-900">Freelance Software Developer</h3>
+                <p class="text-gray-600 mb-2">2021 – Present</p>
                 <ul class="text-sm text-gray-600 space-y-1 ml-4 list-disc">
-                  <li>Developed a 2D educational game in a 7-member team using Unity & C#</li>
-                  <li>Implemented core gameplay mechanics and integrated quiz-based learning modules</li>
-                  <li>Improved user experience based on playtesting and iteration</li>
+                  <li>Build web platforms with Laravel and Vue, and a mobile app with Flutter.</li>
+                  <li>Write Python tools that automate Android apps and Telegram bots.</li>
+                  <li>See the <RouterLink to="/projects" class="text-brand-600 hover:text-brand-700">projects page</RouterLink> for the main examples.</li>
+                </ul>
+              </div>
+              <div class="border-l-2 border-brand-600 pl-4">
+                <h3 class="font-medium text-gray-900">Game Developer — Legend Company</h3>
+                <p class="text-gray-600 mb-2">2018 – 2020 · Kashmar, Iran</p>
+                <ul class="text-sm text-gray-600 space-y-1 ml-4 list-disc">
+                  <li>Worked in a team of seven on a 2D educational game in Unity and C#.</li>
+                  <li>Wrote core gameplay mechanics and the quiz modules that carry the learning content.</li>
+                  <li>Changed gameplay and UI based on playtesting.</li>
                 </ul>
               </div>
             </div>
@@ -277,7 +230,7 @@
                 • Co-developed a driving simulation game used in an IEEE-published study (Paper ID: 8712031)
               </div>
               <div class="text-gray-700">
-                • Investigated improvements to HEFT-based load-balancing algorithms (referencing IEEE 7881902)
+                • Looked into ways to improve HEFT-based load-balancing algorithms, building on IEEE paper 7881902
               </div>
             </div>
           </div>
@@ -297,8 +250,8 @@
             <h2 class="text-2xl font-semibold text-gray-900 mb-4">Languages</h2>
             <div class="space-y-2">
               <div class="text-gray-700">• Persian: Native</div>
-              <div class="text-gray-700">• English: B2 (IELTS preparation in progress)</div>
-              <div class="text-gray-700">• Spanish: A2 (on Duolingo)</div>
+              <div class="text-gray-700">• English: B2 (self-assessed)</div>
+              <div class="text-gray-700">• Spanish: about A2 (learning on Duolingo)</div>
             </div>
           </div>
           
@@ -348,6 +301,16 @@ const convertToLetterGrade = (score) => {
   return 'F'
 }
 
+const skillGroups = [
+  { title: 'Languages', items: ['Python (advanced)', 'PHP', 'JavaScript', 'TypeScript', 'Java', 'SQL', 'C#'] },
+  { title: 'Backend', items: ['Laravel', 'REST APIs', 'Sanctum auth', 'MySQL/MariaDB', 'PostgreSQL', 'Redis', 'Meilisearch', 'Laravel Reverb'] },
+  { title: 'Frontend', items: ['Vue 3', 'Inertia.js', 'HTML', 'CSS', 'Tailwind CSS', 'DaisyUI', 'Vite'] },
+  { title: 'Automation & Mobile', items: ['Appium (UiAutomator2)', 'ADB', 'Selenium', 'OpenCV', 'Flutter'] },
+  { title: 'Data & ML', items: ['NumPy', 'pandas', 'scikit-learn', 'PyTorch (basic)', 'TensorFlow/Keras (basic)', 'Ollama', 'llama.cpp'] },
+  { title: 'Tools', items: ['Git/GitHub', 'GitLab CI/CD', 'Linux (Ubuntu)', 'Apache', 'FFmpeg', 'Unit testing', 'Google Cloud (basic)'] },
+  { title: 'AI-Assisted Development', items: ['ChatGPT', 'Cursor', 'Prototyping', 'Debugging'] }
+]
+
 const courseGroups = [
   {
     title: '',
@@ -365,8 +328,6 @@ const courseGroups = [
     ]
   }
 ]
-
-// uses local /images/avatar.png
 
 const handleMouseMove = (e) => {
   if (!avatarCard.value) return

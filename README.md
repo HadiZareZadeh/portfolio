@@ -1,40 +1,43 @@
 # Hadi ZareZadeh — Portfolio
 
-A modern, responsive portfolio showcasing my projects, skills, and experience with a focus on Data Science, AI, and full‑stack development.
+Personal portfolio of a software developer working in Python, PHP/Laravel and Vue, with a focus on backend, automation and applied AI.
 
-## Visit the website
+**Live site:** https://hadizarezadeh.github.io/portfolio/
 
-- Live site: [Hadi ZareZadeh — Portfolio](https://HadiZareZadeh.github.io/portfolio/)
+## Pages
 
-## What you'll find
+- **Home**: short introduction and links
+- **About**: summary, skills, education, teaching and research, languages
+- **My Story**: how I got into programming, from age 9 until today
+- **Projects**: Academy ZareZadeh, Lyndakade, Plato automation, Telegram bot, Open Huddle, local AI setup, 3D racing game
+- **Contact**: email, LinkedIn, GitHub
 
-- **Home**: Hero section with introduction and call-to-action
-- **About**: Comprehensive profile including education, experience, skills, publications, and academic achievements
-- **Projects**: Showcase of automation systems, mobile apps, e-learning platforms, and game development projects
-- **Story**: Personal journey through my passion for programming and computer science
-- **Contact**: Connect via LinkedIn, GitHub, or email
+## Tech
 
-## Quick navigation
+Vue 3, Vite, Vue Router, Tailwind CSS, Heroicons. Deployed to GitHub Pages with `gh-pages`.
 
-- Home: [`/`](https://HadiZareZadeh.github.io/portfolio/)
-- About: [`/about`](https://HadiZareZadeh.github.io/portfolio/about)
-- Projects: [`/projects`](https://HadiZareZadeh.github.io/portfolio/projects)
-- Story: [`/story`](https://HadiZareZadeh.github.io/portfolio/story)
-- Contact: [`/contact`](https://HadiZareZadeh.github.io/portfolio/contact)
+## Run locally
 
-## Tech at a glance
+```bash
+npm install
+npm run dev
+```
 
-- **Framework**: Vue 3 + Vite
-- **Styling**: Tailwind CSS
-- **Routing**: Vue Router
-- **Icons**: @heroicons/vue
+## Deploy
+
+```bash
+npm run deploy
+```
+
+`vite.config.js` sets `base: "/portfolio/"`, so the site must live at `/portfolio/`.
+`public/404.html` and the script in `index.html` make direct links such as `/portfolio/about` work on GitHub Pages.
 
 ## Contact
 
-- Email: [HadiZareZadeh00@gmail.com](mailto:HadiZareZadeh00@gmail.com)
-- LinkedIn: [hadi-zare-zadeh](https://www.linkedin.com/in/hadi-zare-zadeh)
-- GitHub: [@HadiZareZadeh](https://github.com/HadiZareZadeh)
+- Email: HadiZareZadeh00@gmail.com
+- LinkedIn: https://www.linkedin.com/in/hadi-zare-zadeh
+- GitHub: https://github.com/HadiZareZadeh
 
 ## License
 
-MIT — you’re welcome to browse the code and take inspiration.
+MIT

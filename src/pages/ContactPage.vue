@@ -7,7 +7,7 @@
           Get in touch
         </h1>
         <p class="text-xl text-gray-600 max-w-3xl mx-auto">
-          Motivated by long-term research-driven challenges and seeking opportunities to develop advanced AI systems. Let's connect!
+          I'm looking for backend, automation or Python roles, ideally with some AI work in them. Let's connect!
         </p>
       </div>
       
@@ -16,7 +16,7 @@
           <div v-reveal class="card p-8">
             <h2 class="text-2xl font-semibold text-gray-900 mb-6">Let's Connect</h2>
             <p class="text-gray-700 mb-8 leading-relaxed">
-              Computer Science graduate with strong foundations in algorithms, optimization, and software engineering, now transitioning toward Machine Learning and AI research. Passionate about deep learning, computer vision, NLP, and reinforcement learning. Motivated by long-term research-driven challenges and seeking opportunities to develop advanced AI systems while contributing to innovative and impactful projects.
+              Computer science graduate and freelance developer since 2021. I build web platforms with Laravel and Vue, Python automation tools, and I study machine learning on the side. The quickest way to reach me is email; I usually answer within a few days.
             </p>
             
             <!-- Contact Links -->
@@ -84,5 +84,5 @@
 </template>
 
 <script setup>
-import ContactForm from '../components/ContactForm.vue'
+// The contact form is disabled for now, so nothing to import here.
 </script>

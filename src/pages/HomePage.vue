@@ -11,28 +11,36 @@
                 Hadi ZareZadeh
               </h1>
               <p class="text-2xl lg:text-3xl text-gray-600 mt-4">
-                Computer Science Graduate & Aspiring ML/AI Researcher
+                Software Developer · Python, Backend & Automation
               </p>
             </div>
             
             <div v-reveal class="space-y-6">
               <p class="text-lg text-gray-700 leading-relaxed">
-                Computer Science graduate with strong foundations in algorithms, optimization, and software engineering, now transitioning toward Machine Learning and AI research. Passionate about deep learning, computer vision, NLP, and reinforcement learning, with a growing portfolio of Python-based projects involving automation, data processing, and algorithmic problem-solving. Experienced with LLM-assisted development workflows (ChatGPT, Cursor) for prototyping, debugging, and accelerating project delivery since 2023.
+                Computer science graduate, freelancing as a developer since 2021. I mostly write Python and PHP: e-learning platforms in Laravel and Vue, automation for Android apps, and a Telegram bot. Alongside that I study machine learning (computer vision and NLP so far) and run language models locally. I'm looking for a backend, automation or Python role, ideally with some AI work in it.
               </p>
               
               <div class="flex flex-col sm:flex-row gap-4">
                 <RouterLink 
-                  to="/about" 
+                  to="/projects" 
                   class="btn btn-primary animate-float"
                 >
-                  Get to Know Me
+                  See My Projects
                 </RouterLink>
                 <RouterLink 
-                  to="/story" 
+                  to="/about" 
                   class="btn btn-outline"
                 >
-                  My Story
+                  About Me
                 </RouterLink>
+                <a
+                  :href="base + 'Hadi_ZareZadeh_Resume.pdf'"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn btn-outline"
+                >
+                  Resume (PDF)
+                </a>
                 <RouterLink 
                   to="/contact" 
                   class="btn btn-outline"
@@ -53,7 +61,7 @@
             >
               <img 
                 :src="base + 'images/avatar.png'" 
-                alt="Hadi ZareZadeh - Computer Science Graduate transitioning toward ML/AI Research"
+                alt="Hadi ZareZadeh, software developer"
                 class="w-full h-full object-cover"
                 loading="eager"
               />

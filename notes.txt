@@ -1,4 +1,4 @@
 git add .
-git commit -m "updated photo"
+git commit -m "updated resume and story"
 git push -u origin main
 npm run deploy

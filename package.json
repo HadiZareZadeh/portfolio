@@ -2,7 +2,7 @@
   "name": "hadi-portfolio",
   "type": "module",
   "version": "1.0.0",
-  "description": "Hadi ZareZadeh - Data Science & AI Portfolio",
+  "description": "Hadi ZareZadeh - Software Developer Portfolio (Python, Backend, Automation)",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
@@ -31,7 +31,9 @@
     "portfolio",
     "vue",
     "vite",
-    "data-science",
+    "python",
+    "backend",
+    "automation",
     "machine-learning"
   ],
   "author": "Hadi ZareZadeh",

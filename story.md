@@ -4,7 +4,7 @@
 
 ---
 
-> **Note:** This is the first version of my story and will be refined soon.
+> **Note:** This story is still being written. The university years are told in detail; the years since graduation are shorter for now.
 
 ---
 
@@ -86,5 +86,10 @@ There were a few things I was known for at KHEI:
 
 ---
 
-*There's more to include in the last 5 years from 2020 (my graduation year from KHEI) until right now...*
+## Chapter 8 — Building Real Products (2020–Today)
 
+After graduating in 2020, I kept building. Since 2021 I have worked as a freelance developer, mostly in Python and PHP. I wrote Lyndakade, an online learning platform with about 10,000 courses in Persian and English, together with its Flutter mobile app, and later Academy ZareZadeh, a Laravel and Vue platform with real-time features and local payment gateways.
+
+In parallel I wrote Python tools that automate Android apps and Telegram bots, which taught me a lot about concurrency, long-running processes and computer vision with OpenCV. Since 2023 I have used ChatGPT and Cursor to prototype faster, and I now study machine learning and run language models locally with Ollama and llama.cpp.
+
+What I want next is a team where I can do backend and automation work, with some AI in it, and keep learning from people better than me, the way I did at university.
